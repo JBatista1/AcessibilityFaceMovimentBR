@@ -14,6 +14,8 @@
 		9A2F486025A3EA8F0043A2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F485F25A3EA8F0043A2A6 /* Assets.xcassets */; };
 		9A2F486325A3EA8F0043A2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F486125A3EA8F0043A2A6 /* LaunchScreen.storyboard */; };
 		9A2F486E25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F486D25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift */; };
+		9A2F487E25A3F1A80043A2A6 /* UIImage+ImagesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F487D25A3F1A80043A2A6 /* UIImage+ImagesResources.swift */; };
+		9A2F488A25A3F40C0043A2A6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F488925A3F40C0043A2A6 /* .swiftlint.yml */; };
 		A0770479EFD2B2BF5D4A61C0 /* Pods_AcessibilityFaceMovimentBRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6524D84D03E0513A22BF13 /* Pods_AcessibilityFaceMovimentBRTests.framework */; };
 		C8335635C543761D60B5302B /* Pods_AcessibilityFaceMovimentBR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F628952DC4CA9110355D4E49 /* Pods_AcessibilityFaceMovimentBR.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,8 @@
 		9A2F486925A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcessibilityFaceMovimentBRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2F486D25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityFaceMovimentBRTests.swift; sourceTree = "<group>"; };
 		9A2F486F25A3EA8F0043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2F487D25A3F1A80043A2A6 /* UIImage+ImagesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImagesResources.swift"; sourceTree = "<group>"; };
+		9A2F488925A3F40C0043A2A6 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = AcessibilityFaceMovimentBR/SupportFiles/Configuration/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		9CA8C3FDF5F9C4E736F9F0A1 /* Pods-AcessibilityFaceMovimentBR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBR.debug.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBR/Pods-AcessibilityFaceMovimentBR.debug.xcconfig"; sourceTree = "<group>"; };
 		A23B29D2B6A7E8BF9CAEFE40 /* Pods-AcessibilityFaceMovimentBRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBRTests.release.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBRTests/Pods-AcessibilityFaceMovimentBRTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAA48ED0EA9DADD247F51A8C /* Pods-AcessibilityFaceMovimentBR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBR.release.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBR/Pods-AcessibilityFaceMovimentBR.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,13 +104,10 @@
 		9A2F485525A3EA880043A2A6 /* AcessibilityFaceMovimentBR */ = {
 			isa = PBXGroup;
 			children = (
-				9A2F485625A3EA880043A2A6 /* AppDelegate.swift */,
-				9A2F485825A3EA880043A2A6 /* SceneDelegate.swift */,
-				9A2F485A25A3EA880043A2A6 /* ViewController.swift */,
-				9A2F485C25A3EA880043A2A6 /* Main.storyboard */,
-				9A2F485F25A3EA8F0043A2A6 /* Assets.xcassets */,
-				9A2F486125A3EA8F0043A2A6 /* LaunchScreen.storyboard */,
-				9A2F486425A3EA8F0043A2A6 /* Info.plist */,
+				9A2F488325A3F22B0043A2A6 /* Common */,
+				9A2F487B25A3F1580043A2A6 /* AcessobilitaFace */,
+				9A2F487C25A3F16F0043A2A6 /* Resources */,
+				9A2F487925A3F04D0043A2A6 /* SupportFiles */,
 			);
 			path = AcessibilityFaceMovimentBR;
 			sourceTree = "<group>";
@@ -120,6 +121,75 @@
 			path = AcessibilityFaceMovimentBRTests;
 			sourceTree = "<group>";
 		};
+		9A2F487925A3F04D0043A2A6 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F488B25A3F5E80043A2A6 /* Configuration */,
+				9A2F486425A3EA8F0043A2A6 /* Info.plist */,
+				9A2F486125A3EA8F0043A2A6 /* LaunchScreen.storyboard */,
+				9A2F485625A3EA880043A2A6 /* AppDelegate.swift */,
+				9A2F485825A3EA880043A2A6 /* SceneDelegate.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		9A2F487B25A3F1580043A2A6 /* AcessobilitaFace */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F488725A3F2EA0043A2A6 /* Core */,
+				9A2F488525A3F2680043A2A6 /* Auxiliaries */,
+				9A2F488425A3F23B0043A2A6 /* Exemple */,
+			);
+			path = AcessobilitaFace;
+			sourceTree = "<group>";
+		};
+		9A2F487C25A3F16F0043A2A6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F485F25A3EA8F0043A2A6 /* Assets.xcassets */,
+				9A2F487D25A3F1A80043A2A6 /* UIImage+ImagesResources.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A2F488325A3F22B0043A2A6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9A2F488425A3F23B0043A2A6 /* Exemple */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F485A25A3EA880043A2A6 /* ViewController.swift */,
+				9A2F485C25A3EA880043A2A6 /* Main.storyboard */,
+			);
+			path = Exemple;
+			sourceTree = "<group>";
+		};
+		9A2F488525A3F2680043A2A6 /* Auxiliaries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auxiliaries;
+			sourceTree = "<group>";
+		};
+		9A2F488725A3F2EA0043A2A6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9A2F488B25A3F5E80043A2A6 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				9A2F488925A3F40C0043A2A6 /* .swiftlint.yml */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		A3C6FF0FCB5FB5D72B260713 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,7 +198,6 @@
 				36F416FDD173D9B3E365F6B3 /* Pods-AcessibilityFaceMovimentBRTests.debug.xcconfig */,
 				A23B29D2B6A7E8BF9CAEFE40 /* Pods-AcessibilityFaceMovimentBRTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -143,6 +212,7 @@
 				9A2F484F25A3EA880043A2A6 /* Sources */,
 				9A2F485025A3EA880043A2A6 /* Frameworks */,
 				9A2F485125A3EA880043A2A6 /* Resources */,
+				9A2F487825A3EFDD0043A2A6 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -161,6 +231,7 @@
 				9A2F486525A3EA8F0043A2A6 /* Sources */,
 				9A2F486625A3EA8F0043A2A6 /* Frameworks */,
 				9A2F486725A3EA8F0043A2A6 /* Resources */,
+				9A2F488825A3F3ED0043A2A6 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -215,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A2F488A25A3F40C0043A2A6 /* .swiftlint.yml in Resources */,
 				9A2F486325A3EA8F0043A2A6 /* LaunchScreen.storyboard in Resources */,
 				9A2F486025A3EA8F0043A2A6 /* Assets.xcassets in Resources */,
 				9A2F485E25A3EA880043A2A6 /* Main.storyboard in Resources */,
@@ -253,6 +325,42 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9A2F487825A3EFDD0043A2A6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		9A2F488825A3F3ED0043A2A6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
 		C9BB3A91E19F668AB2756FC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */,
+				9A2F487E25A3F1A80043A2A6 /* UIImage+ImagesResources.swift in Sources */,
 				9A2F485725A3EA880043A2A6 /* AppDelegate.swift in Sources */,
 				9A2F485925A3EA880043A2A6 /* SceneDelegate.swift in Sources */,
 			);
@@ -446,7 +555,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AcessibilityFaceMovimentBR/Info.plist;
+				INFOPLIST_FILE = "AcessibilityFaceMovimentBR/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,7 +574,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = AcessibilityFaceMovimentBR/Info.plist;
+				INFOPLIST_FILE = "AcessibilityFaceMovimentBR/Support Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

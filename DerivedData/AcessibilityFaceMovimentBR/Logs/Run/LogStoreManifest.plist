@@ -5,6 +5,41 @@
 	<key>logFormatVersion</key>
 	<integer>10</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>2BD295ED-678B-4124-BA94-A2DDCDEBBC16</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>2BD295ED-678B-4124-BA94-A2DDCDEBBC16.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>AcessibilityFaceMovimentBR project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>AcessibilityFaceMovimentBR</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run AcessibilityFaceMovimentBR</string>
+			<key>timeStartedRecording</key>
+			<real>631501624.92752194</real>
+			<key>timeStoppedRecording</key>
+			<real>631502035.06607795</real>
+			<key>title</key>
+			<string>Run AcessibilityFaceMovimentBR</string>
+			<key>uniqueIdentifier</key>
+			<string>2BD295ED-678B-4124-BA94-A2DDCDEBBC16</string>
+		</dict>
+	</dict>
 </dict>
 </plist>

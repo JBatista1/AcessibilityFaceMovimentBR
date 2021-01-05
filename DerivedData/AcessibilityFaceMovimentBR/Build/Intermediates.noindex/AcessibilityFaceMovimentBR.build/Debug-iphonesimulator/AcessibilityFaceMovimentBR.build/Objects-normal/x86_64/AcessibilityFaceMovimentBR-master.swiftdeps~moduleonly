@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "022ad7424011b2c373db434010a02a69"
+build_time: [1609809381, 541943000]
+inputs:
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/ViewController.swift": [1609808983, 710647364]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/Resources/UIImage+ImagesResources.swift": [1609808534, 499931600]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/SupportFiles/AppDelegate.swift": [1609808983, 550446960]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/SupportFiles/SceneDelegate.swift": [1609808983, 426849354]
