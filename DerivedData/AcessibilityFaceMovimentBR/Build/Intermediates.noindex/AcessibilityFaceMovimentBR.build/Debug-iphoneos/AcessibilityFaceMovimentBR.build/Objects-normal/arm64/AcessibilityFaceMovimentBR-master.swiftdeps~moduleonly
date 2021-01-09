@@ -1,0 +1,12 @@
+version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
+options: "354dc2655aaa19f544651914adca645e"
+build_time: [1610235766, 931854000]
+inputs:
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/ViewController.swift": [1610232695, 38774433]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Constants/Assets.swift": [1610233885, 887455001]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Protocols/AccessibilityFaceAnchorProperties.swift": [1610228521, 94281188]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/Resources/UIImage+ImagesResources.swift": [1609808534, 499931600]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Core/AccessibilityFaceAnchor.swift": [1610235711, 609490782]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Constants/Constants.swift": [1610235766, 755205222]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/SupportFiles/AppDelegate.swift": [1609808983, 550446960]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/SupportFiles/SceneDelegate.swift": [1610059479, 300792395]
