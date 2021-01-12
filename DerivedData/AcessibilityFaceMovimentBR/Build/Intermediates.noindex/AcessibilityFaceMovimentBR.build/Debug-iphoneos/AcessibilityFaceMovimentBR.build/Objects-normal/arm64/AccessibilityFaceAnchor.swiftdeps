@@ -7,6 +7,7 @@ provides-member:
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", ""]
 provides-dynamic-lookup:
 - "cursor"
+- "moveCursor"
 - "renderer"
 - "resetTracking"
 - "sceneView"
@@ -29,6 +30,8 @@ depends-top-level:
 - "Constants"
 - "FloatLiteralType"
 - "IntegerLiteralType"
+- "MoveCursorFaceAnchor"
+- "MoveCursorProtocol"
 - "SCNNode"
 - "SCNSceneRenderer"
 - !private "UIApplication"
@@ -51,6 +54,7 @@ depends-member:
 - !private ["So17ARSCNViewDelegateP", "Asset"]
 - ["So17ARSCNViewDelegateP", "CGRect"]
 - ["So17ARSCNViewDelegateP", "Constants"]
+- ["So17ARSCNViewDelegateP", "MoveCursorFaceAnchor"]
 - !private ["So17ARSCNViewDelegateP", "UIApplication"]
 - ["So17ARSCNViewDelegateP", "UIImageView"]
 - ["So17ARSCNViewDelegateP", ""]
@@ -73,6 +77,7 @@ depends-member:
 - !private ["So17ARSessionDelegateP", "Asset"]
 - ["So17ARSessionDelegateP", "CGRect"]
 - ["So17ARSessionDelegateP", "Constants"]
+- ["So17ARSessionDelegateP", "MoveCursorFaceAnchor"]
 - !private ["So17ARSessionDelegateP", "UIApplication"]
 - ["So17ARSessionDelegateP", "UIImageView"]
 - ["So17ARSessionDelegateP", ""]
@@ -93,6 +98,7 @@ depends-member:
 - !private ["So17ARSessionObserverP", "Asset"]
 - ["So17ARSessionObserverP", "CGRect"]
 - ["So17ARSessionObserverP", "Constants"]
+- ["So17ARSessionObserverP", "MoveCursorFaceAnchor"]
 - !private ["So17ARSessionObserverP", "UIApplication"]
 - ["So17ARSessionObserverP", "UIImageView"]
 - ["So17ARSessionObserverP", ""]
@@ -119,6 +125,8 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "Bool"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "CGRect"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "Constants"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "MoveCursorFaceAnchor"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "MoveCursorProtocol"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "SCNNode"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "SCNSceneRenderer"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "UIApplication"]
@@ -126,6 +134,7 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "cursor"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "deinit"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "init"]
+- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "moveCursor"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "print"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "renderer"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "resetTracking"]
@@ -153,6 +162,7 @@ depends-member:
 - !private ["s7CVarArgP", "Asset"]
 - ["s7CVarArgP", "CGRect"]
 - ["s7CVarArgP", "Constants"]
+- ["s7CVarArgP", "MoveCursorFaceAnchor"]
 - !private ["s7CVarArgP", "UIApplication"]
 - ["s7CVarArgP", "UIImageView"]
 - ["s7CVarArgP", ""]
@@ -193,6 +203,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Asset"]
 - ["s28CustomDebugStringConvertibleP", "CGRect"]
 - ["s28CustomDebugStringConvertibleP", "Constants"]
+- ["s28CustomDebugStringConvertibleP", "MoveCursorFaceAnchor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - ["s28CustomDebugStringConvertibleP", "UIImageView"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -231,6 +242,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Asset"]
 - ["s23CustomStringConvertibleP", "CGRect"]
 - ["s23CustomStringConvertibleP", "Constants"]
+- ["s23CustomStringConvertibleP", "MoveCursorFaceAnchor"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - ["s23CustomStringConvertibleP", "UIImageView"]
 - ["s23CustomStringConvertibleP", ""]
@@ -272,6 +284,7 @@ depends-member:
 - !private ["SQ", "Asset"]
 - ["SQ", "CGRect"]
 - ["SQ", "Constants"]
+- ["SQ", "MoveCursorFaceAnchor"]
 - !private ["SQ", "UIApplication"]
 - ["SQ", "UIImageView"]
 - ["SQ", ""]
@@ -312,6 +325,7 @@ depends-member:
 - !private ["SH", "Asset"]
 - ["SH", "CGRect"]
 - ["SH", "Constants"]
+- ["SH", "MoveCursorFaceAnchor"]
 - !private ["SH", "UIApplication"]
 - ["SH", "UIImageView"]
 - ["SH", ""]
@@ -343,11 +357,15 @@ depends-member:
 - !private ["SH", "viewDidAppear"]
 - !private ["SH", "viewDidLoad"]
 - !private ["26AcessibilityFaceMovimentBR10ImageAssetV", "image"]
+- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "deinit"]
+- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "init"]
+- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "init"]
 - !private ["So8NSCodingP", "ARFaceTrackingConfiguration"]
 - ["So8NSCodingP", "ARSCNView"]
 - !private ["So8NSCodingP", "Asset"]
 - ["So8NSCodingP", "CGRect"]
 - ["So8NSCodingP", "Constants"]
+- ["So8NSCodingP", "MoveCursorFaceAnchor"]
 - !private ["So8NSCodingP", "UIApplication"]
 - ["So8NSCodingP", "UIImageView"]
 - ["So8NSCodingP", ""]
@@ -383,6 +401,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Asset"]
 - ["So26NSExtensionRequestHandlingP", "CGRect"]
 - ["So26NSExtensionRequestHandlingP", "Constants"]
+- ["So26NSExtensionRequestHandlingP", "MoveCursorFaceAnchor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - ["So26NSExtensionRequestHandlingP", "UIImageView"]
 - ["So26NSExtensionRequestHandlingP", ""]
@@ -409,6 +428,8 @@ depends-member:
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGRect"]
 - ["So8NSObjectC", "Constants"]
+- ["So8NSObjectC", "MoveCursorFaceAnchor"]
+- ["So8NSObjectC", "MoveCursorProtocol"]
 - ["So8NSObjectC", "SCNNode"]
 - ["So8NSObjectC", "SCNSceneRenderer"]
 - !private ["So8NSObjectC", "UIApplication"]
@@ -424,6 +445,7 @@ depends-member:
 - !private ["So8NSObjectC", "isIdleTimerDisabled"]
 - !private ["So8NSObjectC", "isSupported"]
 - !private ["So8NSObjectC", "maximumNumberOfTrackedFaces"]
+- ["So8NSObjectC", "moveCursor"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "red"]
 - ["So8NSObjectC", "renderer"]
@@ -445,6 +467,7 @@ depends-member:
 - !private ["So8NSObjectP", "Asset"]
 - ["So8NSObjectP", "CGRect"]
 - ["So8NSObjectP", "Constants"]
+- ["So8NSObjectP", "MoveCursorFaceAnchor"]
 - !private ["So8NSObjectP", "UIApplication"]
 - ["So8NSObjectP", "UIImageView"]
 - ["So8NSObjectP", ""]
@@ -498,6 +521,7 @@ depends-member:
 - !private ["So24SCNSceneRendererDelegateP", "Asset"]
 - ["So24SCNSceneRendererDelegateP", "CGRect"]
 - ["So24SCNSceneRendererDelegateP", "Constants"]
+- ["So24SCNSceneRendererDelegateP", "MoveCursorFaceAnchor"]
 - !private ["So24SCNSceneRendererDelegateP", "UIApplication"]
 - ["So24SCNSceneRendererDelegateP", "UIImageView"]
 - ["So24SCNSceneRendererDelegateP", ""]
@@ -517,7 +541,7 @@ depends-member:
 - ["So19SCNTechniqueSupportP", "init"]
 - !private ["So19SCNTechniqueSupportP", "isHidden"]
 - !private ["So19SCNTechniqueSupportP", "session"]
-- !private ["So10SCNVector3V", "x"]
+- !private ["So10SCNVector3V", "y"]
 - !private ["So7SCNViewC", "delegate"]
 - ["So7SCNViewC", "init"]
 - !private ["So7SCNViewC", "isHidden"]
@@ -546,6 +570,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Asset"]
 - ["So21UIAppearanceContainerP", "CGRect"]
 - ["So21UIAppearanceContainerP", "Constants"]
+- ["So21UIAppearanceContainerP", "MoveCursorFaceAnchor"]
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
 - ["So21UIAppearanceContainerP", "UIImageView"]
 - ["So21UIAppearanceContainerP", ""]
@@ -577,6 +602,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "Asset"]
 - ["So18UIContentContainerP", "CGRect"]
 - ["So18UIContentContainerP", "Constants"]
+- ["So18UIContentContainerP", "MoveCursorFaceAnchor"]
 - !private ["So18UIContentContainerP", "UIApplication"]
 - ["So18UIContentContainerP", "UIImageView"]
 - ["So18UIContentContainerP", ""]
@@ -613,6 +639,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Asset"]
 - ["So18UIFocusEnvironmentP", "CGRect"]
 - ["So18UIFocusEnvironmentP", "Constants"]
+- ["So18UIFocusEnvironmentP", "MoveCursorFaceAnchor"]
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - ["So18UIFocusEnvironmentP", "UIImageView"]
 - ["So18UIFocusEnvironmentP", ""]
@@ -667,6 +694,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Asset"]
 - ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - ["So30UIPasteConfigurationSupportingP", "Constants"]
+- ["So30UIPasteConfigurationSupportingP", "MoveCursorFaceAnchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - ["So30UIPasteConfigurationSupportingP", "UIImageView"]
 - ["So30UIPasteConfigurationSupportingP", ""]
@@ -699,6 +727,8 @@ depends-member:
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CGRect"]
 - ["So11UIResponderC", "Constants"]
+- ["So11UIResponderC", "MoveCursorFaceAnchor"]
+- ["So11UIResponderC", "MoveCursorProtocol"]
 - ["So11UIResponderC", "SCNNode"]
 - ["So11UIResponderC", "SCNSceneRenderer"]
 - !private ["So11UIResponderC", "UIApplication"]
@@ -711,6 +741,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "isHidden"]
 - !private ["So11UIResponderC", "isIdleTimerDisabled"]
+- ["So11UIResponderC", "moveCursor"]
 - !private ["So11UIResponderC", "print"]
 - ["So11UIResponderC", "renderer"]
 - ["So11UIResponderC", "resetTracking"]
@@ -730,6 +761,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Asset"]
 - ["So30UIResponderStandardEditActionsP", "CGRect"]
 - ["So30UIResponderStandardEditActionsP", "Constants"]
+- ["So30UIResponderStandardEditActionsP", "MoveCursorFaceAnchor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - ["So30UIResponderStandardEditActionsP", "UIImageView"]
 - ["So30UIResponderStandardEditActionsP", ""]
@@ -760,6 +792,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Asset"]
 - ["So16UIStateRestoringP", "CGRect"]
 - ["So16UIStateRestoringP", "Constants"]
+- ["So16UIStateRestoringP", "MoveCursorFaceAnchor"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - ["So16UIStateRestoringP", "UIImageView"]
 - ["So16UIStateRestoringP", ""]
@@ -782,6 +815,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Asset"]
 - ["So18UITraitEnvironmentP", "CGRect"]
 - ["So18UITraitEnvironmentP", "Constants"]
+- ["So18UITraitEnvironmentP", "MoveCursorFaceAnchor"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - ["So18UITraitEnvironmentP", "UIImageView"]
 - ["So18UITraitEnvironmentP", ""]
@@ -810,6 +844,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Asset"]
 - ["So23UIUserActivityRestoringP", "CGRect"]
 - ["So23UIUserActivityRestoringP", "Constants"]
+- ["So23UIUserActivityRestoringP", "MoveCursorFaceAnchor"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - ["So23UIUserActivityRestoringP", "UIImageView"]
 - ["So23UIUserActivityRestoringP", ""]
@@ -849,6 +884,8 @@ depends-member:
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CGRect"]
 - ["So16UIViewControllerC", "Constants"]
+- ["So16UIViewControllerC", "MoveCursorFaceAnchor"]
+- ["So16UIViewControllerC", "MoveCursorProtocol"]
 - ["So16UIViewControllerC", "SCNNode"]
 - ["So16UIViewControllerC", "SCNSceneRenderer"]
 - !private ["So16UIViewControllerC", "UIApplication"]
@@ -856,6 +893,7 @@ depends-member:
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "cursor"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "moveCursor"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "renderer"]
 - ["So16UIViewControllerC", "resetTracking"]
@@ -876,6 +914,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Asset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Constants"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "MoveCursorFaceAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIImageView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -911,6 +950,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Asset"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGRect"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Constants"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "MoveCursorFaceAnchor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImageView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
@@ -944,7 +984,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "addSubview"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "red"]
-- !private ["s21_ObjectiveCBridgeableP", "x"]
+- !private ["s21_ObjectiveCBridgeableP", "y"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addSubview"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "delegate"]
@@ -978,6 +1018,8 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
 - !private "26AcessibilityFaceMovimentBR10ImageAssetV"
+- "26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC"
+- "26AcessibilityFaceMovimentBR18MoveCursorProtocolP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -1076,4 +1118,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d842b25e31535d84b7816a74f8f3c475"
+interface-hash: "13dcc040b70ed6ed603c68f61b636e02"

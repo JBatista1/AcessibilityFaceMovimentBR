@@ -14,7 +14,7 @@ open class AccessibilityFaceAnchor: UIViewController {
   // MARK: - Private property
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
-  
+  private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
   // MARK: - Life cicle
 
   open override func viewDidLoad() {
@@ -59,6 +59,6 @@ open class AccessibilityFaceAnchor: UIViewController {
 extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
 
   public func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-    print(node.eulerAngles.x)
+    print(node.eulerAngles.y)
   }
 }
