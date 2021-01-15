@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1BA60925B10084007F9AF4 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1BA60825B10084007F9AF4 /* CGFloatExtension.swift */; };
 		9A2F485725A3EA880043A2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F485625A3EA880043A2A6 /* AppDelegate.swift */; };
 		9A2F485925A3EA880043A2A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F485825A3EA880043A2A6 /* SceneDelegate.swift */; };
 		9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F485A25A3EA880043A2A6 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		1A6524D84D03E0513A22BF13 /* Pods_AcessibilityFaceMovimentBRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcessibilityFaceMovimentBRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F416FDD173D9B3E365F6B3 /* Pods-AcessibilityFaceMovimentBRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBRTests.debug.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBRTests/Pods-AcessibilityFaceMovimentBRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1BA60825B10084007F9AF4 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		9A2F485325A3EA880043A2A6 /* AcessibilityFaceMovimentBR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcessibilityFaceMovimentBR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2F485625A3EA880043A2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A2F485825A3EA880043A2A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 				1A6524D84D03E0513A22BF13 /* Pods_AcessibilityFaceMovimentBRTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A1BA60725B10075007F9AF4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A1BA60825B10084007F9AF4 /* CGFloatExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		9A2F484A25A3EA880043A2A6 = {
@@ -185,6 +195,7 @@
 		9A2F488525A3F2680043A2A6 /* Auxiliaries */ = {
 			isa = PBXGroup;
 			children = (
+				9A1BA60725B10075007F9AF4 /* Extension */,
 				9A4EDF9F25AD2BD300DC97DA /* Enuns */,
 				9A4EDF9C25AD272800DC97DA /* Transformer */,
 				9A58CE4F25AA6F0700948A06 /* Constants */,
@@ -442,6 +453,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1BA60925B10084007F9AF4 /* CGFloatExtension.swift in Sources */,
 				9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */,
 				9A58CE5125AA6F1500948A06 /* Assets.swift in Sources */,
 				9A4EDFA525AD303000DC97DA /* LimitedScreen.swift in Sources */,
@@ -622,7 +634,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFaceMovimentBR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -642,7 +654,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFaceMovimentBR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

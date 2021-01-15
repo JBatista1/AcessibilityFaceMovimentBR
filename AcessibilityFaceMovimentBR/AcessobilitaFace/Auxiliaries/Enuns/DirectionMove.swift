@@ -17,4 +17,5 @@ enum DirectionMove {
   case topLeftDiagonal
   case bottomRightDiagonal
   case bottomLeftDiagonal
+  case stop
 }

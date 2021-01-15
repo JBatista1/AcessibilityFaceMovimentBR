@@ -10,4 +10,5 @@ import UIKit
 
 protocol MoveCursorProtocol: AnyObject {
   func getNextPosition(withPoint point: CGPoint) -> CGPoint
+  func set(initialPosition initial: CGPoint)
 }

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>N4MVZWV284.com.joaoBatista.AcessibilityFaceMovimentBR</string>
+	<string>N4MVZWV284.com.joaoBatista.AcessibilityFace</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>N4MVZWV284</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>N4MVZWV284.com.joaoBatista.AcessibilityFaceMovimentBR</string>
+		<string>N4MVZWV284.com.joaoBatista.AcessibilityFace</string>
 	</array>
 </dict>
 </plist>
