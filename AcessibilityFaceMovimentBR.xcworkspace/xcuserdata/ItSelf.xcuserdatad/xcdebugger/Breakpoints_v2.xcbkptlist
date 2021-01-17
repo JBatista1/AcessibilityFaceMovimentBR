@@ -3,4 +3,22 @@
    uuid = "641AF3C4-A5D0-47DE-AAFA-4B8EE1AAB4EF"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "857846B3-8948-42D3-BDA0-849A94DF8D27"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Transformer/MoveCursorFaceAnchor.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "verifyDirectionMove(withCoordinate:theLastCoordinate:andTolerance:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

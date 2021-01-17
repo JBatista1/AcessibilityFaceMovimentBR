@@ -16,14 +16,16 @@ final class MoveCursorFaceAnchor {
   private var lastFacePosition = CGPoint.zero
   private var isInitial = false
   private var toleranceX: CGFloat = 0.0037
-  private var toleranceY: CGFloat = 0.1
+  private var toleranceY: CGFloat = 0.004
   private let valueMovimentBase: CGFloat
   private var valueMoviment: CGFloat = 0
+
   // MARK: - Life Cicle
 
   init(valueMoviment: CGFloat) {
     self.valueMovimentBase = valueMoviment
     self.valueMoviment = valueMoviment
+
   }
 
   // MARK: - Private Method
@@ -35,11 +37,9 @@ final class MoveCursorFaceAnchor {
     }
   }
 
-  private func verifyDirectionMove(withCoordinate coordinate: CGFloat, andLastCoordinate lastCoordinate: CGFloat) -> MovimentDirection {
-    if abs(coordinate - lastCoordinate) < toleranceX {
+  private func verifyDirectionMove(withCoordinate coordinate: CGFloat, theLastCoordinate lastCoordinate: CGFloat, andTolerance tolerance: CGFloat) -> MovimentDirection {
+    if abs(coordinate - lastCoordinate) < tolerance {
       return .stop
-    } else {
-      updateValueMoviment(withValue: abs(coordinate - lastCoordinate).truncate())
     }
 
     if coordinate > lastCoordinate {
@@ -71,6 +71,46 @@ final class MoveCursorFaceAnchor {
       valueMoviment *= 5
     }
   }
+
+  private func getNewPosition(withDirectioX directionX: MovimentDirection, theDirectionY directionY: MovimentDirection, andPointPosition position: CGPoint) -> CGPoint {
+    var newPosition = position
+
+    switch (directionX, directionY) {
+
+    case (.positive, .positive):
+      newPosition.x += valueMoviment
+      newPosition.y += (valueMoviment + valueMoviment/2)
+
+    case (.positive, .negative):
+      newPosition.x += valueMoviment
+      newPosition.y -= (valueMoviment + valueMoviment/2)
+
+    case (.positive, .stop):
+      newPosition.x += (valueMoviment + valueMoviment/2)
+
+    case (.negative, .positive):
+      newPosition.x -= valueMoviment
+      newPosition.y += (valueMoviment + valueMoviment/2)
+
+    case (.negative, .negative):
+      newPosition.x -= valueMoviment
+      newPosition.y -= (valueMoviment + valueMoviment/2)
+
+    case (.negative, .stop):
+      newPosition.x -= valueMoviment
+
+    case (.stop, .positive):
+      newPosition.y += (valueMoviment + valueMoviment/2)
+
+    case (.stop, .negative):
+      newPosition.y -= (valueMoviment + valueMoviment/2)
+
+    default:
+      return newPosition
+    }
+
+    return newPosition
+  }
 }
 
 // MARK: - Extensions
@@ -81,29 +121,26 @@ extension MoveCursorFaceAnchor: MoveCursorProtocol, MoveCursorUtilsProtocol {
   }
 
   func getNextPosition(withPoint point: CGPoint) -> CGPoint {
-    var newPositionCursor = lastPosition
     verifyIsInitial(withPoint: point)
 
-    let movimentX = verifyDirectionMove(withCoordinate: point.x, andLastCoordinate: lastFacePosition.x)
+    let movimentX = verifyDirectionMove(withCoordinate: point.x, theLastCoordinate: lastFacePosition.x, andTolerance: toleranceX)
+    let movimentY = verifyDirectionMove(withCoordinate: point.y, theLastCoordinate: lastFacePosition.y, andTolerance: toleranceY)
 
-    switch movimentX {
-    case .positive:
-      newPositionCursor.x += valueMoviment
-      lastFacePosition = point
-    case .negative:
-      newPositionCursor.x -= valueMoviment
-      lastFacePosition = point
-    case .stop:
-      newPositionCursor = lastPosition
-      lastFacePosition = point
-    }
+    var newPositionCursor  = getNewPosition(withDirectioX: movimentX, theDirectionY: movimentY, andPointPosition: lastPosition)
+    print("###########-MOVIMENT-###########")
+    print(movimentX)
+    print(movimentY)
 
     if newPositionCursor.x < 0 || newPositionCursor.x > Constants.Screen.width {
-      newPositionCursor = lastPosition
+      newPositionCursor.x = lastPosition.x
+    }
+    if newPositionCursor.y < 0 || newPositionCursor.y > Constants.Screen.heigh {
+      newPositionCursor.y = lastPosition.y
     }
     
     lastPosition = newPositionCursor
     valueMoviment = valueMovimentBase
+    lastFacePosition = point
     return newPositionCursor
   }
 }

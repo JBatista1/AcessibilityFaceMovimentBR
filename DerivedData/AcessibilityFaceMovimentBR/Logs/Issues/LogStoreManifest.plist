@@ -6,35 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>65693982-88C6-4669-A965-75EF0B7415D7</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
-			<key>fileName</key>
-			<string>65693982-88C6-4669-A965-75EF0B7415D7.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>signature</key>
-			<string>Pods-AcessibilityFaceMovimentBR-erkqdfdcnzalijahpqidmercpvaj</string>
-			<key>timeStartedRecording</key>
-			<real>632535881.40273798</real>
-			<key>timeStoppedRecording</key>
-			<real>632535881.41045797</real>
-			<key>title</key>
-			<string>Build target Pods-AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>65693982-88C6-4669-A965-75EF0B7415D7</string>
-		</dict>
-		<key>9B2ED4B8-F13C-4C94-8331-9C89A6A3F679</key>
+		<key>0FB82D8B-0F80-42F6-A84F-BCFD057575B2</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>9B2ED4B8-F13C-4C94-8331-9C89A6A3F679.xcactivitylog</string>
+			<string>0FB82D8B-0F80-42F6-A84F-BCFD057575B2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +26,41 @@
 			<key>signature</key>
 			<string>AcessibilityFaceMovimentBR-ebwxowkedffdbuezlgvpexwsouxp</string>
 			<key>timeStartedRecording</key>
-			<real>632544869.36819804</real>
+			<real>632591795.40503597</real>
 			<key>timeStoppedRecording</key>
-			<real>632544874.221192</real>
+			<real>632591800.54991603</real>
 			<key>title</key>
 			<string>Build target AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>9B2ED4B8-F13C-4C94-8331-9C89A6A3F679</string>
+			<string>0FB82D8B-0F80-42F6-A84F-BCFD057575B2</string>
+		</dict>
+		<key>32A72A65-683C-4F69-A5CA-B0D519E359C9</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>32A72A65-683C-4F69-A5CA-B0D519E359C9.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-AcessibilityFaceMovimentBR-erkqdfdcnzalijahpqidmercpvaj</string>
+			<key>timeStartedRecording</key>
+			<real>632590259.77536201</real>
+			<key>timeStoppedRecording</key>
+			<real>632590260.06808698</real>
+			<key>title</key>
+			<string>Build target Pods-AcessibilityFaceMovimentBR</string>
+			<key>uniqueIdentifier</key>
+			<string>32A72A65-683C-4F69-A5CA-B0D519E359C9</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

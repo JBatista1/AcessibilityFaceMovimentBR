@@ -95,11 +95,6 @@ extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
     let newPosition = moveCursor.getNextPosition(withPoint: point)
 
     animateCursor(toNextPoint: newPosition)
-//    print(CGFloat(node.eulerAngles.y).truncate())
-//    if countStop < 15 {
-//      createMediumFaceStop(withPoint: point)
-//    } else {
-//      print("Finish")
-//    }
+
   }
 }
