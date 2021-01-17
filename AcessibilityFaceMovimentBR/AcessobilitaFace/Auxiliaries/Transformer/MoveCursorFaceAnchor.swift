@@ -66,9 +66,9 @@ final class MoveCursorFaceAnchor {
     case ..<0.2:
       valueMoviment *= 2.3
     case ..<0.4:
-      valueMoviment *= 2.5
-    default:
       valueMoviment *= 3
+    default:
+      valueMoviment *= 5
     }
   }
 }
