@@ -10,9 +10,9 @@ import UIKit
 
 extension CGFloat {
 
-  func truncate(withDecimalplaces places: Int) -> CGFloat {
-    var truncateValue = (self * CGFloat(places))
-    truncateValue = CGFloat(truncateValue / CGFloat(places))
-    return truncateValue
+  func truncate(withDecimalplaces places: Int = 4) -> CGFloat {
+    let base = CGFloat(pow(Double(10), Double(places)))
+    let truncateValue = Int(self * base)
+    return CGFloat(CGFloat(truncateValue) / base)
   }
 }

@@ -17,8 +17,8 @@ enum Constants {
     static let center = CGPoint(x: Screen.width / 2, y: Screen.heigh / 2)
   }
   enum Cursor {
-    static let heigh: CGFloat = 50
-    static let width: CGFloat = 50
+    static let heigh: CGFloat = 30
+    static let width: CGFloat = 30
     static let x = CGFloat(Screen.center.x - (Cursor.heigh / 2))
     static let y = CGFloat(Screen.center.y - (Cursor.width / 2))
   }

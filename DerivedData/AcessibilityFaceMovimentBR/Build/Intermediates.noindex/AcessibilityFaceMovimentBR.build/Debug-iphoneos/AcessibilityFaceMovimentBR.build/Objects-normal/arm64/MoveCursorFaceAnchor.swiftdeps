@@ -13,38 +13,47 @@ provides-dynamic-lookup:
 - "set"
 - "toleranceX"
 - "toleranceY"
+- "updateValueMoviment"
 - "valueMoviment"
+- "valueMovimentBase"
 - "verifyDirectionMove"
-- "verifyDirectionMoveDiagonal"
 - "verifyIsInitial"
 - "verifyIsStopFace"
 depends-top-level:
 - !private "&&"
-- !private "+"
+- !private "*="
+- !private "+="
 - !private "-"
+- !private "-="
+- !private "..<"
 - !private "<"
-- !private "<="
 - !private ">"
-- !private ">="
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
 - "CGFloat"
 - "CGPoint"
 - "Constants"
-- "DirectionMove"
 - "FloatLiteralType"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "MoveCursorFaceAnchor"
 - "MoveCursorProtocol"
 - "MoveCursorUtilsProtocol"
+- "MovimentDirection"
 - !private "abs"
 - !private "||"
+- !private "~="
 depends-member:
+- !private ["s18AdditiveArithmeticP", "truncate"]
+- !private ["SB", "truncate"]
+- !private ["Sz", "truncate"]
+- !private ["12CoreGraphics7CGFloatV", "truncate"]
 - ["So7CGPointV", "init"]
 - !private ["So7CGPointV", "x"]
 - !private ["So7CGPointV", "y"]
 - ["So7CGPointV", "zero"]
+- !private ["s7CVarArgP", "truncate"]
+- !private ["SL", "truncate"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO", "Cursor"]
 - !private ["26AcessibilityFaceMovimentBR9ConstantsO", "Screen"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "x"]
@@ -54,47 +63,44 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - ["s28CustomDebugStringConvertibleP", "zero"]
 - ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "truncate"]
 - !private ["s17CustomReflectableP", "x"]
 - !private ["s17CustomReflectableP", "y"]
 - ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "truncate"]
 - ["Se", "init"]
+- !private ["Se", "truncate"]
 - !private ["Se", "x"]
 - !private ["Se", "y"]
 - ["Se", "zero"]
-- !private ["26AcessibilityFaceMovimentBR13DirectionMoveO", "bottomLeftDiagonal"]
-- !private ["26AcessibilityFaceMovimentBR13DirectionMoveO", "bottomRightDiagonal"]
-- ["26AcessibilityFaceMovimentBR13DirectionMoveO", "left"]
-- ["26AcessibilityFaceMovimentBR13DirectionMoveO", "right"]
-- !private ["26AcessibilityFaceMovimentBR13DirectionMoveO", "stop"]
-- !private ["26AcessibilityFaceMovimentBR13DirectionMoveO", "topLeftDiagonal"]
-- !private ["26AcessibilityFaceMovimentBR13DirectionMoveO", "topRightDiagonal"]
 - ["SE", "init"]
+- !private ["SE", "truncate"]
 - !private ["SE", "x"]
 - !private ["SE", "y"]
 - ["SE", "zero"]
-- !private ["SQ", "bottomLeftDiagonal"]
-- !private ["SQ", "bottomRightDiagonal"]
 - ["SQ", "init"]
-- ["SQ", "left"]
-- ["SQ", "right"]
-- !private ["SQ", "stop"]
-- !private ["SQ", "topLeftDiagonal"]
-- !private ["SQ", "topRightDiagonal"]
+- ["SQ", "negative"]
+- ["SQ", "positive"]
+- ["SQ", "stop"]
+- !private ["SQ", "truncate"]
 - !private ["SQ", "x"]
 - !private ["SQ", "y"]
 - ["SQ", "zero"]
-- !private ["SH", "bottomLeftDiagonal"]
-- !private ["SH", "bottomRightDiagonal"]
-- ["SH", "left"]
-- ["SH", "right"]
-- !private ["SH", "stop"]
-- !private ["SH", "topLeftDiagonal"]
-- !private ["SH", "topRightDiagonal"]
+- !private ["s25ExpressibleByFloatLiteralP", "truncate"]
+- !private ["s27ExpressibleByIntegerLiteralP", "truncate"]
+- !private ["s17FixedWidthIntegerP", "truncate"]
+- !private ["SF", "truncate"]
+- ["SH", "negative"]
+- ["SH", "positive"]
+- ["SH", "stop"]
+- !private ["SH", "truncate"]
+- !private ["s5Int32V", "truncate"]
+- !private ["s25LosslessStringConvertibleP", "truncate"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Bool"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "CGPoint"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Constants"]
-- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "DirectionMove"]
+- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "MovimentDirection"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "abs"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "deinit"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "getNextPosition"]
@@ -106,9 +112,10 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "set"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "toleranceX"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "toleranceY"]
+- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "updateValueMoviment"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "valueMoviment"]
+- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "valueMovimentBase"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyDirectionMove"]
-- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyDirectionMoveDiagonal"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyIsInitial"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyIsStopFace"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGPoint"]
@@ -123,7 +130,9 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "set"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "toleranceX"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "toleranceY"]
+- !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "updateValueMoviment"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "valueMoviment"]
+- !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "valueMovimentBase"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "verifyDirectionMove"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "verifyIsInitial"]
 - ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "CGPoint"]
@@ -138,34 +147,72 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "set"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "toleranceX"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "toleranceY"]
+- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "updateValueMoviment"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "valueMoviment"]
+- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "valueMovimentBase"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "verifyDirectionMove"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "verifyIsInitial"]
+- ["26AcessibilityFaceMovimentBR0C9DirectionO", "negative"]
+- ["26AcessibilityFaceMovimentBR0C9DirectionO", "positive"]
+- ["26AcessibilityFaceMovimentBR0C9DirectionO", "stop"]
+- !private ["Sj", "truncate"]
+- !private ["s10SIMDScalarP", "truncate"]
 - !private ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "width"]
+- !private ["SZ", "truncate"]
+- !private ["s13SignedNumericP", "truncate"]
+- !private ["Sx", "truncate"]
+- !private ["s15_CVarArgAlignedP", "truncate"]
+- !private ["s22_CVarArgPassedAsDoubleP", "truncate"]
 - ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "truncate"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "x"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "y"]
 - ["s30_CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "truncate"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "truncate"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "truncate"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
 - ["s21_ObjectiveCBridgeableP", "zero"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
+- !private "SB"
+- !private "Sz"
+- !private "12CoreGraphics7CGFloatV"
 - "So7CGPointV"
+- !private "s7CVarArgP"
+- !private "SL"
 - "26AcessibilityFaceMovimentBR9ConstantsO"
 - "26AcessibilityFaceMovimentBR9ConstantsO6CursorO"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
 - "Se"
-- "26AcessibilityFaceMovimentBR13DirectionMoveO"
 - "SE"
 - "SQ"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SF"
 - "SH"
+- !private "s5Int32V"
+- !private "s25LosslessStringConvertibleP"
 - "26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC"
 - "26AcessibilityFaceMovimentBR18MoveCursorProtocolP"
 - "26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP"
+- "26AcessibilityFaceMovimentBR0C9DirectionO"
+- !private "Sj"
+- !private "s10SIMDScalarP"
 - !private "26AcessibilityFaceMovimentBR9ConstantsO6ScreenO"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- !private "Sx"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - "s30_CustomPlaygroundQuickLookableP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -215,4 +262,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9f1806a54f1113cdc00f7dabbbad53a1"
+interface-hash: "0307690ea48cfd4fa4d5fbae53a7ecbf"

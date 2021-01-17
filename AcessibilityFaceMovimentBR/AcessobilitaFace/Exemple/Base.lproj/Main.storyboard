@@ -14,7 +14,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrT-cH-siq">
+                                <rect key="frame" x="20" y="418" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="UMY-Wr-DVc"/>
+                                </constraints>
+                                <state key="normal" title="Esquerda"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4r-MQ-LEH">
+                                <rect key="frame" x="349" y="418" width="45" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="YtO-Ve-6NG"/>
+                                </constraints>
+                                <state key="normal" title="Direita"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="E4r-MQ-LEH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KrT-cH-siq" secondAttribute="trailing" constant="8" symbolic="YES" id="1jc-41-mDL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E4r-MQ-LEH" secondAttribute="trailing" constant="20" id="CGR-Co-Jz2"/>
+                            <constraint firstItem="KrT-cH-siq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hJ6-Wv-s81"/>
+                            <constraint firstItem="E4r-MQ-LEH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-20" id="iZg-BQ-OqW"/>
+                            <constraint firstItem="KrT-cH-siq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-20" id="x1G-b4-amx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
