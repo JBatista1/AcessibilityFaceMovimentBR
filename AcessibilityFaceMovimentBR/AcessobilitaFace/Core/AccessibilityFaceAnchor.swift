@@ -14,7 +14,7 @@ open class AccessibilityFaceAnchor: UIViewController {
   // MARK: - Private property
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
-  private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor(valueMoviment: 5)
+  private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
   private var count = 0
   private var sumPointX: CGFloat = 0
   private var lastPoint: CGPoint = .zero

@@ -31,7 +31,6 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "hashValue"]
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "negative"]
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "positive"]
-- ["26AcessibilityFaceMovimentBR0C9DirectionO", "stop"]
 depends-nominal:
 - "SQ"
 - "SH"
@@ -85,4 +84,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7fa99f736bf25e6c4b12e16bb9ef53d9"
+interface-hash: "ffdb5a356e16c11bdb112dd37f479a18"

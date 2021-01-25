@@ -11,5 +11,4 @@ import Foundation
 enum MovimentDirection {
   case positive
   case negative
-  case stop
 }
