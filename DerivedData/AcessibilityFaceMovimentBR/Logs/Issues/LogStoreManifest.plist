@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>DCC0D534-443D-4E1D-9BAA-A7E8539AE861</key>
+		<key>1FD44A5C-9B24-4748-9DD5-5275F417E59F</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>DCC0D534-443D-4E1D-9BAA-A7E8539AE861.xcactivitylog</string>
+			<string>1FD44A5C-9B24-4748-9DD5-5275F417E59F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,15 +26,15 @@
 			<key>signature</key>
 			<string>Pods-AcessibilityFaceMovimentBR-erkqdfdcnzalijahpqidmercpvaj</string>
 			<key>timeStartedRecording</key>
-			<real>634311335.18144596</real>
+			<real>634314220.65910995</real>
 			<key>timeStoppedRecording</key>
-			<real>634311335.31193697</real>
+			<real>634314220.66409504</real>
 			<key>title</key>
 			<string>Build target Pods-AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>DCC0D534-443D-4E1D-9BAA-A7E8539AE861</string>
+			<string>1FD44A5C-9B24-4748-9DD5-5275F417E59F</string>
 		</dict>
-		<key>FF567933-5BD7-4C5B-82F8-DAD456CBB58A</key>
+		<key>3B2B6E8F-DE76-4969-9E7E-71CDF1D5CAED</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -43,7 +43,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>FF567933-5BD7-4C5B-82F8-DAD456CBB58A.xcactivitylog</string>
+			<string>3B2B6E8F-DE76-4969-9E7E-71CDF1D5CAED.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -54,13 +54,13 @@
 			<key>signature</key>
 			<string>AcessibilityFaceMovimentBR-ebwxowkedffdbuezlgvpexwsouxp</string>
 			<key>timeStartedRecording</key>
-			<real>634313766.49093604</real>
+			<real>634315954.74671602</real>
 			<key>timeStoppedRecording</key>
-			<real>634313770.64731002</real>
+			<real>634315958.84989405</real>
 			<key>title</key>
 			<string>Build target AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>FF567933-5BD7-4C5B-82F8-DAD456CBB58A</string>
+			<string>3B2B6E8F-DE76-4969-9E7E-71CDF1D5CAED</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>
