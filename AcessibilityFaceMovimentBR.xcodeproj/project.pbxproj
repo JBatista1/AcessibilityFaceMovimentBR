@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1BA60925B10084007F9AF4 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1BA60825B10084007F9AF4 /* CGFloatExtension.swift */; };
 		9A2F485725A3EA880043A2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F485625A3EA880043A2A6 /* AppDelegate.swift */; };
 		9A2F485925A3EA880043A2A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F485825A3EA880043A2A6 /* SceneDelegate.swift */; };
 		9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F485A25A3EA880043A2A6 /* ViewController.swift */; };
@@ -15,7 +16,15 @@
 		9A2F486325A3EA8F0043A2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F486125A3EA8F0043A2A6 /* LaunchScreen.storyboard */; };
 		9A2F486E25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F486D25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift */; };
 		9A2F487E25A3F1A80043A2A6 /* UIImage+ImagesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F487D25A3F1A80043A2A6 /* UIImage+ImagesResources.swift */; };
-		9A2F488A25A3F40C0043A2A6 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F488925A3F40C0043A2A6 /* .swiftlint.yml */; };
+		9A49E76F25A7C52800F39BB9 /* AccessibilityFaceAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E76E25A7C52800F39BB9 /* AccessibilityFaceAnchor.swift */; };
+		9A49E77525A7CAD300F39BB9 /* MoveCursorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E77425A7CAD300F39BB9 /* MoveCursorProtocol.swift */; };
+		9A4EDF9E25AD275300DC97DA /* MoveCursorFaceAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EDF9D25AD275300DC97DA /* MoveCursorFaceAnchor.swift */; };
+		9A4EDFA125AD2BE300DC97DA /* MovimentDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EDFA025AD2BE300DC97DA /* MovimentDirection.swift */; };
+		9A4EDFA325AD2ED300DC97DA /* MoveCursorUtilsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EDFA225AD2ED300DC97DA /* MoveCursorUtilsProtocol.swift */; };
+		9A4EDFA525AD303000DC97DA /* LimitedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EDFA425AD303000DC97DA /* LimitedScreen.swift */; };
+		9A58CE5125AA6F1500948A06 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A58CE5025AA6F1500948A06 /* Assets.swift */; };
+		9A58CE5325AA6FD400948A06 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A58CE5225AA6FD300948A06 /* Constants.swift */; };
+		9AE7006D25BF7AA20057CECA /* MauseDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE7006C25BF7AA20057CECA /* MauseDirection.swift */; };
 		A0770479EFD2B2BF5D4A61C0 /* Pods_AcessibilityFaceMovimentBRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6524D84D03E0513A22BF13 /* Pods_AcessibilityFaceMovimentBRTests.framework */; };
 		C8335635C543761D60B5302B /* Pods_AcessibilityFaceMovimentBR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F628952DC4CA9110355D4E49 /* Pods_AcessibilityFaceMovimentBR.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +42,7 @@
 /* Begin PBXFileReference section */
 		1A6524D84D03E0513A22BF13 /* Pods_AcessibilityFaceMovimentBRTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AcessibilityFaceMovimentBRTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		36F416FDD173D9B3E365F6B3 /* Pods-AcessibilityFaceMovimentBRTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBRTests.debug.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBRTests/Pods-AcessibilityFaceMovimentBRTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A1BA60825B10084007F9AF4 /* CGFloatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		9A2F485325A3EA880043A2A6 /* AcessibilityFaceMovimentBR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcessibilityFaceMovimentBR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2F485625A3EA880043A2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A2F485825A3EA880043A2A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +50,20 @@
 		9A2F485D25A3EA880043A2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A2F485F25A3EA8F0043A2A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A2F486225A3EA8F0043A2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9A2F486425A3EA8F0043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A2F486425A3EA8F0043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = AcessibilityFaceMovimentBR/SupportFiles/Info.plist; sourceTree = SOURCE_ROOT; };
 		9A2F486925A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AcessibilityFaceMovimentBRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A2F486D25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityFaceMovimentBRTests.swift; sourceTree = "<group>"; };
 		9A2F486F25A3EA8F0043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A2F487D25A3F1A80043A2A6 /* UIImage+ImagesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImagesResources.swift"; sourceTree = "<group>"; };
-		9A2F488925A3F40C0043A2A6 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = AcessibilityFaceMovimentBR/SupportFiles/Configuration/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		9A49E76E25A7C52800F39BB9 /* AccessibilityFaceAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFaceAnchor.swift; sourceTree = "<group>"; };
+		9A49E77425A7CAD300F39BB9 /* MoveCursorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCursorProtocol.swift; sourceTree = "<group>"; };
+		9A4EDF9D25AD275300DC97DA /* MoveCursorFaceAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCursorFaceAnchor.swift; sourceTree = "<group>"; };
+		9A4EDFA025AD2BE300DC97DA /* MovimentDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimentDirection.swift; sourceTree = "<group>"; };
+		9A4EDFA225AD2ED300DC97DA /* MoveCursorUtilsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCursorUtilsProtocol.swift; sourceTree = "<group>"; };
+		9A4EDFA425AD303000DC97DA /* LimitedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedScreen.swift; sourceTree = "<group>"; };
+		9A58CE5025AA6F1500948A06 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		9A58CE5225AA6FD300948A06 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9AE7006C25BF7AA20057CECA /* MauseDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MauseDirection.swift; sourceTree = "<group>"; };
 		9CA8C3FDF5F9C4E736F9F0A1 /* Pods-AcessibilityFaceMovimentBR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBR.debug.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBR/Pods-AcessibilityFaceMovimentBR.debug.xcconfig"; sourceTree = "<group>"; };
 		A23B29D2B6A7E8BF9CAEFE40 /* Pods-AcessibilityFaceMovimentBRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBRTests.release.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBRTests/Pods-AcessibilityFaceMovimentBRTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAA48ED0EA9DADD247F51A8C /* Pods-AcessibilityFaceMovimentBR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBR.release.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBR/Pods-AcessibilityFaceMovimentBR.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,6 +99,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A1BA60725B10075007F9AF4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A1BA60825B10084007F9AF4 /* CGFloatExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9A2F484A25A3EA880043A2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +130,7 @@
 		9A2F485525A3EA880043A2A6 /* AcessibilityFaceMovimentBR */ = {
 			isa = PBXGroup;
 			children = (
+				9AE7006B25BF7A850057CECA /* Files Ideia failed */,
 				9A2F488325A3F22B0043A2A6 /* Common */,
 				9A2F487B25A3F1580043A2A6 /* AcessobilitaFace */,
 				9A2F487C25A3F16F0043A2A6 /* Resources */,
@@ -171,6 +198,11 @@
 		9A2F488525A3F2680043A2A6 /* Auxiliaries */ = {
 			isa = PBXGroup;
 			children = (
+				9A1BA60725B10075007F9AF4 /* Extension */,
+				9A4EDF9F25AD2BD300DC97DA /* Enuns */,
+				9A4EDF9C25AD272800DC97DA /* Transformer */,
+				9A58CE4F25AA6F0700948A06 /* Constants */,
+				9A49E77325A7C72300F39BB9 /* Protocols */,
 			);
 			path = Auxiliaries;
 			sourceTree = "<group>";
@@ -178,6 +210,7 @@
 		9A2F488725A3F2EA0043A2A6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9A49E76E25A7C52800F39BB9 /* AccessibilityFaceAnchor.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -185,9 +218,51 @@
 		9A2F488B25A3F5E80043A2A6 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				9A2F488925A3F40C0043A2A6 /* .swiftlint.yml */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		9A49E77325A7C72300F39BB9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A49E77425A7CAD300F39BB9 /* MoveCursorProtocol.swift */,
+				9A4EDFA225AD2ED300DC97DA /* MoveCursorUtilsProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9A4EDF9C25AD272800DC97DA /* Transformer */ = {
+			isa = PBXGroup;
+			children = (
+				9A4EDF9D25AD275300DC97DA /* MoveCursorFaceAnchor.swift */,
+			);
+			path = Transformer;
+			sourceTree = "<group>";
+		};
+		9A4EDF9F25AD2BD300DC97DA /* Enuns */ = {
+			isa = PBXGroup;
+			children = (
+				9A4EDFA025AD2BE300DC97DA /* MovimentDirection.swift */,
+				9A4EDFA425AD303000DC97DA /* LimitedScreen.swift */,
+			);
+			path = Enuns;
+			sourceTree = "<group>";
+		};
+		9A58CE4F25AA6F0700948A06 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9A58CE5025AA6F1500948A06 /* Assets.swift */,
+				9A58CE5225AA6FD300948A06 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		9AE7006B25BF7A850057CECA /* Files Ideia failed */ = {
+			isa = PBXGroup;
+			children = (
+				9AE7006C25BF7AA20057CECA /* MauseDirection.swift */,
+			);
+			path = "Files Ideia failed";
 			sourceTree = "<group>";
 		};
 		A3C6FF0FCB5FB5D72B260713 /* Pods */ = {
@@ -286,7 +361,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A2F488A25A3F40C0043A2A6 /* .swiftlint.yml in Resources */,
 				9A2F486325A3EA8F0043A2A6 /* LaunchScreen.storyboard in Resources */,
 				9A2F486025A3EA8F0043A2A6 /* Assets.xcassets in Resources */,
 				9A2F485E25A3EA880043A2A6 /* Main.storyboard in Resources */,
@@ -390,8 +464,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1BA60925B10084007F9AF4 /* CGFloatExtension.swift in Sources */,
 				9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */,
+				9A58CE5125AA6F1500948A06 /* Assets.swift in Sources */,
+				9A4EDFA525AD303000DC97DA /* LimitedScreen.swift in Sources */,
+				9A4EDFA125AD2BE300DC97DA /* MovimentDirection.swift in Sources */,
+				9A49E77525A7CAD300F39BB9 /* MoveCursorProtocol.swift in Sources */,
 				9A2F487E25A3F1A80043A2A6 /* UIImage+ImagesResources.swift in Sources */,
+				9A49E76F25A7C52800F39BB9 /* AccessibilityFaceAnchor.swift in Sources */,
+				9A4EDF9E25AD275300DC97DA /* MoveCursorFaceAnchor.swift in Sources */,
+				9AE7006D25BF7AA20057CECA /* MauseDirection.swift in Sources */,
+				9A4EDFA325AD2ED300DC97DA /* MoveCursorUtilsProtocol.swift in Sources */,
+				9A58CE5325AA6FD400948A06 /* Constants.swift in Sources */,
 				9A2F485725A3EA880043A2A6 /* AppDelegate.swift in Sources */,
 				9A2F485925A3EA880043A2A6 /* SceneDelegate.swift in Sources */,
 			);
@@ -555,13 +639,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "AcessibilityFaceMovimentBR/Support Files/Info.plist";
+				DEVELOPMENT_TEAM = N4MVZWV284;
+				INFOPLIST_FILE = AcessibilityFaceMovimentBR/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFaceMovimentBR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -574,13 +659,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "AcessibilityFaceMovimentBR/Support Files/Info.plist";
+				DEVELOPMENT_TEAM = N4MVZWV284;
+				INFOPLIST_FILE = AcessibilityFaceMovimentBR/SupportFiles/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFaceMovimentBR;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

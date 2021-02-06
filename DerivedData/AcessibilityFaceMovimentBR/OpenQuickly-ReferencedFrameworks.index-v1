@@ -4,6 +4,8 @@
 <array>
 	<string>Foundation</string>
 	<string>AcessibilityFaceMovimentBR</string>
+	<string>ARKit</string>
+	<string>AppKit</string>
 	<string>UIKit</string>
 	<string>XCTest</string>
 </array>
