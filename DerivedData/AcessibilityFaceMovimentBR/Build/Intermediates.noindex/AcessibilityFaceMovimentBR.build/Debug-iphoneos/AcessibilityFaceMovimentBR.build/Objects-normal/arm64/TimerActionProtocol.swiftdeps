@@ -18,6 +18,7 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "Int"]
 - ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "startTimer"]
 - ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "stopTimer"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "canceledTimer"]
 - ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "finishTimer"]
 depends-nominal:
 - "26AcessibilityFaceMovimentBR19TimerActionProtocolP"
@@ -70,4 +71,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7829a8394eb451cb854189e083d73261"
+interface-hash: "30cf2c546aba277087f828a6174705fa"

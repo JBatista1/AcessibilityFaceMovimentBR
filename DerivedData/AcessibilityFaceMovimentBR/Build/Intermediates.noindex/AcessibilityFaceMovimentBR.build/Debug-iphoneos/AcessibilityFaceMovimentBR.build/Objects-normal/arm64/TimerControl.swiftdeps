@@ -8,12 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "delegate"
 - "finishTimer"
+- "runTimer"
 - "secondTimer"
 - "startTimer"
 - "stop"
 - "stopTimer"
 - "timer"
+- "verifyIsStop"
+- "verifyTimerIsFinish"
 depends-top-level:
+- !private "+="
+- !private "=="
 - "AssignmentPrecedence"
 - "Bool"
 - "BooleanLiteralType"
@@ -25,21 +30,36 @@ depends-top-level:
 - "TimerActionResponseProtocol"
 - "TimerControl"
 depends-member:
+- !private ["s7CVarArgP", "invalidate"]
 - !private ["s7CVarArgP", "scheduledTimer"]
+- !private ["s28CustomDebugStringConvertibleP", "invalidate"]
 - !private ["s28CustomDebugStringConvertibleP", "scheduledTimer"]
+- !private ["s23CustomStringConvertibleP", "invalidate"]
 - !private ["s23CustomStringConvertibleP", "scheduledTimer"]
+- !private ["SQ", "invalidate"]
 - !private ["SQ", "scheduledTimer"]
+- !private ["SH", "invalidate"]
 - !private ["SH", "scheduledTimer"]
+- !private ["So8NSObjectC", "invalidate"]
 - !private ["So8NSObjectC", "scheduledTimer"]
+- !private ["So8NSObjectP", "invalidate"]
 - !private ["So8NSObjectP", "scheduledTimer"]
+- !private ["So7NSTimerC", "invalidate"]
 - !private ["So7NSTimerC", "scheduledTimer"]
 - !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "Timer"]
 - ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", ""]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "delegate"]
 - !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "finishTimer"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "runTimer"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "secondTimer"]
 - ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "startTimer"]
 - !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "stop"]
 - ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "stopTimer"]
 - !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "timer"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "verifyIsStop"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "verifyTimerIsFinish"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "canceledTimer"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "finishTimer"]
 - ["26AcessibilityFaceMovimentBR12TimerControlC", "Bool"]
 - ["26AcessibilityFaceMovimentBR12TimerControlC", "Int"]
 - ["26AcessibilityFaceMovimentBR12TimerControlC", "Timer"]
@@ -48,12 +68,17 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR12TimerControlC", "delegate"]
 - !private ["26AcessibilityFaceMovimentBR12TimerControlC", "finishTimer"]
 - ["26AcessibilityFaceMovimentBR12TimerControlC", "init"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "runTimer"]
 - !private ["26AcessibilityFaceMovimentBR12TimerControlC", "secondTimer"]
 - ["26AcessibilityFaceMovimentBR12TimerControlC", "startTimer"]
 - !private ["26AcessibilityFaceMovimentBR12TimerControlC", "stop"]
 - ["26AcessibilityFaceMovimentBR12TimerControlC", "stopTimer"]
 - !private ["26AcessibilityFaceMovimentBR12TimerControlC", "timer"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "verifyIsStop"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "verifyTimerIsFinish"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "invalidate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scheduledTimer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "invalidate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scheduledTimer"]
 depends-nominal:
 - !private "s7CVarArgP"
@@ -65,6 +90,7 @@ depends-nominal:
 - !private "So8NSObjectP"
 - !private "So7NSTimerC"
 - "26AcessibilityFaceMovimentBR19TimerActionProtocolP"
+- !private "26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP"
 - "26AcessibilityFaceMovimentBR12TimerControlC"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -116,4 +142,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "9e1c160120bf4bc15bf434f46cbdde53"
+interface-hash: "0ee173d280d9f9d731f8e3d81b1d5ebf"

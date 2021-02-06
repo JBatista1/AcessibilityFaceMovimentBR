@@ -19,13 +19,16 @@ open class AccessibilityFaceAnchor: UIViewController {
   private var sumPointX: CGFloat = 0
   private var lastPoint: CGPoint = .zero
   private var countStop = 0
+
+  let shapeLayer = CAShapeLayer()
   // MARK: - Life cicle
 
   open override func viewDidLoad() {
     super.viewDidLoad()
 
-    setupSceneView()
-    setupViews()
+    //    setupSceneView()
+    //    setupViews()
+    createTimer()
   }
 
   open override func viewDidAppear(_ animated: Bool) {
@@ -36,6 +39,39 @@ open class AccessibilityFaceAnchor: UIViewController {
   }
 
   // MARK: - Class Methods
+  private func createTimer() {
+
+    //Criando circulo
+    let center = view.center
+    let circularPath = UIBezierPath(arcCenter: center,
+                                    radius: 100,
+                                    startAngle: -CGFloat.pi / 2,
+                                    endAngle: 2 * CGFloat.pi ,
+                                    clockwise: true)
+    shapeLayer.path = circularPath.cgPath
+    //Criando contorno
+
+    shapeLayer.strokeColor = UIColor.red.cgColor
+    shapeLayer.lineWidth = 10
+    shapeLayer.fillColor = UIColor.clear.cgColor
+
+    shapeLayer.strokeEnd = 0
+    shapeLayer.lineCap = .round
+
+    view.layer.addSublayer(shapeLayer)
+    view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(startTimerAnimation)))
+  }
+
+  @objc private func startTimerAnimation() {
+
+    let basicAniamtion = CABasicAnimation(keyPath: "strokeEnd")
+    basicAniamtion.toValue = 1
+    basicAniamtion.duration = 2
+    basicAniamtion.fillMode = .forwards
+    basicAniamtion.isRemovedOnCompletion = false
+
+    shapeLayer.add(basicAniamtion, forKey: "urSoBasic")
+  }
 
   private func resetTracking() {
     guard ARFaceTrackingConfiguration.isSupported else {return}

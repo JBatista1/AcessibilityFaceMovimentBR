@@ -1,17 +1,17 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "354dc2655aaa19f544651914adca645e"
-build_time: [1612618901, 924611000]
+build_time: [1612620966, 496822000]
 inputs:
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Extension/CGFloatExtension.swift": [1612617977, 334562214]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/ViewController.swift": [1612617977, 339225724]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Constants/Assets.swift": [1612617977, 332130427]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Enuns/LimitedScreen.swift": [1612617977, 333673581]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Enuns/MovimentDirection.swift": [1612617977, 334038177]
-  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Protocols/TimerActionProtocol.swift": [1612618901, 782588181]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Protocols/TimerActionProtocol.swift": [1612619950, 93512068]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Protocols/MoveCursorProtocol.swift": [1612618150, 3862756]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/Resources/UIImage+ImagesResources.swift": [1609808534, 499931600]
-  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Core/AccessibilityFaceAnchor.swift": [1612617977, 337379707]
-  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Transformer/TimerControl.swift": [1612618901, 792987895]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Core/AccessibilityFaceAnchor.swift": [1612620966, 272947877]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Transformer/TimerControl.swift": [1612619950, 149109229]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Transformer/MoveCursorFaceAnchor.swift": [1612618150, 26027460]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/Files Ideia failed/MauseDirection.swift": [1612617977, 339626413]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Auxiliaries/Protocols/MoveCursorUtilsProtocol.swift": [1612617977, 336044569]
