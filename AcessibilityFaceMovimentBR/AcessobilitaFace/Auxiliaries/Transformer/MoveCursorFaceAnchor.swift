@@ -16,11 +16,10 @@ final class MoveCursorFaceAnchor {
 
   private var isInitial = false
   private var limitAxis = Limited(0.4, 0.3)
-  private var lastPercentagem = PercentagemAxis( 0, 0)
+  private var lastPercentagem = PercentagemAxis(0, 0)
   private var lastPosition = CGPoint.zero
   private var tolerance = 2
   private var totalPercentage: CGFloat = 100
-
 
   // MARK: - Life Cicle
 
@@ -58,10 +57,6 @@ final class MoveCursorFaceAnchor {
 // MARK: - Extensions
 
 extension MoveCursorFaceAnchor: MoveCursorProtocol, MoveCursorUtilsProtocol {
-
-  func set(initialPosition initial: CGPoint) {
-
-  }
 
   func getNextPosition(withPoint point: CGPoint) -> CGPoint {
 

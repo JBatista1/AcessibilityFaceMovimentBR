@@ -13,7 +13,6 @@ provides-dynamic-lookup:
 - "lastPercentagem"
 - "lastPosition"
 - "limitAxis"
-- "set"
 - "tolerance"
 - "totalPercentage"
 - "verifyDirectionMove"
@@ -96,7 +95,6 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPosition"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "limitAxis"]
-- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "set"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "tolerance"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyDirectionMove"]
@@ -114,7 +112,6 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPosition"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "limitAxis"]
-- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "set"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "verifyDirectionMove"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "CGFloat"]
@@ -131,7 +128,6 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "lastPosition"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "limitAxis"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "set"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "verifyDirectionMove"]
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "negative"]
@@ -241,4 +237,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e68725276afb909bb0be1ed34d1448c5"
+interface-hash: "1ec0936232f0b169964852ea7e7a94c1"
