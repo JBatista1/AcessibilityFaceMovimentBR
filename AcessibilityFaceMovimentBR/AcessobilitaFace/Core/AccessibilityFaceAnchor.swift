@@ -65,27 +65,6 @@ open class AccessibilityFaceAnchor: UIViewController {
       }, completion: nil)
     }
   }
-
-  private func getFaceStopValue() -> CGFloat {
-    return (sumPointX / CGFloat(count)).truncate()
-  }
-
-  private func createMediumFaceStop(withPoint point: CGPoint) {
-    if count >= 100 {
-      print(getFaceStopValue())
-      count = 0
-      sumPointX = 0
-      lastPoint = .zero
-      countStop += 1
-    } else if count == 0 {
-      lastPoint = point
-      count += 1
-    } else {
-      sumPointX += abs(lastPoint.x - point.x)
-      lastPoint = point
-      count += 1
-    }
-  }
 }
 
 // MARK: - Extension AR
@@ -93,7 +72,15 @@ open class AccessibilityFaceAnchor: UIViewController {
 extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
 
   public func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-    // é Invertido devido a rotação
+    guard let faceAnchor = anchor as? ARFaceAnchor,
+      let eyeRightClose = faceAnchor.blendShapes[.eyeBlinkLeft] as? CGFloat,
+      let eyeLeftClose = faceAnchor.blendShapes[.eyeBlinkRight] as? CGFloat else { return }
+//    Lingua
+//    print(faceAnchor.blendShapes[.tongueOut])
+    print(eyeLeftClose)
+    if eyeRightClose >= 0.8 && eyeLeftClose <= 0.6 {
+      print("called")
+    }
     let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
     let newPosition = moveCursor.getNextPosition(withPoint: point)
 

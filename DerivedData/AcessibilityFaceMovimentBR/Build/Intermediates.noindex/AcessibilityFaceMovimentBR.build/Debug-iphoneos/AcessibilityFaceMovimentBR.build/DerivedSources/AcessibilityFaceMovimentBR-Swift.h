@@ -269,9 +269,30 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR13SceneDelegate")
 
 
 
+
+@class UILabel;
+@class UIButton;
+
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR14ViewController")
 @interface ViewController : AccessibilityFaceAnchor
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedbackLabel;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewOne;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewTwo;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewThree;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewFour;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewFive;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewSix;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewSeven;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewEight;
 - (void)viewDidLoad;
+- (void)actionOne;
+- (void)actionTwo;
+- (void)actionThree;
+- (void)actionFour;
+- (void)actionFive;
+- (void)actionSix;
+- (void)actionSeven;
+- (void)actionEight;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
