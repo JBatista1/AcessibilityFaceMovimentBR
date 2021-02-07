@@ -13,22 +13,17 @@ open class AccessibilityFaceAnchor: UIViewController {
 
   // MARK: - Private property
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-  private let cursor = MouseCursor(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
+  private let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
-  private var count = 0
-  private var sumPointX: CGFloat = 0
-  private var lastPoint: CGPoint = .zero
-  private var countStop = 0
+  private var action: ActionProtocol!
 
   // MARK: - Life cicle
 
   open override func viewDidLoad() {
     super.viewDidLoad()
-
+    action = ActionInView(superView: view, typeStartAction: .tongue)
     setupSceneView()
     setupViews()
-    cursor.createTimer()
-//    cursor.startAnimitionTimer()
   }
 
   open override func viewDidAppear(_ animated: Bool) {
@@ -65,6 +60,13 @@ open class AccessibilityFaceAnchor: UIViewController {
       }, completion: nil)
     }
   }
+  private func verifyAction(withValueEyeRight eyeRight: CGFloat,
+               theEyeLeft eyeLeft: CGFloat,
+               TongueValue tongue: CGFloat, andPoint pointMouse: CGPoint) {
+    if action.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, andTongueValue: tongue) {
+      action.getViewForAction(withPoint: pointMouse)
+    }
+  }
 }
 
 // MARK: - Extension AR
@@ -73,18 +75,15 @@ extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
 
   public func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
     guard let faceAnchor = anchor as? ARFaceAnchor,
-      let eyeRightClose = faceAnchor.blendShapes[.eyeBlinkLeft] as? CGFloat,
-      let eyeLeftClose = faceAnchor.blendShapes[.eyeBlinkRight] as? CGFloat else { return }
-//    Lingua
-    print(faceAnchor.blendShapes[.tongueOut])
-//    print(eyeLeftClose)
-    if eyeRightClose >= 0.8 && eyeLeftClose <= 0.6 {
-      print("called")
-    }
+      let eyeRight = faceAnchor.blendShapes[.eyeBlinkLeft] as? CGFloat,
+      let eyeLeft = faceAnchor.blendShapes[.eyeBlinkRight] as? CGFloat,
+      let tongue = faceAnchor.blendShapes[.tongueOut] as? CGFloat else { return }
+
     let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
     let newPosition = moveCursor.getNextPosition(withPoint: point)
 
+    verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, TongueValue: tongue, andPoint: newPosition)
     animateCursor(toNextPoint: newPosition)
-
   }
+
 }

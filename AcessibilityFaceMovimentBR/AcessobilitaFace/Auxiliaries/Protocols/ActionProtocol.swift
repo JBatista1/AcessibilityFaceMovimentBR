@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol ActionProtocol {
-  init(viewsAction: [ViewAction], superView: UIView, typeStartAction: TypeStartAction)
-  func verifyAction(withValue eyeRight: CGFloat, theEyeLeft eyeLeft: CGFloat, andTongueValue tongue: CGFloat) -> Bool
+protocol ActionProtocol: AnyObject {
+  init(superView: UIView, typeStartAction: TypeStartAction)
+  func verifyAction(withValueEyeRight eyeRight: CGFloat, theEyeLeft eyeLeft: CGFloat, andTongueValue tongue: CGFloat) -> Bool
   func getViewForAction(withPoint point: CGPoint)
   func setTypeStartAction(withType type: TypeStartAction)
 }

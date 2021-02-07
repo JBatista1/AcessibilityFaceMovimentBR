@@ -7,6 +7,7 @@ provides-member:
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", ""]
 provides-dynamic-lookup:
 - "getViewForAction"
+- "isInAction"
 - "setTypeStartAction"
 - "superView"
 - "typeStartAction"
@@ -21,12 +22,15 @@ depends-top-level:
 - "ActionProtocol"
 - "AssignmentPrecedence"
 - "Bool"
+- "BooleanLiteralType"
 - "CGFloat"
 - "CGPoint"
 - "FloatLiteralType"
+- !private "StringLiteralType"
 - "TypeStartAction"
 - "UIView"
 - "ViewAction"
+- !private "print"
 depends-member:
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "Bool"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "CGFloat"]
@@ -38,6 +42,8 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "deinit"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "getViewForAction"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "init"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "isInAction"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "print"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "setTypeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "superView"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "typeStartAction"]
@@ -48,12 +54,12 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", ""]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getViewForAction"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "init"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "print"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "setTypeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "superView"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "typeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verify"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verifyAction"]
-- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "viewsAction"]
 - ["SQ", "eyeLeft"]
 - ["SQ", "eyeRight"]
 - ["SQ", "tongue"]
@@ -117,4 +123,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3f37d02b2ea40a18e7ca7d9074a12629"
+interface-hash: "0359fedee50bc1decc305b0ae002a976"

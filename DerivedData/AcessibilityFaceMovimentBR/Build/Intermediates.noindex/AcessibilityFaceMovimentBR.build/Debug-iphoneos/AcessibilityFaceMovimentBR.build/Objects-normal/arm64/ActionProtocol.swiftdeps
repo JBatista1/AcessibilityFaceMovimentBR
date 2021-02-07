@@ -8,19 +8,18 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "ActionProtocol"
+- "AnyObject"
 - "Bool"
 - "CGFloat"
 - "CGPoint"
 - "TypeStartAction"
 - "UIView"
-- "ViewAction"
 depends-member:
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "Bool"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "CGPoint"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "TypeStartAction"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "UIView"]
-- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ViewAction"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getViewForAction"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "init"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "setTypeStartAction"]
@@ -75,4 +74,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5f646e77f4e1f7166bc5f6eb30f09a58"
+interface-hash: "8ce30139f50557316a239eb5f13072ac"
