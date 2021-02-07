@@ -12,5 +12,5 @@ protocol ActionProtocol {
   init(viewsAction: [ViewAction], superView: UIView, typeStartAction: TypeStartAction)
   func verifyAction(withValue eyeRight: CGFloat, theEyeLeft eyeLeft: CGFloat, andTongueValue tongue: CGFloat) -> Bool
   func getViewForAction(withPoint point: CGPoint)
-  func setTypeStartAction(withType: TypeStartAction)
+  func setTypeStartAction(withType type: TypeStartAction)
 }

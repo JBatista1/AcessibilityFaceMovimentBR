@@ -76,8 +76,8 @@ extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
       let eyeRightClose = faceAnchor.blendShapes[.eyeBlinkLeft] as? CGFloat,
       let eyeLeftClose = faceAnchor.blendShapes[.eyeBlinkRight] as? CGFloat else { return }
 //    Lingua
-//    print(faceAnchor.blendShapes[.tongueOut])
-    print(eyeLeftClose)
+    print(faceAnchor.blendShapes[.tongueOut])
+//    print(eyeLeftClose)
     if eyeRightClose >= 0.8 && eyeLeftClose <= 0.6 {
       print("called")
     }
