@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>13B7AD22-FE8A-4A7F-BB8A-219C48345043</key>
+		<key>C5FE556D-895D-471C-B39C-14E925F93C70</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
 			<key>fileName</key>
-			<string>13B7AD22-FE8A-4A7F-BB8A-219C48345043.xcactivitylog</string>
+			<string>C5FE556D-895D-471C-B39C-14E925F93C70.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -26,41 +26,13 @@
 			<key>signature</key>
 			<string>Pods-AcessibilityFaceMovimentBR-erkqdfdcnzalijahpqidmercpvaj</string>
 			<key>timeStartedRecording</key>
-			<real>634402804.07580495</real>
+			<real>634404676.16546297</real>
 			<key>timeStoppedRecording</key>
-			<real>634402806.52747703</real>
+			<real>634404676.16864097</real>
 			<key>title</key>
 			<string>Build target Pods-AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>13B7AD22-FE8A-4A7F-BB8A-219C48345043</string>
-		</dict>
-		<key>3D0F1DBC-2E36-4D56-B29D-6BCA5B2677F5</key>
-		<dict>
-			<key>className</key>
-			<string>IDEActivityLogMajorGroupSection</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
-			<key>fileName</key>
-			<string>3D0F1DBC-2E36-4D56-B29D-6BCA5B2677F5.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>signature</key>
-			<string>AcessibilityFaceMovimentBR-ebwxowkedffdbuezlgvpexwsouxp</string>
-			<key>timeStartedRecording</key>
-			<real>634404404.05906296</real>
-			<key>timeStoppedRecording</key>
-			<real>634404409.00854301</real>
-			<key>title</key>
-			<string>Build target AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>3D0F1DBC-2E36-4D56-B29D-6BCA5B2677F5</string>
+			<string>C5FE556D-895D-471C-B39C-14E925F93C70</string>
 		</dict>
 	</dict>
 	<key>preserveOldLogs</key>

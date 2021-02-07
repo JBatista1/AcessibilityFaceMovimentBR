@@ -33,7 +33,6 @@ depends-top-level:
 - "IntegerLiteralType"
 - "MoveCursorFaceAnchor"
 - "MoveCursorProtocol"
-- "MoveCursorUtilsProtocol"
 - "MovimentDirection"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
@@ -91,7 +90,6 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "getPercentage"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "init"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "isInitial"]
-- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "itsInsideInScreen"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPosition"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "limitAxis"]
@@ -108,28 +106,11 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNewPosition"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNextPosition"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getPercentage"]
-- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "itsInsideInScreen"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPosition"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "limitAxis"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "verifyDirectionMove"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "CGFloat"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "CGPoint"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "Constants"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "Int"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "Limited"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "PercentagemAxis"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", ""]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "getNewPosition"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "getNextPosition"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "getPercentage"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "itsInsideInScreen"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "lastPercentagem"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "lastPosition"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "limitAxis"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "totalPercentage"]
-- !private ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "verifyDirectionMove"]
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "negative"]
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "positive"]
 - !private ["Sj", "init"]
@@ -175,7 +156,6 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - "26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC"
 - "26AcessibilityFaceMovimentBR18MoveCursorProtocolP"
-- "26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP"
 - "26AcessibilityFaceMovimentBR0C9DirectionO"
 - !private "Sj"
 - !private "s10SIMDScalarP"
@@ -237,4 +217,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1ec0936232f0b169964852ea7e7a94c1"
+interface-hash: "e23b11b8912bdfa00d7db5f2a79d9854"

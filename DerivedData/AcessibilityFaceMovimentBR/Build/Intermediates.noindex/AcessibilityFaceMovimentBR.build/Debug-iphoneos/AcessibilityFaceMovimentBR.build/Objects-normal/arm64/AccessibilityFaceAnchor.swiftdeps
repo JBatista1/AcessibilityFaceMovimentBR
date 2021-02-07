@@ -554,7 +554,6 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "init"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNextPosition"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "init"]
-- ["26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP", "init"]
 - !private ["So8NSCodingP", "ARFaceTrackingConfiguration"]
 - ["So8NSCodingP", "ARSCNView"]
 - !private ["So8NSCodingP", "ActionInView"]
@@ -1452,7 +1451,6 @@ depends-nominal:
 - !private "SD5IndexV"
 - "26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC"
 - "26AcessibilityFaceMovimentBR18MoveCursorProtocolP"
-- "26AcessibilityFaceMovimentBR23MoveCursorUtilsProtocolP"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
@@ -1561,4 +1559,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "f0f4674c60333d6e6c6a089c7048ebff"
+interface-hash: "83ed2d92fcc6634d616cd26e2d2c60c3"

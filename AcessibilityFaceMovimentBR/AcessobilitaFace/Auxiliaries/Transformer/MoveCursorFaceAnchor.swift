@@ -56,7 +56,7 @@ final class MoveCursorFaceAnchor {
 
 // MARK: - Extensions
 
-extension MoveCursorFaceAnchor: MoveCursorProtocol, MoveCursorUtilsProtocol {
+extension MoveCursorFaceAnchor: MoveCursorProtocol {
 
   func getNextPosition(withPoint point: CGPoint) -> CGPoint {
 

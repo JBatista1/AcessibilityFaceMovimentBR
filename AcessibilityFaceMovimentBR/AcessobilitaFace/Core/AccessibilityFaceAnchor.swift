@@ -60,9 +60,7 @@ open class AccessibilityFaceAnchor: UIViewController {
       }, completion: nil)
     }
   }
-  private func verifyAction(withValueEyeRight eyeRight: CGFloat,
-               theEyeLeft eyeLeft: CGFloat,
-               TongueValue tongue: CGFloat, andPoint pointMouse: CGPoint) {
+  private func verifyAction(withValueEyeRight eyeRight: CGFloat, theEyeLeft eyeLeft: CGFloat, tongueValue tongue: CGFloat, andPoint pointMouse: CGPoint) {
     if action.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, andTongueValue: tongue) {
       action.getViewForAction(withPoint: pointMouse)
     }
@@ -82,7 +80,7 @@ extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
     let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
     let newPosition = moveCursor.getNextPosition(withPoint: point)
 
-    verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, TongueValue: tongue, andPoint: newPosition)
+    verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
     animateCursor(toNextPoint: newPosition)
   }
 
