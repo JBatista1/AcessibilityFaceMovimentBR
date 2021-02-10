@@ -59,7 +59,7 @@
                                     <constraint firstAttribute="height" constant="50" id="aKX-6q-HbU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="7">
+                                <state key="normal" title="6">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -71,7 +71,7 @@
                                     <constraint firstAttribute="height" constant="50" id="kUW-5W-vJ7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="8">
+                                <state key="normal" title="7">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -83,7 +83,7 @@
                                     <constraint firstAttribute="height" constant="50" id="hJa-M8-pcR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="9">
+                                <state key="normal" title="8">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -99,18 +99,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1G-DG-1D5">
-                                <rect key="frame" x="182" y="428" width="50" height="50"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Rot-hJ-t75"/>
-                                    <constraint firstAttribute="height" constant="50" id="b56-x0-nmn"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="5">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1J-Hz-tad">
                                 <rect key="frame" x="344" y="428" width="50" height="50"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,38 +107,56 @@
                                     <constraint firstAttribute="height" constant="50" id="M3p-FY-uqD"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="6">
+                                <state key="normal" title="5">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otn-47-obO">
+                                <rect key="frame" x="90" y="438.5" width="234" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="O1J-Hz-tad" firstAttribute="leading" secondItem="otn-47-obO" secondAttribute="trailing" constant="20" id="0xi-AD-bqs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jks-W2-iRY" secondAttribute="bottom" constant="30" id="10V-TC-3ip"/>
                             <constraint firstItem="Jyr-Us-m1r" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="20E-g9-but"/>
-                            <constraint firstItem="W1G-DG-1D5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="7TO-Yf-4ly"/>
                             <constraint firstItem="Jyr-Us-m1r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bnw-N8-aQ0"/>
                             <constraint firstItem="Jks-W2-iRY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="C9X-aO-oow"/>
                             <constraint firstItem="a8x-ce-rVw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="CH5-vS-yAD"/>
                             <constraint firstItem="O1J-Hz-tad" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Cc3-NP-U6e"/>
+                            <constraint firstItem="otn-47-obO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Mxn-gx-SAE"/>
                             <constraint firstItem="a8x-ce-rVw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RyM-9z-526"/>
                             <constraint firstItem="cdU-E5-5F1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TGm-1Z-ZAP"/>
                             <constraint firstItem="z6t-XI-n6f" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ujk-bV-BzY"/>
-                            <constraint firstItem="W1G-DG-1D5" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WFe-Eq-J2m"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FzV-yi-ObS" secondAttribute="trailing" constant="20" id="WdI-o2-vMv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NoZ-NH-ZqA" secondAttribute="trailing" constant="20" id="XKf-lw-pcj"/>
                             <constraint firstItem="cdU-E5-5F1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="aB0-tG-X2e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O1J-Hz-tad" secondAttribute="trailing" constant="20" id="jEh-ia-Tmh"/>
+                            <constraint firstItem="otn-47-obO" firstAttribute="leading" secondItem="Jyr-Us-m1r" secondAttribute="trailing" constant="20" id="mIR-ne-hIh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FzV-yi-ObS" secondAttribute="bottom" constant="30" id="r9Z-lW-w6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="z6t-XI-n6f" secondAttribute="bottom" constant="30" id="vl6-i0-2V8"/>
                             <constraint firstItem="NoZ-NH-ZqA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="ydU-eL-xuI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="feedbackLabel" destination="otn-47-obO" id="2Eb-Mm-ZN6"/>
+                        <outlet property="viewEight" destination="FzV-yi-ObS" id="JmL-nB-FKB"/>
+                        <outlet property="viewFive" destination="O1J-Hz-tad" id="wIy-tO-SgJ"/>
+                        <outlet property="viewFour" destination="Jyr-Us-m1r" id="RYV-St-x5U"/>
+                        <outlet property="viewOne" destination="a8x-ce-rVw" id="IkR-ny-D7Q"/>
+                        <outlet property="viewSeven" destination="z6t-XI-n6f" id="50c-FH-x8B"/>
+                        <outlet property="viewSix" destination="Jks-W2-iRY" id="HGh-oH-xiB"/>
+                        <outlet property="viewThree" destination="NoZ-NH-ZqA" id="UdK-n8-tJE"/>
+                        <outlet property="viewTwo" destination="cdU-E5-5F1" id="WWn-TW-tTe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="139"/>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
