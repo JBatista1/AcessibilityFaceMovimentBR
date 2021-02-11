@@ -15,9 +15,9 @@ open class AccessibilityFaceAnchor: UIViewController {
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
 
-   // MARK: - Public Property
+  // MARK: - Public Property
 
-   let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
+  let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
   var action: ActionProtocol!
 
   // MARK: - Life cicle
@@ -30,7 +30,6 @@ open class AccessibilityFaceAnchor: UIViewController {
 
   open override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
-
     UIApplication.shared.isIdleTimerDisabled = true
     resetTracking()
   }
@@ -52,7 +51,15 @@ open class AccessibilityFaceAnchor: UIViewController {
 
   private func setupViews() {
     view.addSubview(sceneView)
-    view.addSubview(cursor)
+    insertCursor()
+  }
+
+  func insertCursor() {
+    guard let windows = UIApplication.shared.keyWindow else {
+      view.addSubview(cursor)
+      return
+    }
+    windows.addSubview(cursor)
     cursor.image = Asset.cursorDefault.image
   }
 
@@ -76,16 +83,17 @@ open class AccessibilityFaceAnchor: UIViewController {
 extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
 
   public func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
+
     guard let faceAnchor = anchor as? ARFaceAnchor,
       let eyeRight = faceAnchor.blendShapes[.eyeBlinkLeft] as? CGFloat,
       let eyeLeft = faceAnchor.blendShapes[.eyeBlinkRight] as? CGFloat,
       let tongue = faceAnchor.blendShapes[.tongueOut] as? CGFloat else { return }
 
-    let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
-    let newPosition = moveCursor.getNextPosition(withPoint: point)
+        let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
+        let newPosition = self.moveCursor.getNextPosition(withPoint: point)
+        self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
+        self.animateCursor(toNextPoint: newPosition)
 
-    verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
-    animateCursor(toNextPoint: newPosition)
   }
 
 }

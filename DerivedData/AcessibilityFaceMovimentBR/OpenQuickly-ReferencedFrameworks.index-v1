@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-	<string>AppKit</string>
-	<string>AcessibilityFaceMovimentBR</string>
 	<string>Foundation</string>
+	<string>AcessibilityFaceMovimentBR</string>
 	<string>ARKit</string>
+	<string>AppKit</string>
 	<string>UIKit</string>
 	<string>XCTest</string>
 </array>

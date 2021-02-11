@@ -28,13 +28,23 @@ class ViewController: AccessibilityFaceAnchor {
     super.viewDidLoad()
     action = ActionInView(superView: view, typeStartAction: .tongue, target: self)
     action.set(viewsAction: createViewAction())
-    print(viewOne.frame.minX)
-    print(viewOne.frame.maxX)
-    // Do any additional setup after loading the view.
   }
 
   func createViewAction() -> [ViewAction] {
-    let viewsAction = [ViewAction(view: viewOne, selector: #selector(ViewController.actionOne)),
+     let selectorsTabbar = [#selector(ViewController.firstTabBarButton),#selector(ViewController.secondTabBarButton),#selector(ViewController.thirdTabBarButton)]
+    var viewsTabbar = [ViewAction]()
+
+    if let views = tabBarController?.tabBar.subviews {
+      var index = 0
+      for view in views {
+        if view.isKind(of: NSClassFromString("UITabBarButton")!) {
+          viewsTabbar.append(ViewAction(view: view, selector: selectorsTabbar[index]))
+          index += 1
+        }
+      }
+    }
+
+    var viewsAction = [ViewAction(view: viewOne, selector: #selector(ViewController.actionOne)),
                        ViewAction(view: viewTwo, selector: #selector(actionTwo)),
                        ViewAction(view: viewThree, selector: #selector(actionThree)),
                        ViewAction(view: viewFour, selector: #selector(actionFour)),
@@ -42,6 +52,7 @@ class ViewController: AccessibilityFaceAnchor {
                        ViewAction(view: viewSix, selector: #selector(actionSix)),
                        ViewAction(view: viewSeven, selector: #selector(actionSeven)),
                        ViewAction(view: viewEight, selector: #selector(actionEight))]
+    viewsAction.append(contentsOf: viewsTabbar)
     return viewsAction
   }
 
@@ -52,22 +63,40 @@ class ViewController: AccessibilityFaceAnchor {
   @objc func actionTwo() {
     feedbackLabel.text = "Vermelho"
   }
+
   @objc func actionThree() {
     feedbackLabel.text = "Laranja"
   }
+
   @objc func actionFour() {
     feedbackLabel.text = "Azul marinho"
   }
+
   @objc func actionFive() {
     feedbackLabel.text = "amarelo"
   }
+
   @objc func actionSix() {
     feedbackLabel.text = "Verde"
   }
+
   @objc func actionSeven() {
     feedbackLabel.text = "Rosa"
   }
+
   @objc func actionEight() {
     feedbackLabel.text = "Roxo"
+  }
+
+  @objc func firstTabBarButton() {
+     tabBarController?.selectedIndex = 0
+  }
+
+  @objc func secondTabBarButton() {
+     tabBarController?.selectedIndex = 1
+  }
+
+  @objc func thirdTabBarButton() {
+     tabBarController?.selectedIndex = 2
   }
 }
