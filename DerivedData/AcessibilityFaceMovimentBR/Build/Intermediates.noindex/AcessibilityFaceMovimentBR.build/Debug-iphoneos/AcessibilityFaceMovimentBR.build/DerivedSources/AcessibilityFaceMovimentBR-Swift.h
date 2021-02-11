@@ -187,6 +187,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import ARKit;
+@import ObjectiveC;
 @import SceneKit;
 @import UIKit;
 #endif
@@ -223,6 +224,13 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR23AccessibilityFaceAnchor")
 
 @interface AccessibilityFaceAnchor (SWIFT_EXTENSION(AcessibilityFaceMovimentBR)) <ARSCNViewDelegate, ARSessionDelegate>
 - (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer didUpdateNode:(SCNNode * _Nonnull)node forAnchor:(ARAnchor * _Nonnull)anchor;
+@end
+
+
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR12ActionInView")
+@interface ActionInView : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIApplication;

@@ -26,11 +26,15 @@ class ViewController: AccessibilityFaceAnchor {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
+    action = ActionInView(superView: view, typeStartAction: .tongue, target: self)
+    action.set(viewsAction: createViewAction())
+    print(viewOne.frame.minX)
+    print(viewOne.frame.maxX)
     // Do any additional setup after loading the view.
   }
+
   func createViewAction() -> [ViewAction] {
-    let viewsAction = [ViewAction(view: viewOne, selector: #selector(actionOne)),
+    let viewsAction = [ViewAction(view: viewOne, selector: #selector(ViewController.actionOne)),
                        ViewAction(view: viewTwo, selector: #selector(actionTwo)),
                        ViewAction(view: viewThree, selector: #selector(actionThree)),
                        ViewAction(view: viewFour, selector: #selector(actionFour)),

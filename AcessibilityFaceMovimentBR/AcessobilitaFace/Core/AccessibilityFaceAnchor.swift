@@ -11,17 +11,19 @@ import ARKit
 
 open class AccessibilityFaceAnchor: UIViewController {
 
-  // MARK: - Private property
+  // MARK: - Private =Property
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
-  private let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
-  private var action: ActionProtocol!
+
+   // MARK: - Public Property
+
+   let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
+  var action: ActionProtocol!
 
   // MARK: - Life cicle
 
   open override func viewDidLoad() {
     super.viewDidLoad()
-    action = ActionInView(superView: view, typeStartAction: .tongue)
     setupSceneView()
     setupViews()
   }
@@ -53,6 +55,7 @@ open class AccessibilityFaceAnchor: UIViewController {
     view.addSubview(cursor)
     cursor.image = Asset.cursorDefault.image
   }
+
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
     DispatchQueue.main.async {
       UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.2, options: .curveLinear, animations: {
@@ -60,6 +63,7 @@ open class AccessibilityFaceAnchor: UIViewController {
       }, completion: nil)
     }
   }
+
   private func verifyAction(withValueEyeRight eyeRight: CGFloat, theEyeLeft eyeLeft: CGFloat, tongueValue tongue: CGFloat, andPoint pointMouse: CGPoint) {
     if action.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, andTongueValue: tongue) {
       action.getViewForAction(withPoint: pointMouse)

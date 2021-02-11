@@ -26,7 +26,6 @@ depends-top-level:
 - "ARSCNViewDelegate"
 - "ARSessionDelegate"
 - "AccessibilityFaceAnchor"
-- !private "ActionInView"
 - "ActionProtocol"
 - !private "Asset"
 - "AssignmentPrecedence"
@@ -64,7 +63,6 @@ depends-member:
 - !private ["So9ARSCNViewC", "session"]
 - !private ["So17ARSCNViewDelegateP", "ARFaceTrackingConfiguration"]
 - ["So17ARSCNViewDelegateP", "ARSCNView"]
-- !private ["So17ARSCNViewDelegateP", "ActionInView"]
 - !private ["So17ARSCNViewDelegateP", "Asset"]
 - !private ["So17ARSCNViewDelegateP", "CGFloat"]
 - !private ["So17ARSCNViewDelegateP", "CGPoint"]
@@ -95,7 +93,6 @@ depends-member:
 - !private ["So9ARSessionC", "run"]
 - !private ["So17ARSessionDelegateP", "ARFaceTrackingConfiguration"]
 - ["So17ARSessionDelegateP", "ARSCNView"]
-- !private ["So17ARSessionDelegateP", "ActionInView"]
 - !private ["So17ARSessionDelegateP", "Asset"]
 - !private ["So17ARSessionDelegateP", "CGFloat"]
 - !private ["So17ARSessionDelegateP", "CGPoint"]
@@ -124,7 +121,6 @@ depends-member:
 - !private ["So17ARSessionDelegateP", "view"]
 - !private ["So17ARSessionObserverP", "ARFaceTrackingConfiguration"]
 - ["So17ARSessionObserverP", "ARSCNView"]
-- !private ["So17ARSessionObserverP", "ActionInView"]
 - !private ["So17ARSessionObserverP", "Asset"]
 - !private ["So17ARSessionObserverP", "CGFloat"]
 - !private ["So17ARSessionObserverP", "CGPoint"]
@@ -160,7 +156,6 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "ARFaceAnchor"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "ARFaceTrackingConfiguration"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "ARSCNView"]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "ActionInView"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "ActionProtocol"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "Asset"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "Bool"]
@@ -176,9 +171,9 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "UIApplication"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "UIImageView"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "UIView"]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "action"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "action"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "animateCursor"]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "cursor"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "cursor"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "deinit"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "init"]
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "moveCursor"]
@@ -195,10 +190,7 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "view"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewDidAppear"]
 - ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewDidLoad"]
-- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "deinit"]
-- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "init"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getViewForAction"]
-- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "init"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verifyAction"]
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["s18AdditiveArithmeticP", "truncate"]
@@ -226,7 +218,6 @@ depends-member:
 - ["So6CGRectV", "init"]
 - !private ["s7CVarArgP", "ARFaceTrackingConfiguration"]
 - ["s7CVarArgP", "ARSCNView"]
-- !private ["s7CVarArgP", "ActionInView"]
 - !private ["s7CVarArgP", "Asset"]
 - !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGPoint"]
@@ -289,7 +280,6 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "y"]
 - !private ["s28CustomDebugStringConvertibleP", "ARFaceTrackingConfiguration"]
 - ["s28CustomDebugStringConvertibleP", "ARSCNView"]
-- !private ["s28CustomDebugStringConvertibleP", "ActionInView"]
 - !private ["s28CustomDebugStringConvertibleP", "Asset"]
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
@@ -350,7 +340,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "verifyAction"]
 - !private ["s23CustomStringConvertibleP", "ARFaceTrackingConfiguration"]
 - ["s23CustomStringConvertibleP", "ARSCNView"]
-- !private ["s23CustomStringConvertibleP", "ActionInView"]
 - !private ["s23CustomStringConvertibleP", "Asset"]
 - !private ["s23CustomStringConvertibleP", "CGFloat"]
 - !private ["s23CustomStringConvertibleP", "CGPoint"]
@@ -425,7 +414,6 @@ depends-member:
 - !private ["SE", "verifyAction"]
 - !private ["SQ", "ARFaceTrackingConfiguration"]
 - ["SQ", "ARSCNView"]
-- !private ["SQ", "ActionInView"]
 - !private ["SQ", "Asset"]
 - !private ["SQ", "CGFloat"]
 - !private ["SQ", "CGPoint"]
@@ -472,7 +460,6 @@ depends-member:
 - !private ["SQ", "setupViews"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "subscript"]
-- !private ["SQ", "tongue"]
 - !private ["SQ", "tongueOut"]
 - !private ["SQ", "truncate"]
 - !private ["SQ", "verifyAction"]
@@ -494,7 +481,6 @@ depends-member:
 - !private ["SF", "truncate"]
 - !private ["SH", "ARFaceTrackingConfiguration"]
 - ["SH", "ARSCNView"]
-- !private ["SH", "ActionInView"]
 - !private ["SH", "Asset"]
 - !private ["SH", "CGFloat"]
 - !private ["SH", "CGPoint"]
@@ -539,7 +525,6 @@ depends-member:
 - !private ["SH", "setupViews"]
 - !private ["SH", "shared"]
 - !private ["SH", "subscript"]
-- !private ["SH", "tongue"]
 - !private ["SH", "tongueOut"]
 - !private ["SH", "truncate"]
 - !private ["SH", "verifyAction"]
@@ -556,7 +541,6 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "init"]
 - !private ["So8NSCodingP", "ARFaceTrackingConfiguration"]
 - ["So8NSCodingP", "ARSCNView"]
-- !private ["So8NSCodingP", "ActionInView"]
 - !private ["So8NSCodingP", "Asset"]
 - !private ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGPoint"]
@@ -601,7 +585,6 @@ depends-member:
 - !private ["So9NSCopyingP", "maximumNumberOfTrackedFaces"]
 - !private ["So26NSExtensionRequestHandlingP", "ARFaceTrackingConfiguration"]
 - ["So26NSExtensionRequestHandlingP", "ARSCNView"]
-- !private ["So26NSExtensionRequestHandlingP", "ActionInView"]
 - !private ["So26NSExtensionRequestHandlingP", "Asset"]
 - !private ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - !private ["So26NSExtensionRequestHandlingP", "CGPoint"]
@@ -634,7 +617,6 @@ depends-member:
 - !private ["So8NSObjectC", "ARFaceAnchor"]
 - !private ["So8NSObjectC", "ARFaceTrackingConfiguration"]
 - ["So8NSObjectC", "ARSCNView"]
-- !private ["So8NSObjectC", "ActionInView"]
 - ["So8NSObjectC", "ActionProtocol"]
 - !private ["So8NSObjectC", "Asset"]
 - ["So8NSObjectC", "Bool"]
@@ -685,7 +667,6 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - !private ["So8NSObjectP", "ARFaceTrackingConfiguration"]
 - ["So8NSObjectP", "ARSCNView"]
-- !private ["So8NSObjectP", "ActionInView"]
 - !private ["So8NSObjectP", "Asset"]
 - !private ["So8NSObjectP", "CGFloat"]
 - !private ["So8NSObjectP", "CGPoint"]
@@ -769,7 +750,6 @@ depends-member:
 - !private ["So16SCNSceneRendererP", "session"]
 - !private ["So24SCNSceneRendererDelegateP", "ARFaceTrackingConfiguration"]
 - ["So24SCNSceneRendererDelegateP", "ARSCNView"]
-- !private ["So24SCNSceneRendererDelegateP", "ActionInView"]
 - !private ["So24SCNSceneRendererDelegateP", "Asset"]
 - !private ["So24SCNSceneRendererDelegateP", "CGFloat"]
 - !private ["So24SCNSceneRendererDelegateP", "CGPoint"]
@@ -819,7 +799,6 @@ depends-member:
 - !private ["s13SignedNumericP", "truncate"]
 - !private ["Sx", "init"]
 - !private ["Sx", "truncate"]
-- !private ["26AcessibilityFaceMovimentBR15TypeStartActionO", "tongue"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "center"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
@@ -841,7 +820,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "session"]
 - !private ["So21UIAppearanceContainerP", "ARFaceTrackingConfiguration"]
 - ["So21UIAppearanceContainerP", "ARSCNView"]
-- !private ["So21UIAppearanceContainerP", "ActionInView"]
 - !private ["So21UIAppearanceContainerP", "Asset"]
 - !private ["So21UIAppearanceContainerP", "CGFloat"]
 - !private ["So21UIAppearanceContainerP", "CGPoint"]
@@ -881,7 +859,6 @@ depends-member:
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So18UIContentContainerP", "ARFaceTrackingConfiguration"]
 - ["So18UIContentContainerP", "ARSCNView"]
-- !private ["So18UIContentContainerP", "ActionInView"]
 - !private ["So18UIContentContainerP", "Asset"]
 - !private ["So18UIContentContainerP", "CGFloat"]
 - !private ["So18UIContentContainerP", "CGPoint"]
@@ -928,7 +905,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "session"]
 - !private ["So18UIFocusEnvironmentP", "ARFaceTrackingConfiguration"]
 - ["So18UIFocusEnvironmentP", "ARSCNView"]
-- !private ["So18UIFocusEnvironmentP", "ActionInView"]
 - !private ["So18UIFocusEnvironmentP", "Asset"]
 - !private ["So18UIFocusEnvironmentP", "CGFloat"]
 - !private ["So18UIFocusEnvironmentP", "CGPoint"]
@@ -995,7 +971,6 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "session"]
 - !private ["So30UIPasteConfigurationSupportingP", "ARFaceTrackingConfiguration"]
 - ["So30UIPasteConfigurationSupportingP", "ARSCNView"]
-- !private ["So30UIPasteConfigurationSupportingP", "ActionInView"]
 - !private ["So30UIPasteConfigurationSupportingP", "Asset"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
@@ -1037,7 +1012,6 @@ depends-member:
 - !private ["So11UIResponderC", "ARFaceAnchor"]
 - !private ["So11UIResponderC", "ARFaceTrackingConfiguration"]
 - ["So11UIResponderC", "ARSCNView"]
-- !private ["So11UIResponderC", "ActionInView"]
 - ["So11UIResponderC", "ActionProtocol"]
 - !private ["So11UIResponderC", "Asset"]
 - ["So11UIResponderC", "Bool"]
@@ -1081,7 +1055,6 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "ARFaceTrackingConfiguration"]
 - ["So30UIResponderStandardEditActionsP", "ARSCNView"]
-- !private ["So30UIResponderStandardEditActionsP", "ActionInView"]
 - !private ["So30UIResponderStandardEditActionsP", "Asset"]
 - !private ["So30UIResponderStandardEditActionsP", "CGFloat"]
 - !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
@@ -1121,7 +1094,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "ARFaceTrackingConfiguration"]
 - ["So16UIStateRestoringP", "ARSCNView"]
-- !private ["So16UIStateRestoringP", "ActionInView"]
 - !private ["So16UIStateRestoringP", "Asset"]
 - !private ["So16UIStateRestoringP", "CGFloat"]
 - !private ["So16UIStateRestoringP", "CGPoint"]
@@ -1152,7 +1124,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "ARFaceTrackingConfiguration"]
 - ["So18UITraitEnvironmentP", "ARSCNView"]
-- !private ["So18UITraitEnvironmentP", "ActionInView"]
 - !private ["So18UITraitEnvironmentP", "Asset"]
 - !private ["So18UITraitEnvironmentP", "CGFloat"]
 - !private ["So18UITraitEnvironmentP", "CGPoint"]
@@ -1190,7 +1161,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "ARFaceTrackingConfiguration"]
 - ["So23UIUserActivityRestoringP", "ARSCNView"]
-- !private ["So23UIUserActivityRestoringP", "ActionInView"]
 - !private ["So23UIUserActivityRestoringP", "Asset"]
 - !private ["So23UIUserActivityRestoringP", "CGFloat"]
 - !private ["So23UIUserActivityRestoringP", "CGPoint"]
@@ -1240,7 +1210,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "ARFaceAnchor"]
 - !private ["So16UIViewControllerC", "ARFaceTrackingConfiguration"]
 - ["So16UIViewControllerC", "ARSCNView"]
-- !private ["So16UIViewControllerC", "ActionInView"]
 - ["So16UIViewControllerC", "ActionProtocol"]
 - !private ["So16UIViewControllerC", "Asset"]
 - ["So16UIViewControllerC", "Bool"]
@@ -1286,7 +1255,6 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "tongueOut"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ARFaceTrackingConfiguration"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ARSCNView"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "ActionInView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Asset"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
@@ -1333,7 +1301,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ARFaceTrackingConfiguration"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ARSCNView"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ActionInView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Asset"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGFloat"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGPoint"]
@@ -1414,7 +1381,6 @@ depends-nominal:
 - "So18ARSessionProvidingP"
 - !private "So11ARTrackableP"
 - "26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC"
-- !private "26AcessibilityFaceMovimentBR12ActionInViewC"
 - !private "26AcessibilityFaceMovimentBR14ActionProtocolP"
 - !private "s18AdditiveArithmeticP"
 - !private "So22UIViewAnimationOptionsV"
@@ -1480,7 +1446,6 @@ depends-nominal:
 - !private "s10SetAlgebraP"
 - !private "s13SignedNumericP"
 - !private "Sx"
-- !private "26AcessibilityFaceMovimentBR15TypeStartActionO"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - "So12UIAppearanceP"
@@ -1559,4 +1524,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "83ed2d92fcc6634d616cd26e2d2c60c3"
+interface-hash: "3e19405ed986932e34c96451205fa67e"

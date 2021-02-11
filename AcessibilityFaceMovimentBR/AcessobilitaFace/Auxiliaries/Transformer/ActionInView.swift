@@ -8,21 +8,26 @@
 
 import UIKit
 
-class ActionInView: ActionProtocol {
+class ActionInView: NSObject, ActionProtocol {
 
   private var superView: UIView
   private var viewsAction: [ViewAction] = []
   private var typeStartAction: TypeStartAction
   private var isInAction: Bool = false
+  private var target: UIViewController
+  private var position: Position!
+
   private enum Constants {
     static let closeEye: CGFloat = 0.8
-    static let openEye: CGFloat = 0.6
-    static let tongue: CGFloat = 0.9
+    static let openEye: CGFloat = 0.3
+    static let tongue: CGFloat = 0.8
   }
 
-  required init(superView: UIView, typeStartAction: TypeStartAction) {
+  required init(superView: UIView, typeStartAction: TypeStartAction, target: UIViewController) {
     self.superView = superView
     self.typeStartAction = typeStartAction
+    self.target = target
+
   }
 
   func verifyAction(withValueEyeRight eyeRight: CGFloat, theEyeLeft eyeLeft: CGFloat, andTongueValue tongue: CGFloat) -> Bool {
@@ -37,11 +42,25 @@ class ActionInView: ActionProtocol {
   }
 
   func getViewForAction(withPoint point: CGPoint) {
-    print("teste")
+    if let index = position.getViewSelectedBased(thePoint: point) {
+      print(index)
+      DispatchQueue.main.async {
+        self.target.perform(self.viewsAction[index].selector)
+      }
+    }
   }
   
   func setTypeStartAction(withType type: TypeStartAction) {
     self.typeStartAction = type
+  }
+
+  func set(viewsAction: [ViewAction]) {
+    var views = [UIView]()
+    for viewAction in viewsAction {
+      views.append(viewAction.view)
+    }
+    position = Position(views: views)
+    self.viewsAction = viewsAction
   }
 
   private func verify(theEyeClose eyeClose: CGFloat, andEyeOpen eyeOpen: CGFloat) -> Bool {
