@@ -19,7 +19,6 @@ class Position {
   }
 
   func getViewSelectedBased(thePoint point: CGPoint) -> Int? {
-
     for index in 0..<views.count {
       if verify(withPoint: point, insideInFrame: absolutePosition[index]) {
         return index

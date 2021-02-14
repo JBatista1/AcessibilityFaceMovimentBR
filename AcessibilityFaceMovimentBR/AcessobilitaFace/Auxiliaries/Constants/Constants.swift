@@ -23,4 +23,19 @@ enum Constants {
     static let y = CGFloat(Screen.center.y - (Cursor.width / 2))
   }
 
+  enum AccessibilityUIType: String {
+    case uibutton
+    case uiimageView
+    case unknown
+    var identifier: String {
+      switch self {
+      case .uibutton:
+        return "UIButton"
+      case .uiimageView:
+        return "UIImageView"
+      case .unknown:
+        return "UNKNOWN"
+      }
+    }
+  }
 }

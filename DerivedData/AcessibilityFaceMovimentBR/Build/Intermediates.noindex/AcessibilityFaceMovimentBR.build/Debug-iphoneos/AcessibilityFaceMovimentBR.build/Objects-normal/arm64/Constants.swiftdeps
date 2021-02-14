@@ -5,21 +5,43 @@ provides-nominal:
 - "26AcessibilityFaceMovimentBR9ConstantsO"
 - "26AcessibilityFaceMovimentBR9ConstantsO6ScreenO"
 - "26AcessibilityFaceMovimentBR9ConstantsO6CursorO"
+- "26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO"
 provides-member:
 - ["26AcessibilityFaceMovimentBR9ConstantsO", ""]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", ""]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", ""]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "-"
 - "/"
+- "=="
 - "CGFloat"
 - "CGPoint"
 - "Constants"
 - "FloatLiteralType"
 - "IntegerLiteralType"
+- "String"
+- "StringLiteralType"
 - "UIScreen"
+- !private "_findStringSwitchCase"
+- !private "~="
 depends-member:
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "=="]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "RawValue"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "String"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "_Default_RawValue"]
+- !private ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "_findStringSwitchCase"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "_rawHashValue"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "deinit"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "hash"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "hashValue"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "identifier"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "init"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "rawValue"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uibutton"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiimageView"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "unknown"]
 - ["s18AdditiveArithmeticP", "init"]
 - ["SB", "init"]
 - ["12CoreGraphics7CGFloatV", "init"]
@@ -32,11 +54,14 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "main"]
 - ["SL", "init"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO", "AccessibilityUIType"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO", "CGPoint"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO", "Cursor"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO", "Screen"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO", "String"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO", "UIScreen"]
+- !private ["26AcessibilityFaceMovimentBR9ConstantsO", "_findStringSwitchCase"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "Cursor"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "Screen"]
@@ -69,24 +94,61 @@ depends-member:
 - ["SE", "width"]
 - ["SE", "x"]
 - ["SE", "y"]
+- ["SQ", "=="]
+- ["SQ", "RawValue"]
+- ["SQ", ""]
+- ["SQ", "_Default_RawValue"]
+- !private ["SQ", "_findStringSwitchCase"]
+- ["SQ", "_rawHashValue"]
 - ["SQ", "bounds"]
+- ["SQ", "hash"]
+- ["SQ", "hashValue"]
 - ["SQ", "height"]
 - ["SQ", "init"]
 - ["SQ", "main"]
+- ["SQ", "rawValue"]
+- ["SQ", "uibutton"]
+- ["SQ", "uiimageView"]
+- ["SQ", "unknown"]
 - ["SQ", "width"]
 - ["SQ", "x"]
 - ["SQ", "y"]
 - ["s25ExpressibleByFloatLiteralP", "init"]
 - ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["SF", "init"]
+- ["SH", "=="]
+- ["SH", "RawValue"]
+- ["SH", ""]
+- ["SH", "_Default_RawValue"]
+- !private ["SH", "_findStringSwitchCase"]
+- ["SH", "_rawHashValue"]
 - ["SH", "bounds"]
+- ["SH", "hash"]
+- ["SH", "hashValue"]
 - ["SH", "init"]
 - ["SH", "main"]
+- ["SH", "rawValue"]
+- ["SH", "uibutton"]
+- ["SH", "uiimageView"]
+- ["SH", "unknown"]
 - ["So8NSObjectC", "bounds"]
 - ["So8NSObjectC", "main"]
 - ["So8NSObjectP", "bounds"]
 - ["So8NSObjectP", "main"]
 - ["Sj", "init"]
+- ["SY", "=="]
+- ["SY", "RawValue"]
+- ["SY", ""]
+- ["SY", "_Default_RawValue"]
+- !private ["SY", "_findStringSwitchCase"]
+- ["SY", "_rawHashValue"]
+- ["SY", "hash"]
+- ["SY", "hashValue"]
+- ["SY", "init"]
+- ["SY", "rawValue"]
+- ["SY", "uibutton"]
+- ["SY", "uiimageView"]
+- ["SY", "unknown"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "CGPoint"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "Screen"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "UIScreen"]
@@ -116,6 +178,7 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "x"]
 - ["s21_ObjectiveCBridgeableP", "y"]
 depends-nominal:
+- "26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO"
 - "s18AdditiveArithmeticP"
 - "SB"
 - "12CoreGraphics7CGFloatV"
@@ -138,6 +201,7 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "Sj"
+- "SY"
 - "26AcessibilityFaceMovimentBR9ConstantsO6ScreenO"
 - "s13SignedNumericP"
 - "Sx"
@@ -156,7 +220,10 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ModelIO.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64.swiftmodule"
@@ -166,9 +233,11 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/GLKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ARKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SceneKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SpriteKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
@@ -192,4 +261,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "abe0a38955d1f2c68f6a0ff973cc685a"
+interface-hash: "aa7c0279f43df6cfd131d23a0de1be97"

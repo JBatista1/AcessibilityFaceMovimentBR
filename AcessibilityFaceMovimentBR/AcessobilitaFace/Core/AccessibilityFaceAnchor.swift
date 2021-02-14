@@ -9,16 +9,11 @@
 import UIKit
 import ARKit
 
-open class AccessibilityFaceAnchor: UIViewController {
+open class AccessibilityFaceAnchor: AcessibilityViewController {
 
-  // MARK: - Private =Property
+  // MARK: - Private Property
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
-
-  // MARK: - Public Property
-
-  let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
-  var action: ActionProtocol!
 
   // MARK: - Life cicle
 
@@ -34,7 +29,7 @@ open class AccessibilityFaceAnchor: UIViewController {
     resetTracking()
   }
 
-  // MARK: - Class Methods
+  // MARK: - Private Class Methods
 
   private func resetTracking() {
     guard ARFaceTrackingConfiguration.isSupported else {return}
@@ -51,16 +46,6 @@ open class AccessibilityFaceAnchor: UIViewController {
 
   private func setupViews() {
     view.addSubview(sceneView)
-    insertCursor()
-  }
-
-  func insertCursor() {
-    guard let windows = UIApplication.shared.keyWindow else {
-      view.addSubview(cursor)
-      return
-    }
-    windows.addSubview(cursor)
-    cursor.image = Asset.cursorDefault.image
   }
 
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
@@ -93,7 +78,5 @@ extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
         let newPosition = self.moveCursor.getNextPosition(withPoint: point)
         self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
         self.animateCursor(toNextPoint: newPosition)
-
   }
-
 }

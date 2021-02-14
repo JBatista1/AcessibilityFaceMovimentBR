@@ -210,8 +210,16 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR26AcessibilityViewController")
+@interface AcessibilityViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR23AccessibilityFaceAnchor")
-@interface AccessibilityFaceAnchor : UIViewController
+@interface AccessibilityFaceAnchor : AcessibilityViewController
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -227,11 +235,14 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR23AccessibilityFaceAnchor")
 @end
 
 
+
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR12ActionInView")
 @interface ActionInView : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 @class UIApplication;
 @class UISceneSession;
@@ -244,6 +255,21 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR11AppDelegate")
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UIButton;
+@class UIImageView;
+@class UITapGestureRecognizer;
+
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR29NavigationTesteViewController")
+@interface NavigationTesteViewController : AccessibilityFaceAnchor
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified nextButton;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bookImageView;
+- (void)viewDidLoad;
+- (IBAction)tappedNextScreen:(id _Nonnull)sender;
+- (void)handleTap:(UITapGestureRecognizer * _Nullable)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIWindow;
@@ -262,13 +288,22 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR13SceneDelegate")
 @end
 
 
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR21SuccessViewController")
+@interface SuccessViewController : AccessibilityFaceAnchor
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
 
 
 
 
 
 @class UILabel;
-@class UIButton;
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR14ViewController")
 @interface ViewController : AccessibilityFaceAnchor
@@ -290,12 +325,11 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR14ViewController")
 - (void)actionSix;
 - (void)actionSeven;
 - (void)actionEight;
-- (void)firstTabBarButton;
-- (void)secondTabBarButton;
-- (void)thirdTabBarButton;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
