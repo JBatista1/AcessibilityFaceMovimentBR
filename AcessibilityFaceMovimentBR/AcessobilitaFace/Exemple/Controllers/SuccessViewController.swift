@@ -15,7 +15,6 @@ class SuccessViewController: AccessibilityFaceAnchor {
     super.viewDidLoad()
     action.setTypeStartAction(withType: .tongue)
     action.set(viewsAction: createViewAction())
-    print(tableView.subviews)
   }
 
   func createViewAction() -> [ViewAction] {

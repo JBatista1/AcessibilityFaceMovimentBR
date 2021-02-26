@@ -5,7 +5,6 @@
 //  Created by Joao Batista on 07/02/21.
 //  Copyright © 2021 Joao Batista. All rights reserved.
 //
-
 import UIKit
 
 class ActionInView: NSObject {
@@ -15,18 +14,14 @@ class ActionInView: NSObject {
   private var target: UIViewController
   private var position: Position?
   private var pointView: CGPoint = .zero
-
-  private enum ValuesConstants {
-    static let closeEye: CGFloat = 0.6
-    static let openEye: CGFloat = 0.3
-    static let tongue: CGFloat = 0.8
-  }
+  private var manageCase: ManagesSpecialCases
 
   required init(typeStartAction: TypeStartAction = .tongue, target: UIViewController) {
     self.typeStartAction = typeStartAction
     self.target = target
-
+    manageCase = ManagesSpecialCases()
   }
+
   // MARK: - Private Method
 
   private func calledSelector(inViewAction viewAction: ViewAction) {
@@ -40,72 +35,21 @@ class ActionInView: NSObject {
   private func calledSpecialTarge(withIndentifier identifier: String, inViewAction viewAction: ViewAction) {
 
     switch identifier {
-    case Constants.AccessibilityUIType.uiButton.identifier,
-         Constants.AccessibilityUIType.uiImageView.identifier:
-
+    case AccessibilityUIType.uiButton.identifier,
+         AccessibilityUIType.uiImageView.identifier:
       self.target.perform(viewAction.selector, with: identifier)
 
-    case Constants.AccessibilityUIType.uiTableView.identifier:
-      if let indexPath = getIndexPath(InView: viewAction.view) {
-        self.target.perform(viewAction.selector, with: indexPath)
-      } else {
-        self.target.perform(viewAction.selector)
-      }
+    case AccessibilityUIType.uiTableView.identifier:
+      let indexPath = manageCase.getIndexPathTheUICollectionView(InView: viewAction.view, andPoint: pointView)
+      self.target.perform(viewAction.selector, with: indexPath)
+
+    case AccessibilityUIType.uiCollectionView.identifier:
+      let indexPath = manageCase.getIndexPathTheUICollectionView(InView: viewAction.view, andPoint: pointView)
+      self.target.perform(viewAction.selector, with: indexPath)
 
     default:
       self.target.perform(viewAction.selector)
     }
-  }
-
-  func getIndexPath(InView view: UIView) -> IndexPath? {
-    guard let tableView = view as? UITableView else {return nil}
-    let views = tableView.getCell()
-    let index = position?.getViewSelectedBased(thePoint: pointView, InTableViewCells: views)
-    if let safeIndex = index, let cell = views[safeIndex] as? UITableViewCell, let indexPath = cell.accessibilityElements?.first as? IndexPath {
-      return indexPath
-    }
-    return nil
-  }
-  private func inserTabBarViews(inViewsAction viewsAction: [ViewAction]) -> [ViewAction] {
-    var newViewsActions = viewsAction
-    var index = 0
-    for viewAction in viewsAction {
-      if let tabBar = viewAction.view as? UITabBar {
-        newViewsActions.remove(at: index)
-        newViewsActions.append(contentsOf: getTabBarViews(inTabBar: tabBar, andSelector: viewAction.selector))
-      }
-      index += 1
-    }
-    return newViewsActions
-  }
-
-  private func insertAccessibilityIdentifier(inViewsAction viewsAction: [ViewAction]) -> [ViewAction] {
-    for viewAction in viewsAction {
-      switch viewAction.view {
-      case is UIButton:
-        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uiButton.identifier
-      case is UIImageView:
-        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uiImageView.identifier
-      case is UITableView:
-        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uiTableView.identifier
-      default:
-        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.unknown.identifier
-      }
-    }
-    return viewsAction
-  }
-  
-  private func getTabBarViews(inTabBar tabBar: UITabBar, andSelector selector: Selector ) -> [ViewAction] {
-    var viewsTabbar = [ViewAction]()
-    var index = 0
-    for view in tabBar.subviews {
-      if view.isKind(of: NSClassFromString("UITabBarButton")!) {
-        view.accessibilityIdentifier = "\(index)"
-        viewsTabbar.append(ViewAction(view: view, selector: selector))
-        index += 1
-      }
-    }
-    return viewsTabbar
   }
 
   private func verify(theEyeClose eyeClose: CGFloat, andEyeOpen eyeOpen: CGFloat) -> Bool {
@@ -130,7 +74,6 @@ extension ActionInView: ActionProtocol {
 
   func getViewForAction(withPoint point: CGPoint) {
     pointView = point
-
     if let index = position?.getViewSelectedBased(thePoint: point) {
       let viewAction = viewsAction[index]
       DispatchQueue.main.async {
@@ -146,8 +89,8 @@ extension ActionInView: ActionProtocol {
   func set(viewsAction: [ViewAction]) {
     var views = [UIView]()
 
-    var newViewsAction = inserTabBarViews(inViewsAction: viewsAction)
-    newViewsAction = insertAccessibilityIdentifier(inViewsAction: newViewsAction)
+    var newViewsAction = manageCase.inserTabBarViews(inViewsAction: viewsAction)
+    newViewsAction = manageCase.insertAccessibilityIdentifier(inViewsAction: newViewsAction)
 
     for viewAction in newViewsAction {
       views.append(viewAction.view)

@@ -17,7 +17,7 @@ open class AcessibilityViewController: UIViewController {
   weak var delegateTableView: TableViewSelectedProtocol?
 
   // MARK: - Public Property
-  let cursor = UIImageView(frame: CGRect(x: Constants.Cursor.x, y: Constants.Cursor.y, width: Constants.Cursor.width, height: Constants.Cursor.heigh))
+  let cursor = UIImageView(frame: CGRect(x: Cursor.x, y: Cursor.y, width: Cursor.width, height: Cursor.heigh))
   var action: ActionProtocol!
 
   public override func viewDidLoad() {

@@ -258,6 +258,14 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR28CollectionTestViewController")
+@interface CollectionTestViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIButton;
 @class UIImageView;
 @class UITapGestureRecognizer;
@@ -307,8 +315,6 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR21SuccessViewController")
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)tableView:(UITableView * _Nonnull)tableView titleForHeaderInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 @end
-
-
 
 
 

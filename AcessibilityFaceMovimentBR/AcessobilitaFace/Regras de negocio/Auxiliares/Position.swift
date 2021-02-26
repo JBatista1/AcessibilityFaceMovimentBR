@@ -31,7 +31,16 @@ class Position {
   func getViewSelectedBased(thePoint point: CGPoint, InTableViewCells tableViewCells: [UIView]) -> Int? {
     absolutePositionTable = getAbsolutePosition(inViews: tableViewCells)
     for index in 0..<tableViewCells.count {
-      print(absolutePositionTable[index])
+      if verify(withPoint: point, insideInFrame: absolutePositionTable[index]) {
+        return index
+      }
+    }
+    return nil
+  }
+
+  func getViewSelectedBased(thePoint point: CGPoint, InCollectionViewCells collectionViewCells: [UIView]) -> Int? {
+    absolutePositionTable = getAbsolutePosition(inViews: collectionViewCells)
+    for index in 0..<collectionViewCells.count {
       if verify(withPoint: point, insideInFrame: absolutePositionTable[index]) {
         return index
       }

@@ -1,49 +1,58 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "Constants"
+- "Screen"
+- "Cursor"
+- "ValuesConstants"
+- "AccessibilityUIType"
 provides-nominal:
-- "26AcessibilityFaceMovimentBR9ConstantsO"
-- "26AcessibilityFaceMovimentBR9ConstantsO6ScreenO"
-- "26AcessibilityFaceMovimentBR9ConstantsO6CursorO"
-- "26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO"
+- "26AcessibilityFaceMovimentBR6ScreenO"
+- "26AcessibilityFaceMovimentBR6CursorO"
+- "26AcessibilityFaceMovimentBR15ValuesConstantsO"
+- "26AcessibilityFaceMovimentBR19AccessibilityUITypeO"
 provides-member:
-- ["26AcessibilityFaceMovimentBR9ConstantsO", ""]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", ""]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", ""]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", ""]
+- ["26AcessibilityFaceMovimentBR6ScreenO", ""]
+- ["26AcessibilityFaceMovimentBR6CursorO", ""]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", ""]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "-"
 - "/"
 - "=="
+- "AccessibilityUIType"
 - "CGFloat"
 - "CGPoint"
-- "Constants"
+- "Cursor"
 - "FloatLiteralType"
+- "IndexPath"
 - "IntegerLiteralType"
+- "Screen"
 - "String"
 - "StringLiteralType"
 - "UIScreen"
+- "ValuesConstants"
 - !private "_findStringSwitchCase"
 - !private "~="
 depends-member:
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "=="]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "RawValue"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "String"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "_Default_RawValue"]
-- !private ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "_findStringSwitchCase"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "_rawHashValue"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "deinit"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "hash"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "hashValue"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "identifier"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "init"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "rawValue"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiButton"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiImageView"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiTableView"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "unknown"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "=="]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "RawValue"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "String"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "_Default_RawValue"]
+- !private ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "_findStringSwitchCase"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "_rawHashValue"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "deinit"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "hash"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "hashValue"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "identifier"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "init"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "rawValue"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiButton"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiCollectionView"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiImageView"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiTableView"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "unknown"]
 - ["s18AdditiveArithmeticP", "init"]
+- ["SK", "init"]
 - ["SB", "init"]
 - ["12CoreGraphics7CGFloatV", "init"]
 - ["So7CGPointV", "init"]
@@ -54,22 +63,15 @@ depends-member:
 - ["s7CVarArgP", "bounds"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "main"]
+- ["Sl", "init"]
 - ["SL", "init"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO", "AccessibilityUIType"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO", "CGFloat"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO", "CGPoint"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO", "Cursor"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO", "Screen"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO", "String"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO", "UIScreen"]
-- !private ["26AcessibilityFaceMovimentBR9ConstantsO", "_findStringSwitchCase"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "CGFloat"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "Cursor"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "Screen"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "heigh"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "width"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "x"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6CursorO", "y"]
+- ["26AcessibilityFaceMovimentBR6CursorO", "CGFloat"]
+- ["26AcessibilityFaceMovimentBR6CursorO", "Cursor"]
+- ["26AcessibilityFaceMovimentBR6CursorO", "Screen"]
+- ["26AcessibilityFaceMovimentBR6CursorO", "heigh"]
+- ["26AcessibilityFaceMovimentBR6CursorO", "width"]
+- ["26AcessibilityFaceMovimentBR6CursorO", "x"]
+- ["26AcessibilityFaceMovimentBR6CursorO", "y"]
 - ["s28CustomDebugStringConvertibleP", "bounds"]
 - ["s28CustomDebugStringConvertibleP", "height"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -109,12 +111,14 @@ depends-member:
 - ["SQ", "main"]
 - ["SQ", "rawValue"]
 - ["SQ", "uiButton"]
+- ["SQ", "uiCollectionView"]
 - ["SQ", "uiImageView"]
 - ["SQ", "uiTableView"]
 - ["SQ", "unknown"]
 - ["SQ", "width"]
 - ["SQ", "x"]
 - ["SQ", "y"]
+- ["s25ExpressibleByArrayLiteralP", "init"]
 - ["s25ExpressibleByFloatLiteralP", "init"]
 - ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["SF", "init"]
@@ -131,14 +135,18 @@ depends-member:
 - ["SH", "main"]
 - ["SH", "rawValue"]
 - ["SH", "uiButton"]
+- ["SH", "uiCollectionView"]
 - ["SH", "uiImageView"]
 - ["SH", "uiTableView"]
 - ["SH", "unknown"]
+- ["10Foundation9IndexPathV", "init"]
+- ["SM", "init"]
 - ["So8NSObjectC", "bounds"]
 - ["So8NSObjectC", "main"]
 - ["So8NSObjectP", "bounds"]
 - ["So8NSObjectP", "main"]
 - ["Sj", "init"]
+- ["Sk", "init"]
 - ["SY", "=="]
 - ["SY", "RawValue"]
 - ["SY", ""]
@@ -150,21 +158,30 @@ depends-member:
 - ["SY", "init"]
 - ["SY", "rawValue"]
 - ["SY", "uiButton"]
+- ["SY", "uiCollectionView"]
 - ["SY", "uiImageView"]
 - ["SY", "uiTableView"]
 - ["SY", "unknown"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "CGPoint"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "Screen"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "UIScreen"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "center"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "heigh"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "width"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- ["26AcessibilityFaceMovimentBR6ScreenO", "CGPoint"]
+- ["26AcessibilityFaceMovimentBR6ScreenO", "Screen"]
+- ["26AcessibilityFaceMovimentBR6ScreenO", "UIScreen"]
+- ["26AcessibilityFaceMovimentBR6ScreenO", "center"]
+- ["26AcessibilityFaceMovimentBR6ScreenO", "heigh"]
+- ["26AcessibilityFaceMovimentBR6ScreenO", "width"]
+- ["ST", "init"]
 - ["s13SignedNumericP", "init"]
 - ["Sx", "init"]
 - ["So8UIScreenC", "bounds"]
 - ["So8UIScreenC", "main"]
 - ["So18UITraitEnvironmentP", "bounds"]
 - ["So18UITraitEnvironmentP", "main"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "CGFloat"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "IndexPath"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "closeEye"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "indexPathError"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "openEye"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tongue"]
 - ["s15_CVarArgAlignedP", "init"]
 - ["s22_CVarArgPassedAsDoubleP", "init"]
 - ["s30_CustomPlaygroundQuickLookableP", "height"]
@@ -182,35 +199,43 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "x"]
 - ["s21_ObjectiveCBridgeableP", "y"]
 depends-nominal:
-- "26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO"
+- "26AcessibilityFaceMovimentBR19AccessibilityUITypeO"
 - "s18AdditiveArithmeticP"
+- "SK"
 - "SB"
 - "12CoreGraphics7CGFloatV"
 - "So7CGPointV"
 - "So6CGRectV"
 - "s7CVarArgP"
+- "Sl"
 - "SL"
-- "26AcessibilityFaceMovimentBR9ConstantsO"
-- "26AcessibilityFaceMovimentBR9ConstantsO6CursorO"
+- "26AcessibilityFaceMovimentBR6CursorO"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "Se"
 - "SE"
 - "SQ"
+- "s25ExpressibleByArrayLiteralP"
 - "s25ExpressibleByFloatLiteralP"
 - "s27ExpressibleByIntegerLiteralP"
 - "SF"
 - "SH"
+- "10Foundation9IndexPathV"
+- "SM"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - "Sj"
+- "Sk"
 - "SY"
-- "26AcessibilityFaceMovimentBR9ConstantsO6ScreenO"
+- "10Foundation20ReferenceConvertibleP"
+- "26AcessibilityFaceMovimentBR6ScreenO"
+- "ST"
 - "s13SignedNumericP"
 - "Sx"
 - "So8UIScreenC"
 - "So18UITraitEnvironmentP"
+- "26AcessibilityFaceMovimentBR15ValuesConstantsO"
 - "s15_CVarArgAlignedP"
 - "s22_CVarArgPassedAsDoubleP"
 - "s30_CustomPlaygroundQuickLookableP"
@@ -265,4 +290,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e898e4d0af341cd946abc081bdf20ae4"
+interface-hash: "56c8b582174ef79f350c53f1c063030c"

@@ -3,10 +3,10 @@
 <plist version="1.0">
 <array>
 	<string>Foundation</string>
-	<string>XCTest</string>
 	<string>AcessibilityFaceMovimentBR</string>
+	<string>AppKit</string>
 	<string>ARKit</string>
 	<string>UIKit</string>
-	<string>AppKit</string>
+	<string>XCTest</string>
 </array>
 </plist>

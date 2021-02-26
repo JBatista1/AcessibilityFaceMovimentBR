@@ -3,22 +3,4 @@
    uuid = "641AF3C4-A5D0-47DE-AAFA-4B8EE1AAB4EF"
    type = "0"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "2CE3E6B9-B525-4F55-9185-9C35F2E64D00"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Auxiliares/ActionInView.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "getIndexPath(InView:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

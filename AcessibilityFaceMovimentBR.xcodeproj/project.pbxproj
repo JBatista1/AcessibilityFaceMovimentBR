@@ -33,6 +33,8 @@
 		9AB6644225D899CD002EEA51 /* AcessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6644125D899CD002EEA51 /* AcessibilityViewController.swift */; };
 		9AB6644425D8A252002EEA51 /* TimerControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6644325D8A252002EEA51 /* TimerControl.swift */; };
 		9AB6644625D8A25E002EEA51 /* TimerActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6644525D8A25E002EEA51 /* TimerActionProtocol.swift */; };
+		9AB77FEE25E9B36500BCC152 /* CollectionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */; };
+		9AB77FF225E9B54F00BCC152 /* ManagesSpecialCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */; };
 		9AE8480C25E8703B00666008 /* TableViewSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480B25E8703B00666008 /* TableViewSelectedProtocol.swift */; };
 		9AE8480E25E8768100666008 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480D25E8768100666008 /* UITableViewExtension.swift */; };
 		9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */; };
@@ -86,6 +88,8 @@
 		9AB6644125D899CD002EEA51 /* AcessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityViewController.swift; sourceTree = "<group>"; };
 		9AB6644325D8A252002EEA51 /* TimerControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerControl.swift; sourceTree = "<group>"; };
 		9AB6644525D8A25E002EEA51 /* TimerActionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerActionProtocol.swift; sourceTree = "<group>"; };
+		9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTestViewController.swift; sourceTree = "<group>"; };
+		9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagesSpecialCases.swift; sourceTree = "<group>"; };
 		9AE8480B25E8703B00666008 /* TableViewSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSelectedProtocol.swift; sourceTree = "<group>"; };
 		9AE8480D25E8768100666008 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSelectedProtocol.swift; sourceTree = "<group>"; };
@@ -274,6 +278,7 @@
 				9A4EDF9D25AD275300DC97DA /* MoveCursorFaceAnchor.swift */,
 				9A5E811B25D02EE800B58861 /* ActionInView.swift */,
 				9AB0869F25D4A81E00DF37C7 /* Position.swift */,
+				9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */,
 			);
 			path = Auxiliares;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */,
 				9A2F485A25A3EA880043A2A6 /* ViewController.swift */,
 				9AF2C87A25D8978800FB7259 /* SuccessViewController.swift */,
+				9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -524,10 +530,12 @@
 			files = (
 				9A1BA60925B10084007F9AF4 /* CGFloatExtension.swift in Sources */,
 				9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */,
+				9AB77FEE25E9B36500BCC152 /* CollectionTestViewController.swift in Sources */,
 				9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */,
 				9AB6644425D8A252002EEA51 /* TimerControl.swift in Sources */,
 				9AF2C87725D895AB00FB7259 /* NavigationTesteViewController.swift in Sources */,
 				9A58CE5125AA6F1500948A06 /* Assets.swift in Sources */,
+				9AB77FF225E9B54F00BCC152 /* ManagesSpecialCases.swift in Sources */,
 				9AF2C87525D8942700FB7259 /* UIViewControllerExtension.swift in Sources */,
 				9A4EDFA525AD303000DC97DA /* LimitedScreen.swift in Sources */,
 				9A5E812025D02FD500B58861 /* ViewAction.swift in Sources */,

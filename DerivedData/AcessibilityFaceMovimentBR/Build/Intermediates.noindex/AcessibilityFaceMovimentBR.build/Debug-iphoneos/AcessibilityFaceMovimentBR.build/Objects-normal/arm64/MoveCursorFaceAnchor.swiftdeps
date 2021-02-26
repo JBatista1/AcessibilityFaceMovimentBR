@@ -27,13 +27,13 @@ depends-top-level:
 - "BooleanLiteralType"
 - "CGFloat"
 - "CGPoint"
-- !private "Constants"
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
 - "MoveCursorFaceAnchor"
 - "MoveCursorProtocol"
 - "MovimentDirection"
+- !private "Screen"
 depends-member:
 - !private ["s18AdditiveArithmeticP", "init"]
 - !private ["SB", "init"]
@@ -44,7 +44,6 @@ depends-member:
 - ["So7CGPointV", "zero"]
 - !private ["s7CVarArgP", "init"]
 - !private ["SL", "init"]
-- !private ["26AcessibilityFaceMovimentBR9ConstantsO", "Screen"]
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "y"]
 - ["s28CustomDebugStringConvertibleP", "zero"]
@@ -79,11 +78,11 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "CGPoint"]
-- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Constants"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Int"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Limited"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "MovimentDirection"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "PercentagemAxis"]
+- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Screen"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "deinit"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "getNewPosition"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "getNextPosition"]
@@ -98,10 +97,10 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyDirectionMove"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGPoint"]
-- !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "Constants"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "Int"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "Limited"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "PercentagemAxis"]
+- !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "Screen"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", ""]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNewPosition"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNextPosition"]
@@ -115,7 +114,7 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "positive"]
 - !private ["Sj", "init"]
 - !private ["s10SIMDScalarP", "init"]
-- !private ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "center"]
+- !private ["26AcessibilityFaceMovimentBR6ScreenO", "center"]
 - !private ["SZ", "init"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
@@ -139,7 +138,6 @@ depends-nominal:
 - "So7CGPointV"
 - !private "s7CVarArgP"
 - !private "SL"
-- !private "26AcessibilityFaceMovimentBR9ConstantsO"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
@@ -159,7 +157,7 @@ depends-nominal:
 - "26AcessibilityFaceMovimentBR0C9DirectionO"
 - !private "Sj"
 - !private "s10SIMDScalarP"
-- !private "26AcessibilityFaceMovimentBR9ConstantsO6ScreenO"
+- !private "26AcessibilityFaceMovimentBR6ScreenO"
 - !private "SZ"
 - !private "s13SignedNumericP"
 - !private "Sx"

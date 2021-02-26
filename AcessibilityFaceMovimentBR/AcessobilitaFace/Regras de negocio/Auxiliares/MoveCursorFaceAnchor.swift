@@ -82,9 +82,9 @@ extension MoveCursorFaceAnchor: MoveCursorProtocol {
       percentagemY = getPercentage(withFacePosition: -point.y, andLimitedAxis: limitAxis.axisY)
     }
 
-    newPositionCursor.x =  getNewPosition(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Constants.Screen.center.x)
+    newPositionCursor.x =  getNewPosition(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Screen.center.x)
 
-    newPositionCursor.y =  getNewPosition(withPercentage: percentagemY, MovimentDirection: directionY, andMaxValue: Constants.Screen.center.y) 
+    newPositionCursor.y =  getNewPosition(withPercentage: percentagemY, MovimentDirection: directionY, andMaxValue: Screen.center.y) 
 
     lastPercentagem = (percentagemX, percentagemY)
     lastPosition = newPositionCursor
