@@ -7,10 +7,13 @@ provides-member:
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", ""]
 provides-dynamic-lookup:
 - "calledSelector"
+- "calledSpecialTarge"
+- "getIndexPath"
 - "getTabBarViews"
 - "getViewForAction"
 - "inserTabBarViews"
 - "insertAccessibilityIdentifier"
+- "pointView"
 - "position"
 - "set"
 - "setTypeStartAction"
@@ -34,47 +37,60 @@ depends-top-level:
 - !private "Constants"
 - !private "DispatchQueue"
 - "FloatLiteralType"
+- "IndexPath"
 - !private "IntegerLiteralType"
 - !private "NSClassFromString"
 - "NSObject"
 - "Position"
 - "Selector"
+- "String"
 - !private "StringLiteralType"
 - "TypeStartAction"
 - !private "UIButton"
 - !private "UIImageView"
 - "UITabBar"
-- !private "UIView"
+- !private "UITableView"
+- !private "UITableViewCell"
+- "UIView"
 - "UIViewController"
 - "ViewAction"
+- !private "~="
 depends-member:
 - !private ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "identifier"]
-- !private ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uibutton"]
-- !private ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiimageView"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiButton"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiImageView"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiTableView"]
 - !private ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "unknown"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "Bool"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "CGPoint"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "Constants"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "DispatchQueue"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "IndexPath"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "NSClassFromString"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "Position"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "Selector"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "String"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "TypeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIButton"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIImageView"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "UITabBar"]
-- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIView"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "UITableView"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "UITableViewCell"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIView"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIViewController"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "ValuesConstants"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "ViewAction"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "calledSelector"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "calledSpecialTarge"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "deinit"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "getIndexPath"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "getTabBarViews"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "getViewForAction"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "init"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "inserTabBarViews"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "insertAccessibilityIdentifier"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "pointView"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "position"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "set"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "setTypeStartAction"]
@@ -92,10 +108,13 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ViewAction"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", ""]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "calledSelector"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "calledSpecialTarge"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getIndexPath"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getTabBarViews"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getViewForAction"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "inserTabBarViews"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "insertAccessibilityIdentifier"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "pointView"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "position"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "set"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "setTypeStartAction"]
@@ -105,16 +124,21 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verifyAction"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "viewsAction"]
 - !private ["Sa", "append"]
+- !private ["Sa", "first"]
 - !private ["Sa", "init"]
 - !private ["Sa", "remove"]
 - !private ["Sa", "subscript"]
 - !private ["SK", "append"]
+- !private ["SK", "first"]
 - !private ["SK", "init"]
 - !private ["SK", "remove"]
 - !private ["SK", "subscript"]
+- !private ["So15CALayerDelegateP", "accessibilityElements"]
 - !private ["So15CALayerDelegateP", "accessibilityIdentifier"]
+- !private ["So15CALayerDelegateP", "getCell"]
 - !private ["So15CALayerDelegateP", "isKind"]
 - !private ["So15CALayerDelegateP", "subviews"]
+- ["So7CGPointV", "zero"]
 - !private ["s7CVarArgP", "Constants"]
 - !private ["s7CVarArgP", "DispatchQueue"]
 - !private ["s7CVarArgP", "NSClassFromString"]
@@ -123,10 +147,15 @@ depends-member:
 - !private ["s7CVarArgP", "ValuesConstants"]
 - !private ["s7CVarArgP", "ViewAction"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "accessibilityElements"]
 - !private ["s7CVarArgP", "accessibilityIdentifier"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "calledSelector"]
+- !private ["s7CVarArgP", "calledSpecialTarge"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "getCell"]
+- !private ["s7CVarArgP", "getIndexPath"]
 - !private ["s7CVarArgP", "getTabBarViews"]
 - ["s7CVarArgP", "getViewForAction"]
 - !private ["s7CVarArgP", "init"]
@@ -135,6 +164,7 @@ depends-member:
 - !private ["s7CVarArgP", "isKind"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "perform"]
+- !private ["s7CVarArgP", "pointView"]
 - !private ["s7CVarArgP", "position"]
 - !private ["s7CVarArgP", "remove"]
 - ["s7CVarArgP", "set"]
@@ -147,11 +177,13 @@ depends-member:
 - ["s7CVarArgP", "verifyAction"]
 - !private ["s7CVarArgP", "viewsAction"]
 - !private ["Sl", "append"]
+- !private ["Sl", "first"]
 - !private ["Sl", "init"]
 - !private ["Sl", "remove"]
 - !private ["Sl", "subscript"]
-- !private ["26AcessibilityFaceMovimentBR9ConstantsO", "AccessibilityUIType"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO", "AccessibilityUIType"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
 - !private ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "remove"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
@@ -163,10 +195,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "ValuesConstants"]
 - !private ["s28CustomDebugStringConvertibleP", "ViewAction"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "accessibilityElements"]
 - !private ["s28CustomDebugStringConvertibleP", "accessibilityIdentifier"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "calledSelector"]
+- !private ["s28CustomDebugStringConvertibleP", "calledSpecialTarge"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "getCell"]
+- !private ["s28CustomDebugStringConvertibleP", "getIndexPath"]
 - !private ["s28CustomDebugStringConvertibleP", "getTabBarViews"]
 - ["s28CustomDebugStringConvertibleP", "getViewForAction"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -175,6 +212,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "isKind"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "perform"]
+- !private ["s28CustomDebugStringConvertibleP", "pointView"]
 - !private ["s28CustomDebugStringConvertibleP", "position"]
 - !private ["s28CustomDebugStringConvertibleP", "remove"]
 - ["s28CustomDebugStringConvertibleP", "set"]
@@ -186,10 +224,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "verify"]
 - ["s28CustomDebugStringConvertibleP", "verifyAction"]
 - !private ["s28CustomDebugStringConvertibleP", "viewsAction"]
+- ["s28CustomDebugStringConvertibleP", "zero"]
 - !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "remove"]
 - !private ["s17CustomReflectableP", "subscript"]
+- ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "Constants"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - !private ["s23CustomStringConvertibleP", "NSClassFromString"]
@@ -198,12 +239,17 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "ValuesConstants"]
 - !private ["s23CustomStringConvertibleP", "ViewAction"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "accessibilityElements"]
 - !private ["s23CustomStringConvertibleP", "accessibilityIdentifier"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "async"]
 - !private ["s23CustomStringConvertibleP", "calledSelector"]
+- !private ["s23CustomStringConvertibleP", "calledSpecialTarge"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "getCell"]
+- !private ["s23CustomStringConvertibleP", "getIndexPath"]
 - !private ["s23CustomStringConvertibleP", "getTabBarViews"]
 - ["s23CustomStringConvertibleP", "getViewForAction"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -212,6 +258,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "isKind"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "perform"]
+- !private ["s23CustomStringConvertibleP", "pointView"]
 - !private ["s23CustomStringConvertibleP", "position"]
 - !private ["s23CustomStringConvertibleP", "remove"]
 - ["s23CustomStringConvertibleP", "set"]
@@ -224,13 +271,16 @@ depends-member:
 - ["s23CustomStringConvertibleP", "verifyAction"]
 - !private ["s23CustomStringConvertibleP", "viewsAction"]
 - !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "first"]
 - !private ["10Foundation12DataProtocolP", "init"]
 - !private ["10Foundation12DataProtocolP", "remove"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "append"]
+- !private ["Se", "first"]
 - !private ["Se", "init"]
 - !private ["Se", "remove"]
 - !private ["Se", "subscript"]
+- ["Se", "zero"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["So18OS_dispatch_objectC", "async"]
@@ -238,9 +288,11 @@ depends-member:
 - !private ["So17OS_dispatch_queueC", "async"]
 - !private ["So17OS_dispatch_queueC", "main"]
 - !private ["SE", "append"]
+- !private ["SE", "first"]
 - !private ["SE", "init"]
 - !private ["SE", "remove"]
 - !private ["SE", "subscript"]
+- ["SE", "zero"]
 - !private ["SQ", "Constants"]
 - !private ["SQ", "DispatchQueue"]
 - !private ["SQ", "NSClassFromString"]
@@ -249,12 +301,17 @@ depends-member:
 - !private ["SQ", "ValuesConstants"]
 - !private ["SQ", "ViewAction"]
 - ["SQ", ""]
+- !private ["SQ", "accessibilityElements"]
 - !private ["SQ", "accessibilityIdentifier"]
 - !private ["SQ", "append"]
 - !private ["SQ", "async"]
 - !private ["SQ", "calledSelector"]
+- !private ["SQ", "calledSpecialTarge"]
 - ["SQ", "eyeLeft"]
 - ["SQ", "eyeRight"]
+- !private ["SQ", "first"]
+- !private ["SQ", "getCell"]
+- !private ["SQ", "getIndexPath"]
 - !private ["SQ", "getTabBarViews"]
 - ["SQ", "getViewForAction"]
 - !private ["SQ", "identifier"]
@@ -264,6 +321,7 @@ depends-member:
 - !private ["SQ", "isKind"]
 - !private ["SQ", "main"]
 - !private ["SQ", "perform"]
+- !private ["SQ", "pointView"]
 - !private ["SQ", "position"]
 - !private ["SQ", "remove"]
 - ["SQ", "set"]
@@ -273,13 +331,16 @@ depends-member:
 - !private ["SQ", "target"]
 - ["SQ", "tongue"]
 - !private ["SQ", "typeStartAction"]
-- !private ["SQ", "uibutton"]
-- !private ["SQ", "uiimageView"]
+- ["SQ", "uiButton"]
+- ["SQ", "uiImageView"]
+- ["SQ", "uiTableView"]
 - !private ["SQ", "unknown"]
 - !private ["SQ", "verify"]
 - ["SQ", "verifyAction"]
 - !private ["SQ", "viewsAction"]
+- ["SQ", "zero"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "remove"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -291,12 +352,17 @@ depends-member:
 - !private ["SH", "ValuesConstants"]
 - !private ["SH", "ViewAction"]
 - ["SH", ""]
+- !private ["SH", "accessibilityElements"]
 - !private ["SH", "accessibilityIdentifier"]
 - !private ["SH", "append"]
 - !private ["SH", "async"]
 - !private ["SH", "calledSelector"]
+- !private ["SH", "calledSpecialTarge"]
 - ["SH", "eyeLeft"]
 - ["SH", "eyeRight"]
+- !private ["SH", "first"]
+- !private ["SH", "getCell"]
+- !private ["SH", "getIndexPath"]
 - !private ["SH", "getTabBarViews"]
 - ["SH", "getViewForAction"]
 - !private ["SH", "identifier"]
@@ -306,6 +372,7 @@ depends-member:
 - !private ["SH", "isKind"]
 - !private ["SH", "main"]
 - !private ["SH", "perform"]
+- !private ["SH", "pointView"]
 - !private ["SH", "position"]
 - !private ["SH", "remove"]
 - ["SH", "set"]
@@ -315,21 +382,26 @@ depends-member:
 - !private ["SH", "target"]
 - ["SH", "tongue"]
 - !private ["SH", "typeStartAction"]
-- !private ["SH", "uibutton"]
-- !private ["SH", "uiimageView"]
+- ["SH", "uiButton"]
+- ["SH", "uiImageView"]
+- ["SH", "uiTableView"]
 - !private ["SH", "unknown"]
 - !private ["SH", "verify"]
 - ["SH", "verifyAction"]
 - !private ["SH", "viewsAction"]
 - !private ["SM", "append"]
+- !private ["SM", "first"]
 - !private ["SM", "init"]
 - !private ["SM", "remove"]
 - !private ["SM", "subscript"]
 - !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
 - !private ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "remove"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "accessibilityElements"]
 - !private ["So8NSCodingP", "accessibilityIdentifier"]
+- !private ["So8NSCodingP", "getCell"]
 - !private ["So8NSCodingP", "isKind"]
 - !private ["So8NSCodingP", "perform"]
 - !private ["So8NSCodingP", "subviews"]
@@ -339,21 +411,29 @@ depends-member:
 - ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "Constants"]
 - !private ["So8NSObjectC", "DispatchQueue"]
+- ["So8NSObjectC", "IndexPath"]
 - !private ["So8NSObjectC", "NSClassFromString"]
 - ["So8NSObjectC", "Position"]
 - ["So8NSObjectC", "Selector"]
+- ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "TypeStartAction"]
 - !private ["So8NSObjectC", "UIButton"]
 - !private ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UITabBar"]
-- !private ["So8NSObjectC", "UIView"]
+- !private ["So8NSObjectC", "UITableView"]
+- !private ["So8NSObjectC", "UITableViewCell"]
+- ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "UIViewController"]
 - !private ["So8NSObjectC", "ValuesConstants"]
 - ["So8NSObjectC", "ViewAction"]
 - ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "accessibilityElements"]
 - !private ["So8NSObjectC", "accessibilityIdentifier"]
 - !private ["So8NSObjectC", "async"]
 - ["So8NSObjectC", "calledSelector"]
+- ["So8NSObjectC", "calledSpecialTarge"]
+- !private ["So8NSObjectC", "getCell"]
+- ["So8NSObjectC", "getIndexPath"]
 - ["So8NSObjectC", "getTabBarViews"]
 - ["So8NSObjectC", "getViewForAction"]
 - ["So8NSObjectC", "init"]
@@ -362,6 +442,7 @@ depends-member:
 - !private ["So8NSObjectC", "isKind"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "perform"]
+- ["So8NSObjectC", "pointView"]
 - ["So8NSObjectC", "position"]
 - ["So8NSObjectC", "set"]
 - ["So8NSObjectC", "setTypeStartAction"]
@@ -379,9 +460,13 @@ depends-member:
 - !private ["So8NSObjectP", "ValuesConstants"]
 - !private ["So8NSObjectP", "ViewAction"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "accessibilityElements"]
 - !private ["So8NSObjectP", "accessibilityIdentifier"]
 - !private ["So8NSObjectP", "async"]
 - !private ["So8NSObjectP", "calledSelector"]
+- !private ["So8NSObjectP", "calledSpecialTarge"]
+- !private ["So8NSObjectP", "getCell"]
+- !private ["So8NSObjectP", "getIndexPath"]
 - !private ["So8NSObjectP", "getTabBarViews"]
 - ["So8NSObjectP", "getViewForAction"]
 - !private ["So8NSObjectP", "init"]
@@ -390,6 +475,7 @@ depends-member:
 - !private ["So8NSObjectP", "isKind"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "perform"]
+- !private ["So8NSObjectP", "pointView"]
 - !private ["So8NSObjectP", "position"]
 - ["So8NSObjectP", "set"]
 - ["So8NSObjectP", "setTypeStartAction"]
@@ -404,20 +490,24 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR8PositionC", "getViewSelectedBased"]
 - !private ["26AcessibilityFaceMovimentBR8PositionC", "init"]
 - !private ["Sk", "append"]
+- !private ["Sk", "first"]
 - !private ["Sk", "init"]
 - !private ["Sk", "remove"]
 - !private ["Sk", "subscript"]
 - !private ["Sm", "append"]
+- !private ["Sm", "first"]
 - !private ["Sm", "init"]
 - !private ["Sm", "remove"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "identifier"]
-- !private ["SY", "uibutton"]
-- !private ["SY", "uiimageView"]
+- ["SY", "uiButton"]
+- ["SY", "uiImageView"]
+- ["SY", "uiTableView"]
 - !private ["SY", "unknown"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
 - !private ["ST", "append"]
+- !private ["ST", "first"]
 - !private ["ST", "init"]
 - !private ["ST", "remove"]
 - !private ["ST", "subscript"]
@@ -428,60 +518,97 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR15TypeStartActionO", "eyeLeft"]
 - ["26AcessibilityFaceMovimentBR15TypeStartActionO", "eyeRight"]
 - ["26AcessibilityFaceMovimentBR15TypeStartActionO", "tongue"]
+- !private ["So29UIAccessibilityIdentificationP", "accessibilityElements"]
 - !private ["So29UIAccessibilityIdentificationP", "accessibilityIdentifier"]
+- !private ["So29UIAccessibilityIdentificationP", "getCell"]
 - !private ["So29UIAccessibilityIdentificationP", "isKind"]
 - !private ["So29UIAccessibilityIdentificationP", "subviews"]
+- !private ["So12UIAppearanceP", "accessibilityElements"]
 - !private ["So12UIAppearanceP", "accessibilityIdentifier"]
+- !private ["So12UIAppearanceP", "getCell"]
 - !private ["So12UIAppearanceP", "isKind"]
 - !private ["So12UIAppearanceP", "subviews"]
+- !private ["So21UIAppearanceContainerP", "accessibilityElements"]
 - !private ["So21UIAppearanceContainerP", "accessibilityIdentifier"]
+- !private ["So21UIAppearanceContainerP", "getCell"]
 - !private ["So21UIAppearanceContainerP", "isKind"]
 - !private ["So21UIAppearanceContainerP", "perform"]
 - !private ["So21UIAppearanceContainerP", "subviews"]
 - !private ["So18UIContentContainerP", "perform"]
+- !private ["So17UICoordinateSpaceP", "accessibilityElements"]
 - !private ["So17UICoordinateSpaceP", "accessibilityIdentifier"]
+- !private ["So17UICoordinateSpaceP", "getCell"]
 - !private ["So17UICoordinateSpaceP", "isKind"]
 - !private ["So17UICoordinateSpaceP", "subviews"]
+- !private ["So23UIDataSourceTranslatingP", "getCell"]
+- !private ["So13UIDynamicItemP", "accessibilityElements"]
 - !private ["So13UIDynamicItemP", "accessibilityIdentifier"]
+- !private ["So13UIDynamicItemP", "getCell"]
 - !private ["So13UIDynamicItemP", "isKind"]
 - !private ["So13UIDynamicItemP", "subviews"]
+- !private ["So18UIFocusEnvironmentP", "accessibilityElements"]
 - !private ["So18UIFocusEnvironmentP", "accessibilityIdentifier"]
+- !private ["So18UIFocusEnvironmentP", "getCell"]
 - !private ["So18UIFocusEnvironmentP", "isKind"]
 - !private ["So18UIFocusEnvironmentP", "perform"]
 - !private ["So18UIFocusEnvironmentP", "subviews"]
+- !private ["So11UIFocusItemP", "accessibilityElements"]
 - !private ["So11UIFocusItemP", "accessibilityIdentifier"]
+- !private ["So11UIFocusItemP", "getCell"]
 - !private ["So11UIFocusItemP", "isKind"]
 - !private ["So11UIFocusItemP", "subviews"]
+- !private ["So20UIFocusItemContainerP", "accessibilityElements"]
 - !private ["So20UIFocusItemContainerP", "accessibilityIdentifier"]
+- !private ["So20UIFocusItemContainerP", "getCell"]
 - !private ["So20UIFocusItemContainerP", "isKind"]
 - !private ["So20UIFocusItemContainerP", "subviews"]
+- !private ["So30UIFocusItemScrollableContainerP", "getCell"]
+- !private ["So27UIGestureRecognizerDelegateP", "accessibilityElements"]
+- !private ["So24UILargeContentViewerItemP", "accessibilityElements"]
 - !private ["So24UILargeContentViewerItemP", "accessibilityIdentifier"]
+- !private ["So24UILargeContentViewerItemP", "getCell"]
 - !private ["So24UILargeContentViewerItemP", "isKind"]
 - !private ["So24UILargeContentViewerItemP", "subviews"]
+- !private ["So30UIPasteConfigurationSupportingP", "accessibilityElements"]
 - !private ["So30UIPasteConfigurationSupportingP", "accessibilityIdentifier"]
+- !private ["So30UIPasteConfigurationSupportingP", "getCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "isKind"]
 - !private ["So30UIPasteConfigurationSupportingP", "perform"]
 - !private ["So30UIPasteConfigurationSupportingP", "subviews"]
+- !private ["So11UIResponderC", "accessibilityElements"]
 - !private ["So11UIResponderC", "accessibilityIdentifier"]
+- !private ["So11UIResponderC", "getCell"]
 - !private ["So11UIResponderC", "isKind"]
 - !private ["So11UIResponderC", "perform"]
 - !private ["So11UIResponderC", "subviews"]
+- !private ["So30UIResponderStandardEditActionsP", "accessibilityElements"]
 - !private ["So30UIResponderStandardEditActionsP", "accessibilityIdentifier"]
+- !private ["So30UIResponderStandardEditActionsP", "getCell"]
 - !private ["So30UIResponderStandardEditActionsP", "isKind"]
 - !private ["So30UIResponderStandardEditActionsP", "perform"]
 - !private ["So30UIResponderStandardEditActionsP", "subviews"]
+- !private ["So12UIScrollViewC", "getCell"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "getCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "subviews"]
 - !private ["So16UIStateRestoringP", "perform"]
 - !private ["So8UITabBarC", "subviews"]
+- !private ["So11UITableViewC", "getCell"]
+- !private ["So15UITableViewCellC", "accessibilityElements"]
+- !private ["So18UITraitEnvironmentP", "accessibilityElements"]
 - !private ["So18UITraitEnvironmentP", "accessibilityIdentifier"]
+- !private ["So18UITraitEnvironmentP", "getCell"]
 - !private ["So18UITraitEnvironmentP", "isKind"]
 - !private ["So18UITraitEnvironmentP", "perform"]
 - !private ["So18UITraitEnvironmentP", "subviews"]
+- !private ["So23UIUserActivityRestoringP", "accessibilityElements"]
 - !private ["So23UIUserActivityRestoringP", "accessibilityIdentifier"]
+- !private ["So23UIUserActivityRestoringP", "getCell"]
 - !private ["So23UIUserActivityRestoringP", "isKind"]
 - !private ["So23UIUserActivityRestoringP", "perform"]
 - !private ["So23UIUserActivityRestoringP", "subviews"]
+- !private ["So6UIViewC", "accessibilityElements"]
 - !private ["So6UIViewC", "accessibilityIdentifier"]
+- !private ["So6UIViewC", "getCell"]
 - !private ["So6UIViewC", "isKind"]
 - !private ["So6UIViewC", "subviews"]
 - !private ["So16UIViewControllerC", "perform"]
@@ -489,18 +616,23 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR10ViewActionV", "selector"]
 - !private ["26AcessibilityFaceMovimentBR10ViewActionV", "view"]
 - !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "remove"]
 - !private ["s14_ArrayProtocolP", "subscript"]
+- ["s30_CustomPlaygroundQuickLookableP", "zero"]
 - !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "remove"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "first"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "remove"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "remove"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
@@ -512,9 +644,13 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ValuesConstants"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ViewAction"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "accessibilityElements"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "accessibilityIdentifier"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "calledSelector"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "calledSpecialTarge"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getCell"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getIndexPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "getTabBarViews"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "getViewForAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -523,6 +659,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isKind"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pointView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "position"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "setTypeStartAction"]
@@ -540,9 +677,13 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ValuesConstants"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ViewAction"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "accessibilityElements"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "accessibilityIdentifier"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calledSelector"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calledSpecialTarge"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getCell"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getIndexPath"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getTabBarViews"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getViewForAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
@@ -551,6 +692,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isKind"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "perform"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pointView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "position"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setTypeStartAction"]
@@ -561,32 +703,37 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "verifyAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewsAction"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "remove"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "accessibilityElements"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "accessibilityIdentifier"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "getCell"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "isKind"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "subviews"]
 depends-nominal:
-- !private "26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO"
+- "26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO"
 - "26AcessibilityFaceMovimentBR12ActionInViewC"
 - "26AcessibilityFaceMovimentBR14ActionProtocolP"
 - !private "Sa"
 - !private "SK"
 - !private "So15CALayerDelegateP"
+- "So7CGPointV"
 - "s7CVarArgP"
 - !private "Sl"
-- !private "26AcessibilityFaceMovimentBR9ConstantsO"
+- "26AcessibilityFaceMovimentBR9ConstantsO"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "10Foundation12DataProtocolP"
-- !private "Se"
+- "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
-- !private "SE"
+- "SE"
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - "SH"
@@ -600,7 +747,7 @@ depends-nominal:
 - !private "26AcessibilityFaceMovimentBR8PositionC"
 - !private "Sk"
 - !private "Sm"
-- !private "SY"
+- "SY"
 - !private "7Combine9SchedulerP"
 - !private "ST"
 - !private "s27StringInterpolationProtocolP"
@@ -611,29 +758,36 @@ depends-nominal:
 - !private "So21UIAppearanceContainerP"
 - !private "So18UIContentContainerP"
 - !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
 - !private "So13UIDynamicItemP"
 - !private "So18UIFocusEnvironmentP"
 - !private "So11UIFocusItemP"
 - !private "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
+- !private "So27UIGestureRecognizerDelegateP"
 - !private "So24UILargeContentViewerItemP"
 - !private "So30UIPasteConfigurationSupportingP"
 - !private "So11UIResponderC"
 - !private "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - !private "So16UIStateRestoringP"
 - !private "So8UITabBarC"
+- !private "So11UITableViewC"
+- !private "So15UITableViewCellC"
 - !private "So18UITraitEnvironmentP"
 - !private "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "26AcessibilityFaceMovimentBR10ViewActionV"
 - !private "s14_ArrayProtocolP"
+- "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 - !private "s38__DefaultCustomPlaygroundQuickLookableP"
 depends-dynamic-lookup:
 depends-external:
@@ -683,4 +837,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b9554c592dbcd273f391af918d2b34b7"
+interface-hash: "9c0c40699d88391ed10fa21df189f8fd"

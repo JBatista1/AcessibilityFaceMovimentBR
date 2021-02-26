@@ -14,6 +14,7 @@ class ActionInView: NSObject {
   private var typeStartAction: TypeStartAction
   private var target: UIViewController
   private var position: Position?
+  private var pointView: CGPoint = .zero
 
   private enum ValuesConstants {
     static let closeEye: CGFloat = 0.6
@@ -30,12 +31,41 @@ class ActionInView: NSObject {
 
   private func calledSelector(inViewAction viewAction: ViewAction) {
     if let identifier = viewAction.view.accessibilityIdentifier {
-      self.target.perform(viewAction.selector, with: identifier)
+      calledSpecialTarge(withIndentifier: identifier, inViewAction: viewAction)
     } else {
       self.target.perform(viewAction.selector)
     }
   }
 
+  private func calledSpecialTarge(withIndentifier identifier: String, inViewAction viewAction: ViewAction) {
+
+    switch identifier {
+    case Constants.AccessibilityUIType.uiButton.identifier,
+         Constants.AccessibilityUIType.uiImageView.identifier:
+
+      self.target.perform(viewAction.selector, with: identifier)
+
+    case Constants.AccessibilityUIType.uiTableView.identifier:
+      if let indexPath = getIndexPath(InView: viewAction.view) {
+        self.target.perform(viewAction.selector, with: indexPath)
+      } else {
+        self.target.perform(viewAction.selector)
+      }
+
+    default:
+      self.target.perform(viewAction.selector)
+    }
+  }
+
+  func getIndexPath(InView view: UIView) -> IndexPath? {
+    guard let tableView = view as? UITableView else {return nil}
+    let views = tableView.getCell()
+    let index = position?.getViewSelectedBased(thePoint: pointView, InTableViewCells: views)
+    if let safeIndex = index, let cell = views[safeIndex] as? UITableViewCell, let indexPath = cell.accessibilityElements?.first as? IndexPath {
+      return indexPath
+    }
+    return nil
+  }
   private func inserTabBarViews(inViewsAction viewsAction: [ViewAction]) -> [ViewAction] {
     var newViewsActions = viewsAction
     var index = 0
@@ -53,9 +83,11 @@ class ActionInView: NSObject {
     for viewAction in viewsAction {
       switch viewAction.view {
       case is UIButton:
-        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uibutton.identifier
+        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uiButton.identifier
       case is UIImageView:
-        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uiimageView.identifier
+        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uiImageView.identifier
+      case is UITableView:
+        viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.uiTableView.identifier
       default:
         viewAction.view.accessibilityIdentifier = Constants.AccessibilityUIType.unknown.identifier
       }
@@ -97,6 +129,8 @@ extension ActionInView: ActionProtocol {
   }
 
   func getViewForAction(withPoint point: CGPoint) {
+    pointView = point
+
     if let index = position?.getViewSelectedBased(thePoint: point) {
       let viewAction = viewsAction[index]
       DispatchQueue.main.async {

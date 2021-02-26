@@ -39,8 +39,9 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "identifier"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "init"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "rawValue"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uibutton"]
-- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiimageView"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiButton"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiImageView"]
+- ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "uiTableView"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO19AccessibilityUITypeO", "unknown"]
 - ["s18AdditiveArithmeticP", "init"]
 - ["SB", "init"]
@@ -107,8 +108,9 @@ depends-member:
 - ["SQ", "init"]
 - ["SQ", "main"]
 - ["SQ", "rawValue"]
-- ["SQ", "uibutton"]
-- ["SQ", "uiimageView"]
+- ["SQ", "uiButton"]
+- ["SQ", "uiImageView"]
+- ["SQ", "uiTableView"]
 - ["SQ", "unknown"]
 - ["SQ", "width"]
 - ["SQ", "x"]
@@ -128,8 +130,9 @@ depends-member:
 - ["SH", "init"]
 - ["SH", "main"]
 - ["SH", "rawValue"]
-- ["SH", "uibutton"]
-- ["SH", "uiimageView"]
+- ["SH", "uiButton"]
+- ["SH", "uiImageView"]
+- ["SH", "uiTableView"]
 - ["SH", "unknown"]
 - ["So8NSObjectC", "bounds"]
 - ["So8NSObjectC", "main"]
@@ -146,8 +149,9 @@ depends-member:
 - ["SY", "hashValue"]
 - ["SY", "init"]
 - ["SY", "rawValue"]
-- ["SY", "uibutton"]
-- ["SY", "uiimageView"]
+- ["SY", "uiButton"]
+- ["SY", "uiImageView"]
+- ["SY", "uiTableView"]
 - ["SY", "unknown"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "CGPoint"]
 - ["26AcessibilityFaceMovimentBR9ConstantsO6ScreenO", "Screen"]
@@ -261,4 +265,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "aa7c0279f43df6cfd131d23a0de1be97"
+interface-hash: "e898e4d0af341cd946abc081bdf20ae4"

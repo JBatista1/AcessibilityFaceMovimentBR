@@ -12,10 +12,11 @@ class Position {
 
   private let views: [UIView]
   private var absolutePosition: [CGRect] = []
+  private var absolutePositionTable: [CGRect] = []
 
   init(views: [UIView]) {
     self.views = views
-    getAbsolutePositionViews()
+    absolutePosition = getAbsolutePosition(inViews: views)
   }
 
   func getViewSelectedBased(thePoint point: CGPoint) -> Int? {
@@ -27,18 +28,32 @@ class Position {
     return nil
   }
 
+  func getViewSelectedBased(thePoint point: CGPoint, InTableViewCells tableViewCells: [UIView]) -> Int? {
+    absolutePositionTable = getAbsolutePosition(inViews: tableViewCells)
+    for index in 0..<tableViewCells.count {
+      print(absolutePositionTable[index])
+      if verify(withPoint: point, insideInFrame: absolutePositionTable[index]) {
+        return index
+      }
+    }
+    return nil
+  }
+
   func verify(withPoint point: CGPoint, insideInFrame frame: CGRect) -> Bool {
-    if point.x > frame.minX && point.x < frame.maxX {
-      if point.y > frame.minY && point.y < frame.maxY {
+    if point.x >= frame.minX && point.x < frame.maxX {
+      if point.y >= frame.minY && point.y < frame.maxY {
         return true
       }
     }
     return false
   }
 
-  func getAbsolutePositionViews() {
+  func getAbsolutePosition(inViews views: [UIView]) -> [CGRect] {
+    var absolutePosition = [CGRect]()
     for view in views {
       absolutePosition.append(view.absoluteValueToFrame())
     }
+    return absolutePosition
   }
+  
 }

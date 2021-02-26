@@ -10,7 +10,40 @@ import UIKit
 
 class SuccessViewController: AccessibilityFaceAnchor {
 
-    override func viewDidLoad() {
-      super.viewDidLoad()
-    }
+  @IBOutlet weak var tableView: UITableView!
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    action.setTypeStartAction(withType: .tongue)
+    action.set(viewsAction: createViewAction())
+    print(tableView.subviews)
+  }
+
+  func createViewAction() -> [ViewAction] {
+    let viewsAction: [ViewAction] = [ViewAction(view: tableView, selector: #selector(handleTap(_:)))]
+    return getViewsActionWithTabBar(viewsAction: viewsAction)
+  }
+
+  @objc func handleTap(_ sender: Any? = nil) {
+    guard let index = sender as? IndexPath else { return }
+    print(index)
+  }
+}
+
+extension SuccessViewController: UITableViewDataSource, UITableViewDelegate {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 30
+  }
+
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = UITableViewCell()
+    cell.textLabel?.text = "AQUI MANO DO Cell\(indexPath.row)"
+    cell.accessibilityIdentifier = "row:\(indexPath.row) section: \(indexPath.section)"
+    return cell
+  }
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 3
+  }
+  func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    return "Tatu bola piranha"
+  }
 }

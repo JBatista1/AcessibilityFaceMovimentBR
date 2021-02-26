@@ -16,6 +16,7 @@ enum Constants {
     static let width = UIScreen.main.bounds.width
     static let center = CGPoint(x: Screen.width / 2, y: Screen.heigh / 2)
   }
+  
   enum Cursor {
     static let heigh: CGFloat = 30
     static let width: CGFloat = 30
@@ -24,15 +25,18 @@ enum Constants {
   }
 
   enum AccessibilityUIType: String {
-    case uibutton
-    case uiimageView
+    case uiButton
+    case uiImageView
+    case uiTableView
     case unknown
     var identifier: String {
       switch self {
-      case .uibutton:
+      case .uiButton:
         return "UIButton"
-      case .uiimageView:
+      case .uiImageView:
         return "UIImageView"
+      case .uiTableView:
+        return "UITableView"
       case .unknown:
         return "UNKNOWN"
       }
