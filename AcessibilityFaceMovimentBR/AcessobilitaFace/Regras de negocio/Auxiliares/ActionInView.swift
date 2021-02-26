@@ -5,6 +5,7 @@
 //  Created by Joao Batista on 07/02/21.
 //  Copyright © 2021 Joao Batista. All rights reserved.
 //
+
 import UIKit
 
 class ActionInView: NSObject {
@@ -14,12 +15,11 @@ class ActionInView: NSObject {
   private var target: UIViewController
   private var position: Position?
   private var pointView: CGPoint = .zero
-  private var manageCase: ManagesSpecialCases
+  private var manageCase = ManagesSpecialCases()
 
   required init(typeStartAction: TypeStartAction = .tongue, target: UIViewController) {
     self.typeStartAction = typeStartAction
     self.target = target
-    manageCase = ManagesSpecialCases()
   }
 
   // MARK: - Private Method

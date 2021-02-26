@@ -77,7 +77,7 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "viewsAction"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "AccessibilityUIType"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "DispatchQueue"]
-- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ManagesSpecialCases"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ManagesSpecialCases"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "Position"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "UIView"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ValuesConstants"]
@@ -105,7 +105,7 @@ depends-member:
 - ["So7CGPointV", "zero"]
 - !private ["s7CVarArgP", "AccessibilityUIType"]
 - !private ["s7CVarArgP", "DispatchQueue"]
-- !private ["s7CVarArgP", "ManagesSpecialCases"]
+- ["s7CVarArgP", "ManagesSpecialCases"]
 - !private ["s7CVarArgP", "Position"]
 - !private ["s7CVarArgP", "UIView"]
 - !private ["s7CVarArgP", "ValuesConstants"]
@@ -138,7 +138,7 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "AccessibilityUIType"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
-- !private ["s28CustomDebugStringConvertibleP", "ManagesSpecialCases"]
+- ["s28CustomDebugStringConvertibleP", "ManagesSpecialCases"]
 - !private ["s28CustomDebugStringConvertibleP", "Position"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - !private ["s28CustomDebugStringConvertibleP", "ValuesConstants"]
@@ -170,7 +170,7 @@ depends-member:
 - ["s17CustomReflectableP", "zero"]
 - !private ["s23CustomStringConvertibleP", "AccessibilityUIType"]
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
-- !private ["s23CustomStringConvertibleP", "ManagesSpecialCases"]
+- ["s23CustomStringConvertibleP", "ManagesSpecialCases"]
 - !private ["s23CustomStringConvertibleP", "Position"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - !private ["s23CustomStringConvertibleP", "ValuesConstants"]
@@ -212,7 +212,7 @@ depends-member:
 - ["SE", "zero"]
 - !private ["SQ", "AccessibilityUIType"]
 - !private ["SQ", "DispatchQueue"]
-- !private ["SQ", "ManagesSpecialCases"]
+- ["SQ", "ManagesSpecialCases"]
 - !private ["SQ", "Position"]
 - !private ["SQ", "UIView"]
 - !private ["SQ", "ValuesConstants"]
@@ -251,7 +251,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["SH", "AccessibilityUIType"]
 - !private ["SH", "DispatchQueue"]
-- !private ["SH", "ManagesSpecialCases"]
+- ["SH", "ManagesSpecialCases"]
 - !private ["SH", "Position"]
 - !private ["SH", "UIView"]
 - !private ["SH", "ValuesConstants"]
@@ -285,7 +285,7 @@ depends-member:
 - ["SH", "verifyAction"]
 - !private ["SH", "viewsAction"]
 - !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "getIndexPathTheUICollectionView"]
-- !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "init"]
+- ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "init"]
 - !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "inserTabBarViews"]
 - !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "insertAccessibilityIdentifier"]
 - !private ["SM", "append"]
@@ -331,7 +331,7 @@ depends-member:
 - ["So8NSObjectC", "viewsAction"]
 - !private ["So8NSObjectP", "AccessibilityUIType"]
 - !private ["So8NSObjectP", "DispatchQueue"]
-- !private ["So8NSObjectP", "ManagesSpecialCases"]
+- ["So8NSObjectP", "ManagesSpecialCases"]
 - !private ["So8NSObjectP", "Position"]
 - !private ["So8NSObjectP", "UIView"]
 - !private ["So8NSObjectP", "ValuesConstants"]
@@ -422,7 +422,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AccessibilityUIType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "ManagesSpecialCases"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ManagesSpecialCases"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Position"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ValuesConstants"]
@@ -447,7 +447,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewsAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AccessibilityUIType"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ManagesSpecialCases"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ManagesSpecialCases"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Position"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ValuesConstants"]
@@ -497,7 +497,7 @@ depends-nominal:
 - "SQ"
 - !private "s25ExpressibleByArrayLiteralP"
 - "SH"
-- !private "26AcessibilityFaceMovimentBR19ManagesSpecialCasesC"
+- "26AcessibilityFaceMovimentBR19ManagesSpecialCasesC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
@@ -589,4 +589,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "042eb77f6ece95c74411b8f55a8f5052"
+interface-hash: "98e6ba51d0260dc833b4c4dc075dab83"

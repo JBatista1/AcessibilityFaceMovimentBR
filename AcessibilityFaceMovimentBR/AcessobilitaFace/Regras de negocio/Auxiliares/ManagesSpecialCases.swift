@@ -25,9 +25,8 @@ class ManagesSpecialCases {
   }
 
   func getIndexPathTheUICollectionView(InView view: UIView, andPoint pointView: CGPoint) -> IndexPath {
-
-    guard let tableView = view as? UITableView else { return indexPathError }
-    let views = tableView.getCell()
+    guard let collectionView = view as? UICollectionView else { return indexPathError }
+    let views = collectionView.getCell()
     let index = position.getViewSelectedBased(thePoint: pointView, InTableViewCells: views)
     if let safeIndex = index, let indexPath = views[safeIndex].accessibilityElements?.first as? IndexPath {
       return indexPath

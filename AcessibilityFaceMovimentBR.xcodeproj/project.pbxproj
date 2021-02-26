@@ -35,6 +35,7 @@
 		9AB6644625D8A25E002EEA51 /* TimerActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6644525D8A25E002EEA51 /* TimerActionProtocol.swift */; };
 		9AB77FEE25E9B36500BCC152 /* CollectionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */; };
 		9AB77FF225E9B54F00BCC152 /* ManagesSpecialCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */; };
+		9AB77FF625E9BE0600BCC152 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FF525E9BE0600BCC152 /* UICollectionViewExtension.swift */; };
 		9AE8480C25E8703B00666008 /* TableViewSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480B25E8703B00666008 /* TableViewSelectedProtocol.swift */; };
 		9AE8480E25E8768100666008 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480D25E8768100666008 /* UITableViewExtension.swift */; };
 		9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */; };
@@ -90,6 +91,7 @@
 		9AB6644525D8A25E002EEA51 /* TimerActionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerActionProtocol.swift; sourceTree = "<group>"; };
 		9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTestViewController.swift; sourceTree = "<group>"; };
 		9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagesSpecialCases.swift; sourceTree = "<group>"; };
+		9AB77FF525E9BE0600BCC152 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		9AE8480B25E8703B00666008 /* TableViewSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSelectedProtocol.swift; sourceTree = "<group>"; };
 		9AE8480D25E8768100666008 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSelectedProtocol.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				9A1BA60825B10084007F9AF4 /* CGFloatExtension.swift */,
 				9AF2C87425D8942700FB7259 /* UIViewControllerExtension.swift */,
 				9AE8480D25E8768100666008 /* UITableViewExtension.swift */,
+				9AB77FF525E9BE0600BCC152 /* UICollectionViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				9AB6644625D8A25E002EEA51 /* TimerActionProtocol.swift in Sources */,
 				9A58CE5325AA6FD400948A06 /* Constants.swift in Sources */,
 				9A5E811C25D02EE800B58861 /* ActionInView.swift in Sources */,
+				9AB77FF625E9BE0600BCC152 /* UICollectionViewExtension.swift in Sources */,
 				9AB6644025D8993A002EEA51 /* NavigationBackButtonProtocol.swift in Sources */,
 				9A2F485725A3EA880043A2A6 /* AppDelegate.swift in Sources */,
 				9AF2C87B25D8978800FB7259 /* SuccessViewController.swift in Sources */,

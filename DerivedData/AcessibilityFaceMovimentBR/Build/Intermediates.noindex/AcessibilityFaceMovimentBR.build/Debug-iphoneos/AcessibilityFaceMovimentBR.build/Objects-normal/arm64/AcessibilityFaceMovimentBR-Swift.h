@@ -326,6 +326,8 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR21SuccessViewController")
 
 
 
+
+
 @class UILabel;
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR14ViewController")

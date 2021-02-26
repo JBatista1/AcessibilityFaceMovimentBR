@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)"
 options: "354dc2655aaa19f544651914adca645e"
-build_time: [1614381577, 98144000]
+build_time: [1614382978, 157410000]
 inputs:
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Extension/CGFloatExtension.swift": [1612617977, 334562214]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/ViewController.swift": [1613261655, 28531776]
@@ -9,7 +9,7 @@ inputs:
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Auxiliares/TimerControl.swift": [1612619950, 149109229]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/NavigationTesteViewController.swift": [1613263766, 853331968]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Constants/Assets.swift": [1612617977, 332130427]
-  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Auxiliares/ManagesSpecialCases.swift": [1614381576, 803850039]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Auxiliares/ManagesSpecialCases.swift": [1614382977, 940400559]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Extension/UIViewControllerExtension.swift": [1613258076, 677752488]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Enuns/LimitedScreen.swift": [1612617977, 333673581]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Models/ViewAction.swift": [1612995399, 365757623]
@@ -26,7 +26,8 @@ inputs:
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Protocols/TableViewSelectedProtocol.swift": [1614297538, 697773300]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Protocols/TimerActionProtocol.swift": [1612711841, 109258298]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Constants/Constants.swift": [1614380400, 55876247]
-  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Auxiliares/ActionInView.swift": [1614381412, 882091308]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Auxiliares/ActionInView.swift": [1614382697, 425460551]
+  "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Extension/UICollectionViewExtension.swift": [1614382977, 927488250]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Protocols/NavigationBackButtonProtocol.swift": [1613259303, 705201674]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/SupportFiles/AppDelegate.swift": [1609808983, 550446960]
   "/Users/ItSelf/Documents/TCC/TCC Zero a 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/SuccessViewController.swift": [1614381485, 369916735]
