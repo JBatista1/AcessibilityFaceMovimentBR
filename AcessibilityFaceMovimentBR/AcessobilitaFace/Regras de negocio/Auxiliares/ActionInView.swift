@@ -40,7 +40,7 @@ class ActionInView: NSObject {
       self.target.perform(viewAction.selector, with: identifier)
 
     case AccessibilityUIType.uiTableView.identifier:
-      let indexPath = manageCase.getIndexPathTheUICollectionView(InView: viewAction.view, andPoint: pointView)
+      let indexPath = manageCase.getIndexPathTheTable(InView: viewAction.view, andPoint: pointView)
       self.target.perform(viewAction.selector, with: indexPath)
 
     case AccessibilityUIType.uiCollectionView.identifier:

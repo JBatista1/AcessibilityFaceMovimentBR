@@ -284,6 +284,7 @@ depends-member:
 - !private ["SH", "verify"]
 - ["SH", "verifyAction"]
 - !private ["SH", "viewsAction"]
+- !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "getIndexPathTheTable"]
 - !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "getIndexPathTheUICollectionView"]
 - ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "init"]
 - !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "inserTabBarViews"]
