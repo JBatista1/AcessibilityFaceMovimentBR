@@ -36,6 +36,7 @@
 		9AB77FEE25E9B36500BCC152 /* CollectionTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */; };
 		9AB77FF225E9B54F00BCC152 /* ManagesSpecialCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */; };
 		9AB77FF625E9BE0600BCC152 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FF525E9BE0600BCC152 /* UICollectionViewExtension.swift */; };
+		9AB77FF925E9C07F00BCC152 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FF825E9C07F00BCC152 /* CellCollectionViewCell.swift */; };
 		9AE8480C25E8703B00666008 /* TableViewSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480B25E8703B00666008 /* TableViewSelectedProtocol.swift */; };
 		9AE8480E25E8768100666008 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480D25E8768100666008 /* UITableViewExtension.swift */; };
 		9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */; };
@@ -92,6 +93,7 @@
 		9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTestViewController.swift; sourceTree = "<group>"; };
 		9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagesSpecialCases.swift; sourceTree = "<group>"; };
 		9AB77FF525E9BE0600BCC152 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		9AB77FF825E9C07F00BCC152 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AE8480B25E8703B00666008 /* TableViewSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewSelectedProtocol.swift; sourceTree = "<group>"; };
 		9AE8480D25E8768100666008 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSelectedProtocol.swift; sourceTree = "<group>"; };
@@ -313,9 +315,18 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9AB77FF725E9C06500BCC152 /* Cel */ = {
+			isa = PBXGroup;
+			children = (
+				9AB77FF825E9C07F00BCC152 /* CellCollectionViewCell.swift */,
+			);
+			path = Cel;
+			sourceTree = "<group>";
+		};
 		9AF2C87825D8976600FB7259 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9AB77FF725E9C06500BCC152 /* Cel */,
 				9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */,
 				9A2F485A25A3EA880043A2A6 /* ViewController.swift */,
 				9AF2C87A25D8978800FB7259 /* SuccessViewController.swift */,
@@ -561,6 +572,7 @@
 				9A2F485725A3EA880043A2A6 /* AppDelegate.swift in Sources */,
 				9AF2C87B25D8978800FB7259 /* SuccessViewController.swift in Sources */,
 				9A2F485925A3EA880043A2A6 /* SceneDelegate.swift in Sources */,
+				9AB77FF925E9C07F00BCC152 /* CellCollectionViewCell.swift in Sources */,
 				9AE8480E25E8768100666008 /* UITableViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -57,11 +57,15 @@ open class AcessibilityViewController: UIViewController {
   }
 
   private func insertCursor() {
-    guard let windows = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else {
-      view.addSubview(cursor)
+    cursor.image = Asset.cursorDefault.image
+    guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else {
+      guard let window = UIApplication.shared.windows.first else {
+        view.addSubview(cursor)
+        return
+      }
+      window.addSubview(cursor)
       return
     }
-    windows.addSubview(cursor)
-    cursor.image = Asset.cursorDefault.image
+    window.addSubview(cursor)
   }
 }

@@ -56,6 +56,8 @@ class ManagesSpecialCases {
         viewAction.view.accessibilityIdentifier = AccessibilityUIType.uiImageView.identifier
       case is UITableView:
         viewAction.view.accessibilityIdentifier = AccessibilityUIType.uiTableView.identifier
+      case is UICollectionView:
+        viewAction.view.accessibilityIdentifier = AccessibilityUIType.uiCollectionView.identifier
       default:
         viewAction.view.accessibilityIdentifier = AccessibilityUIType.unknown.identifier
       }

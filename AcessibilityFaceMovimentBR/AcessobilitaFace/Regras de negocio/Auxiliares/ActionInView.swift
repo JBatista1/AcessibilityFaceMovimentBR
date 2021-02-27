@@ -55,6 +55,7 @@ class ActionInView: NSObject {
   private func verify(theEyeClose eyeClose: CGFloat, andEyeOpen eyeOpen: CGFloat) -> Bool {
     return eyeClose >= ValuesConstants.closeEye && eyeOpen <= ValuesConstants.openEye
   }
+  
 }
 
 // MARK: - Extension
