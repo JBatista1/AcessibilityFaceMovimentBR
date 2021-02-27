@@ -26,6 +26,7 @@ enum ValuesConstants {
   static let openEye: CGFloat = 0.3
   static let tongue: CGFloat = 0.8
   static let indexPathError = IndexPath(row: -1, section: -1)
+  static let tabBarIndexError: Int = -1
 }
 
 internal enum AccessibilityUIType: String {
@@ -34,6 +35,8 @@ internal enum AccessibilityUIType: String {
   case uiImageView
   case uiTableView
   case uiCollectionView
+  case uiCursor
+  case uiTabBar
   case unknown
 
   var identifier: String {
@@ -46,8 +49,13 @@ internal enum AccessibilityUIType: String {
       return "UITableView"
     case .uiCollectionView:
       return "UICollectionView"
+    case .uiCursor:
+      return "UICursor"
+    case .uiTabBar:
+      return "UITabBar"
     case .unknown:
-      return "UNKNOWN"
+      return "UIUNKNOWN"
+
     }
   }
 }

@@ -220,8 +220,8 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR26AcessibilityViewController")
 @end
 
 
-SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR23AccessibilityFaceAnchor")
-@interface AccessibilityFaceAnchor : AcessibilityViewController
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR37AccessibilityFaceAnchorViewController")
+@interface AccessibilityFaceAnchorViewController : AcessibilityViewController
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -232,9 +232,16 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR23AccessibilityFaceAnchor")
 @class SCNNode;
 @class ARAnchor;
 
-@interface AccessibilityFaceAnchor (SWIFT_EXTENSION(AcessibilityFaceMovimentBR)) <ARSCNViewDelegate, ARSessionDelegate>
+@interface AccessibilityFaceAnchorViewController (SWIFT_EXTENSION(AcessibilityFaceMovimentBR)) <ARSCNViewDelegate, ARSessionDelegate>
 - (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer didUpdateNode:(SCNNode * _Nonnull)node forAnchor:(ARAnchor * _Nonnull)anchor;
 @end
+
+
+
+@interface AcessibilityViewController (SWIFT_EXTENSION(AcessibilityFaceMovimentBR))
+- (void)selectedCell:(id _Nullable)sender;
+@end
+
 
 
 
@@ -271,13 +278,15 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR22CellCollectionViewCell")
 @class UICollectionView;
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR28CollectionTestViewController")
-@interface CollectionTestViewController : AccessibilityFaceAnchor
+@interface CollectionTestViewController : AccessibilityFaceAnchorViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 - (void)viewDidLoad;
 - (void)handleTap:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 
 @interface CollectionTestViewController (SWIFT_EXTENSION(AcessibilityFaceMovimentBR)) <UICollectionViewDataSource, UICollectionViewDelegate>
@@ -290,7 +299,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR28CollectionTestViewController")
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR29NavigationTesteViewController")
-@interface NavigationTesteViewController : AccessibilityFaceAnchor
+@interface NavigationTesteViewController : AccessibilityFaceAnchorViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified nextButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bookImageView;
 - (void)viewDidLoad;
@@ -318,7 +327,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR13SceneDelegate")
 @class UITableView;
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR21SuccessViewController")
-@interface SuccessViewController : AccessibilityFaceAnchor
+@interface SuccessViewController : AccessibilityFaceAnchorViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)handleTap:(id _Nullable)sender;
@@ -349,7 +358,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR21SuccessViewController")
 
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR14ViewController")
-@interface ViewController : AccessibilityFaceAnchor
+@interface ViewController : AccessibilityFaceAnchorViewController
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified feedbackLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewOne;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewTwo;

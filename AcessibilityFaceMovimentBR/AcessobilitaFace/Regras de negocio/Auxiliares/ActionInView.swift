@@ -36,7 +36,8 @@ class ActionInView: NSObject {
 
     switch identifier {
     case AccessibilityUIType.uiButton.identifier,
-         AccessibilityUIType.uiImageView.identifier:
+         AccessibilityUIType.uiImageView.identifier,
+         AccessibilityUIType.uiTabBar.identifier:
       self.target.perform(viewAction.selector, with: identifier)
 
     case AccessibilityUIType.uiTableView.identifier:

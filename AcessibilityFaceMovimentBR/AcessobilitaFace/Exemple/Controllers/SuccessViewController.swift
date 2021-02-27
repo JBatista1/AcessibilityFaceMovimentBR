@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SuccessViewController: AccessibilityFaceAnchor {
+class SuccessViewController: AccessibilityFaceAnchorViewController {
 
   @IBOutlet weak var tableView: UITableView!
   override func viewDidLoad() {
@@ -18,8 +18,9 @@ class SuccessViewController: AccessibilityFaceAnchor {
   }
 
   func createViewAction() -> [ViewAction] {
-    let viewsAction: [ViewAction] = [ViewAction(view: tableView, selector: #selector(handleTap(_:)))]
-    return getViewsActionWithTabBar(viewsAction: viewsAction)
+    var viewsAction: [ViewAction] = [ViewAction(view: tableView, selector: #selector(handleTap(_:)))]
+    viewsAction.append(contentsOf: getViewsActionWithTabBar())
+    return viewsAction
   }
 
   @objc func handleTap(_ sender: Any? = nil) {

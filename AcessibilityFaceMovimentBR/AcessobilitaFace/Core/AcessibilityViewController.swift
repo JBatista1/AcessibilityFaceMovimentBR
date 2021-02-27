@@ -14,58 +14,89 @@ open class AcessibilityViewController: UIViewController {
 
   weak var delegateTabBar: TabBarSelectedProtocol?
   weak var delegateNavigationBar: NavigationBackButtonProtocol?
-  weak var delegateTableView: TableViewSelectedProtocol?
+  weak var delegateCellView: CellViewSelectedProtocol?
 
   // MARK: - Public Property
-  let cursor = UIImageView(frame: CGRect(x: Cursor.x, y: Cursor.y, width: Cursor.width, height: Cursor.heigh))
+
+  var cursor = UIImageView(frame: CGRect(x: Cursor.x, y: Cursor.y, width: Cursor.width, height: Cursor.heigh))
   var action: ActionProtocol!
 
   public override func viewDidLoad() {
     super.viewDidLoad()
     action = ActionInView(target: self)
+    setupCursor()
     insertCursor()
-  }
-
-  // MARK: - Public Class Methods
-
-  func getViewsActionWithTabBar(viewsAction: [ViewAction]) -> [ViewAction] {
-    var newViewActions = viewsAction
-    if let tabBar = self.getTabBar() {
-      newViewActions.append(ViewAction(view: tabBar, selector: #selector(selectedTabBar(withIndex:))))
-    }
-    return newViewActions
-  }
-
-  func getViewsActionBackNavigationBar(viewsAction: [ViewAction]) -> [ViewAction] {
-    return viewsAction
   }
 
   // MARK: - Private Class Methods
 
-  @objc private func selectedTabBar(withIndex index: String) {
-    if let selectedIndex = Int(index) {
-      delegateTabBar?.tabBar(isSelectedIndex: selectedIndex)
+  private func setupCursor() {
+    cursor.image = Asset.cursorDefault.image
+    cursor.accessibilityIdentifier = AccessibilityUIType.uiCursor.identifier
+  }
+
+  private func insertCursor() {
+    if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first, (getCursor(inWindows: window) == nil) {
+      window.addSubview(cursor)
+      return
     }
+
+    if let window = UIApplication.shared.windows.first, (getCursor(inWindows: window) == nil) {
+      window.addSubview(cursor)
+      return
+    }
+  }
+
+  private func getCursor(inWindows windows: UIWindow) -> UIImageView? {
+    if let cursor = windows.getViewAcessibility(WithType: .uiCursor) as? UIImageView {
+      self.cursor = cursor
+      return self.cursor
+    }
+    return nil
+  }
+}
+
+// MARK: - Selector for delegates
+
+extension AcessibilityViewController {
+
+  @objc private func selectedTabBar(withIndex index: String) {
+    guard let selectedIndex = Int(index) else { return }
+    delegateTabBar?.tabBar(isSelectedIndex: selectedIndex)
   }
 
   @objc private func selectedBackNavigationBar() {
     delegateNavigationBar?.actionNavigationBack()
   }
-  
-  @objc private func selectedCell(withIndex index: IndexPath) {
-    
+
+  @objc func selectedCell(_ sender: Any? = nil) {
+    guard let index = sender as? IndexPath else { return }
+    delegateCellView?.cellSelected(withIndex: index)
+  }
+}
+
+// MARK: - GetNavigation Controll Actions
+
+extension AcessibilityViewController {
+
+  func getViewsActionWithTabBar() -> [ViewAction] {
+    if let tabBar = self.getTabBar() {
+      return [ViewAction(view: tabBar, selector: #selector(selectedTabBar(withIndex:)))]
+    }
+    return []
   }
 
-  private func insertCursor() {
-    cursor.image = Asset.cursorDefault.image
-    guard let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first else {
-      guard let window = UIApplication.shared.windows.first else {
-        view.addSubview(cursor)
-        return
-      }
-      window.addSubview(cursor)
-      return
+  func getViewsActionBackNavigationBar() -> [ViewAction] {
+    if let tabBar = self.getNavigationBar() {
+      return[ViewAction(view: tabBar, selector: #selector(selectedBackNavigationBar))]
     }
-    window.addSubview(cursor)
+    return []
+  }
+
+  func getViewActionNavigationAndTabBar(viewsAction: [ViewAction]) -> [ViewAction] {
+    var newViewActions = [ViewAction]()
+    newViewActions.append(contentsOf: getViewsActionWithTabBar())
+    newViewActions.append(contentsOf: getViewsActionBackNavigationBar())
+    return newViewActions
   }
 }

@@ -16,10 +16,10 @@
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Auxiliares/Position.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Protocols/MoveCursorProtocol.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/Resources/UIImage+ImagesResources.swift
-/Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Core/AccessibilityFaceAnchor.swift
+/Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Core/AccessibilityFaceAnchorViewController.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Auxiliares/MoveCursorFaceAnchor.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Extension/UIVIew+Position.swift
-/Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Protocols/TableViewSelectedProtocol.swift
+/Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Protocols/CellViewSelectedProtocol.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Protocols/TimerActionProtocol.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Constants/Constants.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Auxiliares/ActionInView.swift

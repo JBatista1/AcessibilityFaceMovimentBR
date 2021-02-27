@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: AccessibilityFaceAnchor {
+class ViewController: AccessibilityFaceAnchorViewController {
 
   // MARK: - Outlets
 
@@ -31,7 +31,7 @@ class ViewController: AccessibilityFaceAnchor {
   }
 
   func createViewAction() -> [ViewAction] {
-    let viewsAction: [ViewAction] = [ViewAction(view: viewOne, selector: #selector(ViewController.actionOne)),
+    var viewsAction: [ViewAction] = [ViewAction(view: viewOne, selector: #selector(ViewController.actionOne)),
                                      ViewAction(view: viewTwo, selector: #selector(actionTwo)),
                                      ViewAction(view: viewThree, selector: #selector(actionThree)),
                                      ViewAction(view: viewFour, selector: #selector(actionFour)),
@@ -39,8 +39,9 @@ class ViewController: AccessibilityFaceAnchor {
                                      ViewAction(view: viewSix, selector: #selector(actionSix)),
                                      ViewAction(view: viewSeven, selector: #selector(actionSeven)),
                                      ViewAction(view: viewEight, selector: #selector(actionEight))]
+    viewsAction.append(contentsOf: getViewsActionWithTabBar())
 
-    return getViewsActionWithTabBar(viewsAction: viewsAction)
+    return viewsAction
   }
 
   @objc func actionOne() {

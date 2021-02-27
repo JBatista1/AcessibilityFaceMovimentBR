@@ -25,6 +25,7 @@ depends-top-level:
 - "Cursor"
 - "FloatLiteralType"
 - "IndexPath"
+- "Int"
 - "IntegerLiteralType"
 - "Screen"
 - "String"
@@ -48,7 +49,9 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "rawValue"]
 - ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiButton"]
 - ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiCollectionView"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiCursor"]
 - ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiImageView"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiTabBar"]
 - ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiTableView"]
 - ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "unknown"]
 - ["s18AdditiveArithmeticP", "init"]
@@ -112,7 +115,9 @@ depends-member:
 - ["SQ", "rawValue"]
 - ["SQ", "uiButton"]
 - ["SQ", "uiCollectionView"]
+- ["SQ", "uiCursor"]
 - ["SQ", "uiImageView"]
+- ["SQ", "uiTabBar"]
 - ["SQ", "uiTableView"]
 - ["SQ", "unknown"]
 - ["SQ", "width"]
@@ -136,7 +141,9 @@ depends-member:
 - ["SH", "rawValue"]
 - ["SH", "uiButton"]
 - ["SH", "uiCollectionView"]
+- ["SH", "uiCursor"]
 - ["SH", "uiImageView"]
+- ["SH", "uiTabBar"]
 - ["SH", "uiTableView"]
 - ["SH", "unknown"]
 - ["10Foundation9IndexPathV", "init"]
@@ -159,7 +166,9 @@ depends-member:
 - ["SY", "rawValue"]
 - ["SY", "uiButton"]
 - ["SY", "uiCollectionView"]
+- ["SY", "uiCursor"]
 - ["SY", "uiImageView"]
+- ["SY", "uiTabBar"]
 - ["SY", "uiTableView"]
 - ["SY", "unknown"]
 - ["10Foundation20ReferenceConvertibleP", "init"]
@@ -178,9 +187,11 @@ depends-member:
 - ["So18UITraitEnvironmentP", "main"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "IndexPath"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "Int"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "closeEye"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "indexPathError"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "openEye"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tabBarIndexError"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tongue"]
 - ["s15_CVarArgAlignedP", "init"]
 - ["s22_CVarArgPassedAsDoubleP", "init"]
@@ -290,4 +301,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "56c8b582174ef79f350c53f1c063030c"
+interface-hash: "5cda4e95976ac9b7603d1ddeaf51d262"

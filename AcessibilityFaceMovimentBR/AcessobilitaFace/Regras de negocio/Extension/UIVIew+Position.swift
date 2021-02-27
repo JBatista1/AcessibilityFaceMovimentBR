@@ -22,4 +22,10 @@ extension UIView {
     return absoluteframe
   }
 
+  func getViewAcessibility(WithType type: AccessibilityUIType) -> UIView? {
+    for view in self.subviews where view.accessibilityIdentifier == type.identifier {
+      return view
+    }
+    return nil
+  }
 }

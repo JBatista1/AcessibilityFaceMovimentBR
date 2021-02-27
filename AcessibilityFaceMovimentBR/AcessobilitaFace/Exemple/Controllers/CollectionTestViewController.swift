@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CollectionTestViewController: AccessibilityFaceAnchor {
+class CollectionTestViewController: AccessibilityFaceAnchorViewController {
 
   @IBOutlet weak var collectionView: UICollectionView!
 
@@ -19,17 +19,20 @@ class CollectionTestViewController: AccessibilityFaceAnchor {
     action.setTypeStartAction(withType: .tongue)
     action.set(viewsAction: createViewAction())
     collectionViewConfiguration()
-    
+    delegateCellView = self
   }
+
   func collectionViewConfiguration() {
     collectionView.dataSource = self
     collectionView.delegate = self
   }
+
   func createViewAction() -> [ViewAction] {
-    let viewsAction: [ViewAction] = [ViewAction(view: collectionView, selector: #selector(handleTap(_:)))]
+    var viewsAction: [ViewAction] = [ViewAction(view: collectionView, selector: #selector(selectedCell(_:)))]
+    viewsAction.append(contentsOf: getViewsActionWithTabBar())
     return viewsAction
   }
-
+  
   @objc func handleTap(_ sender: Any? = nil) {
     guard let index = sender as? IndexPath else { return }
     print(index)
@@ -47,5 +50,11 @@ extension CollectionTestViewController: UICollectionViewDelegate, UICollectionVi
     }
     cell.setup(numberItem: indexPath.item)
     return cell
+  }
+}
+
+extension CollectionTestViewController: CellViewSelectedProtocol {
+  func cellSelected(withIndex index: IndexPath) {
+    print(index)
   }
 }

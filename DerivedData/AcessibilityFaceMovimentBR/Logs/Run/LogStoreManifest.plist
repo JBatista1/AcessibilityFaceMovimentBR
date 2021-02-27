@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>03725294-DE49-4072-A654-518B2C877F4D</key>
+		<key>02D1093E-2A35-49B9-AE48-C56F473F9520</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>03725294-DE49-4072-A654-518B2C877F4D.xcactivitylog</string>
+			<string>02D1093E-2A35-49B9-AE48-C56F473F9520.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,15 +32,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077671.57430696</real>
+			<real>636161749.14829504</real>
 			<key>timeStoppedRecording</key>
-			<real>636077692.05341196</real>
+			<real>636161761.11234295</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>03725294-DE49-4072-A654-518B2C877F4D</string>
+			<string>02D1093E-2A35-49B9-AE48-C56F473F9520</string>
 		</dict>
-		<key>065FE94F-C034-488E-A2A0-067B206A1D6B</key>
+		<key>0ED5B6D6-7E55-494B-AD89-773FAB6972F5</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -49,7 +49,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>065FE94F-C034-488E-A2A0-067B206A1D6B.xcactivitylog</string>
+			<string>0ED5B6D6-7E55-494B-AD89-773FAB6972F5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -66,15 +66,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077962.116521</real>
+			<real>636161140.37981296</real>
 			<key>timeStoppedRecording</key>
-			<real>636078023.39579403</real>
+			<real>636161195.42657602</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>065FE94F-C034-488E-A2A0-067B206A1D6B</string>
+			<string>0ED5B6D6-7E55-494B-AD89-773FAB6972F5</string>
 		</dict>
-		<key>1281C195-F989-43A9-8B27-3EC7B5E8EA20</key>
+		<key>199B05A4-CD5C-43F5-A26D-B95056165F7D</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -83,7 +83,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1281C195-F989-43A9-8B27-3EC7B5E8EA20.xcactivitylog</string>
+			<string>199B05A4-CD5C-43F5-A26D-B95056165F7D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -100,15 +100,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077130.81801105</real>
+			<real>636161714.309237</real>
 			<key>timeStoppedRecording</key>
-			<real>636077242.87572098</real>
+			<real>636161748.42889094</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>1281C195-F989-43A9-8B27-3EC7B5E8EA20</string>
+			<string>199B05A4-CD5C-43F5-A26D-B95056165F7D</string>
 		</dict>
-		<key>175A0548-85A7-4629-A6AD-4BC0BD0448C3</key>
+		<key>2CAECE7F-B38D-48F5-A1C9-EABDE0FD2B94</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -117,7 +117,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>175A0548-85A7-4629-A6AD-4BC0BD0448C3.xcactivitylog</string>
+			<string>2CAECE7F-B38D-48F5-A1C9-EABDE0FD2B94.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -134,15 +134,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077832.33870494</real>
+			<real>636161226.07699597</real>
 			<key>timeStoppedRecording</key>
-			<real>636077861.04661202</real>
+			<real>636161303.64261699</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>175A0548-85A7-4629-A6AD-4BC0BD0448C3</string>
+			<string>2CAECE7F-B38D-48F5-A1C9-EABDE0FD2B94</string>
 		</dict>
-		<key>1A93D2BD-4093-43A5-B0CE-F71FC813C3AE</key>
+		<key>2CCF1344-8EE7-4322-8058-D8BB497D03E6</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -151,7 +151,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1A93D2BD-4093-43A5-B0CE-F71FC813C3AE.xcactivitylog</string>
+			<string>2CCF1344-8EE7-4322-8058-D8BB497D03E6.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -168,15 +168,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636076826.15637898</real>
+			<real>636160793.38054705</real>
 			<key>timeStoppedRecording</key>
-			<real>636076945.49443603</real>
+			<real>636160852.71627402</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>1A93D2BD-4093-43A5-B0CE-F71FC813C3AE</string>
+			<string>2CCF1344-8EE7-4322-8058-D8BB497D03E6</string>
 		</dict>
-		<key>1DBA427E-0563-4472-B908-4E468C870BD4</key>
+		<key>3CB69E5B-25B4-40AA-8AC0-2B960E7C175D</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -185,7 +185,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>1DBA427E-0563-4472-B908-4E468C870BD4.xcactivitylog</string>
+			<string>3CB69E5B-25B4-40AA-8AC0-2B960E7C175D.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -202,15 +202,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077911.29325998</real>
+			<real>636161819.86563301</real>
 			<key>timeStoppedRecording</key>
-			<real>636077938.73547399</real>
+			<real>636161830.98858595</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>1DBA427E-0563-4472-B908-4E468C870BD4</string>
+			<string>3CB69E5B-25B4-40AA-8AC0-2B960E7C175D</string>
 		</dict>
-		<key>2EAD534F-E341-49E4-9722-D902E3B80532</key>
+		<key>54722246-70D3-4603-AE0E-379A7B4429FC</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -219,7 +219,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>2EAD534F-E341-49E4-9722-D902E3B80532.xcactivitylog</string>
+			<string>54722246-70D3-4603-AE0E-379A7B4429FC.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -236,15 +236,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636078028.50948298</real>
+			<real>636161452.08417106</real>
 			<key>timeStoppedRecording</key>
-			<real>636078151.14422202</real>
+			<real>636161503.21593106</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>2EAD534F-E341-49E4-9722-D902E3B80532</string>
+			<string>54722246-70D3-4603-AE0E-379A7B4429FC</string>
 		</dict>
-		<key>406CAEDB-1551-49E9-975E-7618ABFE6D12</key>
+		<key>64AF3FC8-A6C4-4D19-B4A2-01D84CBE7A56</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -253,7 +253,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>406CAEDB-1551-49E9-975E-7618ABFE6D12.xcactivitylog</string>
+			<string>64AF3FC8-A6C4-4D19-B4A2-01D84CBE7A56.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -270,15 +270,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636075324.20295</real>
+			<real>636158941.95768201</real>
 			<key>timeStoppedRecording</key>
-			<real>636075365.38198304</real>
+			<real>636158970.78945994</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>406CAEDB-1551-49E9-975E-7618ABFE6D12</string>
+			<string>64AF3FC8-A6C4-4D19-B4A2-01D84CBE7A56</string>
 		</dict>
-		<key>50022139-E672-4989-919B-410E38C26672</key>
+		<key>9CC58851-6B52-4E7B-B3A6-863C9B6A4942</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -287,7 +287,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>50022139-E672-4989-919B-410E38C26672.xcactivitylog</string>
+			<string>9CC58851-6B52-4E7B-B3A6-863C9B6A4942.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -304,15 +304,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636076951.62643695</real>
+			<real>636161371.10383296</real>
 			<key>timeStoppedRecording</key>
-			<real>636076990.56852996</real>
+			<real>636161451.22372901</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>50022139-E672-4989-919B-410E38C26672</string>
+			<string>9CC58851-6B52-4E7B-B3A6-863C9B6A4942</string>
 		</dict>
-		<key>612D9CF2-2BC4-4C44-9013-8BA5E949E32C</key>
+		<key>A338E8E7-DB27-4F77-883A-A11EF86CC1FF</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -321,7 +321,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>612D9CF2-2BC4-4C44-9013-8BA5E949E32C.xcactivitylog</string>
+			<string>A338E8E7-DB27-4F77-883A-A11EF86CC1FF.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -338,15 +338,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636072643.13694596</real>
+			<real>636161934.79367602</real>
 			<key>timeStoppedRecording</key>
-			<real>636072689.20637798</real>
+			<real>636162006.19662094</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>612D9CF2-2BC4-4C44-9013-8BA5E949E32C</string>
+			<string>A338E8E7-DB27-4F77-883A-A11EF86CC1FF</string>
 		</dict>
-		<key>635C1B6F-015C-451B-8201-FE920C732A6D</key>
+		<key>ADEF7B35-909C-45E2-8063-9E0BDF61CFB7</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -355,7 +355,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>635C1B6F-015C-451B-8201-FE920C732A6D.xcactivitylog</string>
+			<string>ADEF7B35-909C-45E2-8063-9E0BDF61CFB7.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -372,15 +372,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077015.99257803</real>
+			<real>636161799.26684296</real>
 			<key>timeStoppedRecording</key>
-			<real>636077053.584993</real>
+			<real>636161819.07582903</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>635C1B6F-015C-451B-8201-FE920C732A6D</string>
+			<string>ADEF7B35-909C-45E2-8063-9E0BDF61CFB7</string>
 		</dict>
-		<key>A0818105-83D7-45E7-A554-BE01EBFFC370</key>
+		<key>B3447AF0-8AD5-423C-9027-BD836232D8A0</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -389,7 +389,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A0818105-83D7-45E7-A554-BE01EBFFC370.xcactivitylog</string>
+			<string>B3447AF0-8AD5-423C-9027-BD836232D8A0.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -406,15 +406,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636001579.87343097</real>
+			<real>636161761.89178097</real>
 			<key>timeStoppedRecording</key>
-			<real>636001584.71323097</real>
+			<real>636161798.41860104</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>A0818105-83D7-45E7-A554-BE01EBFFC370</string>
+			<string>B3447AF0-8AD5-423C-9027-BD836232D8A0</string>
 		</dict>
-		<key>A0DBCE3A-2F34-4E17-A742-F108C67898B0</key>
+		<key>C1534E92-5AD6-4EB7-B55C-FB402FA7E1A4</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -423,7 +423,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A0DBCE3A-2F34-4E17-A742-F108C67898B0.xcactivitylog</string>
+			<string>C1534E92-5AD6-4EB7-B55C-FB402FA7E1A4.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -440,15 +440,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077866.480474</real>
+			<real>636159121.45397198</real>
 			<key>timeStoppedRecording</key>
-			<real>636077883.95401502</real>
+			<real>636159153.77071202</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>A0DBCE3A-2F34-4E17-A742-F108C67898B0</string>
+			<string>C1534E92-5AD6-4EB7-B55C-FB402FA7E1A4</string>
 		</dict>
-		<key>A1ECFD2F-2D54-44E1-97F8-F2E32F4D0A3A</key>
+		<key>C34A0DE2-834F-4CB7-B309-E873F21777E2</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -457,7 +457,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A1ECFD2F-2D54-44E1-97F8-F2E32F4D0A3A.xcactivitylog</string>
+			<string>C34A0DE2-834F-4CB7-B309-E873F21777E2.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -474,15 +474,15 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636077376.17737198</real>
+			<real>636161083.16259801</real>
 			<key>timeStoppedRecording</key>
-			<real>636077577.90942001</real>
+			<real>636161116.42005706</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>A1ECFD2F-2D54-44E1-97F8-F2E32F4D0A3A</string>
+			<string>C34A0DE2-834F-4CB7-B309-E873F21777E2</string>
 		</dict>
-		<key>B1602CCD-FF32-4812-9A82-B8ED87E8E82B</key>
+		<key>D69AC4D3-5A31-43C4-AACD-0DCD48201C6F</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -491,7 +491,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>B1602CCD-FF32-4812-9A82-B8ED87E8E82B.xcactivitylog</string>
+			<string>D69AC4D3-5A31-43C4-AACD-0DCD48201C6F.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -508,319 +508,13 @@
 			<key>signature</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>timeStartedRecording</key>
-			<real>636072711.97032702</real>
+			<real>636160904.027632</real>
 			<key>timeStoppedRecording</key>
-			<real>636072752.22541702</real>
+			<real>636160912.42781496</real>
 			<key>title</key>
 			<string>Run AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>B1602CCD-FF32-4812-9A82-B8ED87E8E82B</string>
-		</dict>
-		<key>B7F78DBA-7B2B-4F93-80C3-89261BEA3543</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>B7F78DBA-7B2B-4F93-80C3-89261BEA3543.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636074218.15673995</real>
-			<key>timeStoppedRecording</key>
-			<real>636074296.65478599</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>B7F78DBA-7B2B-4F93-80C3-89261BEA3543</string>
-		</dict>
-		<key>BB3EE5D0-1AA3-4C8B-B43A-8FB0650A704D</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>BB3EE5D0-1AA3-4C8B-B43A-8FB0650A704D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636077943.8527</real>
-			<key>timeStoppedRecording</key>
-			<real>636077957.14721894</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>BB3EE5D0-1AA3-4C8B-B43A-8FB0650A704D</string>
-		</dict>
-		<key>C1D967E8-5BE4-419C-8AFE-F016DA5A76EA</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>C1D967E8-5BE4-419C-8AFE-F016DA5A76EA.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636075368.69505894</real>
-			<key>timeStoppedRecording</key>
-			<real>636075423.11747205</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>C1D967E8-5BE4-419C-8AFE-F016DA5A76EA</string>
-		</dict>
-		<key>C762E73C-137F-4F53-8D6A-873852D111E3</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>C762E73C-137F-4F53-8D6A-873852D111E3.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636077889.59261799</real>
-			<key>timeStoppedRecording</key>
-			<real>636077906.30083799</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>C762E73C-137F-4F53-8D6A-873852D111E3</string>
-		</dict>
-		<key>D78290BC-4E2D-456F-AA9B-E6EC34B75AF1</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>D78290BC-4E2D-456F-AA9B-E6EC34B75AF1.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636076794.27578104</real>
-			<key>timeStoppedRecording</key>
-			<real>636076819.83846498</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>D78290BC-4E2D-456F-AA9B-E6EC34B75AF1</string>
-		</dict>
-		<key>E7C53C65-6C71-45B0-8842-8FFC86CA0E55</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E7C53C65-6C71-45B0-8842-8FFC86CA0E55.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636077600.62563801</real>
-			<key>timeStoppedRecording</key>
-			<real>636077666.50111401</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>E7C53C65-6C71-45B0-8842-8FFC86CA0E55</string>
-		</dict>
-		<key>E8C1E162-E8B2-4813-8D0D-A89CDC1A6275</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>E8C1E162-E8B2-4813-8D0D-A89CDC1A6275.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636075436.23512304</real>
-			<key>timeStoppedRecording</key>
-			<real>636076277.67935002</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>E8C1E162-E8B2-4813-8D0D-A89CDC1A6275</string>
-		</dict>
-		<key>EEFF4A17-2C29-4E8D-B939-2B42C8D3887D</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>EEFF4A17-2C29-4E8D-B939-2B42C8D3887D.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636077730.81710899</real>
-			<key>timeStoppedRecording</key>
-			<real>636077773.35013294</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>EEFF4A17-2C29-4E8D-B939-2B42C8D3887D</string>
-		</dict>
-		<key>FCBA0AA8-AD21-4125-B38A-814AC08D67DF</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>FCBA0AA8-AD21-4125-B38A-814AC08D67DF.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AcessibilityFaceMovimentBR project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AcessibilityFaceMovimentBR</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>timeStartedRecording</key>
-			<real>636073148.08583105</real>
-			<key>timeStoppedRecording</key>
-			<real>636073153.67022896</real>
-			<key>title</key>
-			<string>Run AcessibilityFaceMovimentBR</string>
-			<key>uniqueIdentifier</key>
-			<string>FCBA0AA8-AD21-4125-B38A-814AC08D67DF</string>
+			<string>D69AC4D3-5A31-43C4-AACD-0DCD48201C6F</string>
 		</dict>
 	</dict>
 </dict>

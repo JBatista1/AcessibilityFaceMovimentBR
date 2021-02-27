@@ -9,9 +9,10 @@
 import UIKit
 import ARKit
 
-open class AccessibilityFaceAnchor: AcessibilityViewController {
+open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
 
   // MARK: - Private Property
+  
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
 
@@ -50,7 +51,7 @@ open class AccessibilityFaceAnchor: AcessibilityViewController {
 
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
     DispatchQueue.main.async {
-      UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 0.3, options: .curveLinear, animations: {
+      UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 3, initialSpringVelocity: 0.3, options: .curveLinear, animations: {
         self.cursor.center = nextPoint
       }, completion: nil)
     }
@@ -65,7 +66,7 @@ open class AccessibilityFaceAnchor: AcessibilityViewController {
 
 // MARK: - Extension AR
 
-extension AccessibilityFaceAnchor: ARSCNViewDelegate, ARSessionDelegate {
+extension AccessibilityFaceAnchorViewController: ARSCNViewDelegate, ARSessionDelegate {
 
   public func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
 

@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol TableViewSelectedProtocol: AnyObject {
+protocol CellViewSelectedProtocol: AnyObject {
   func cellSelected(withIndex index: IndexPath)
 }

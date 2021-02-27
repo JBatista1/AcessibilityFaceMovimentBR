@@ -27,7 +27,7 @@ provides-dynamic-lookup:
 - "viewThree"
 - "viewTwo"
 depends-top-level:
-- "AccessibilityFaceAnchor"
+- "AccessibilityFaceAnchorViewController"
 - "AssignmentPrecedence"
 - "Int"
 - !private "StringLiteralType"
@@ -118,37 +118,37 @@ depends-member:
 - !private ["So17ARSessionObserverP", "viewSix"]
 - !private ["So17ARSessionObserverP", "viewThree"]
 - !private ["So17ARSessionObserverP", "viewTwo"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "Int"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "UIButton"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "UILabel"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "ViewAction"]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "ViewController"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", ""]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "action"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionEight"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionFive"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionFour"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionOne"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionSeven"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionSix"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionThree"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "actionTwo"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "createViewAction"]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "delegateTabBar"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "feedbackLabel"]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "getViewsActionWithTabBar"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "init"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "tabBar"]
-- !private ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "tabBarController"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewDidLoad"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewEight"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewFive"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewFour"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewOne"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewSeven"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewSix"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewThree"]
-- ["26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC", "viewTwo"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "Int"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "UIButton"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "UILabel"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "ViewAction"]
+- !private ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "ViewController"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", ""]
+- !private ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "action"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionEight"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionFive"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionFour"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionOne"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionSeven"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionSix"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionThree"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "actionTwo"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "createViewAction"]
+- !private ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "delegateTabBar"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "feedbackLabel"]
+- !private ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "getViewsActionWithTabBar"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "init"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "tabBar"]
+- !private ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "tabBarController"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewDidLoad"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewEight"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewFive"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewFour"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewOne"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewSeven"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewSix"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewThree"]
+- ["26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC", "viewTwo"]
 - ["26AcessibilityFaceMovimentBR0A14ViewControllerC", "Int"]
 - ["26AcessibilityFaceMovimentBR0A14ViewControllerC", "UIButton"]
 - ["26AcessibilityFaceMovimentBR0A14ViewControllerC", "UILabel"]
@@ -180,6 +180,8 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR0A14ViewControllerC", "viewThree"]
 - ["26AcessibilityFaceMovimentBR0A14ViewControllerC", "viewTwo"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "set"]
+- !private ["Sa", "append"]
+- !private ["SK", "append"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["s7CVarArgP", "ViewAction"]
 - !private ["s7CVarArgP", "ViewController"]
@@ -193,6 +195,7 @@ depends-member:
 - !private ["s7CVarArgP", "actionSix"]
 - !private ["s7CVarArgP", "actionThree"]
 - !private ["s7CVarArgP", "actionTwo"]
+- !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "createViewAction"]
 - !private ["s7CVarArgP", "delegateTabBar"]
 - !private ["s7CVarArgP", "feedbackLabel"]
@@ -210,6 +213,8 @@ depends-member:
 - !private ["s7CVarArgP", "viewSix"]
 - !private ["s7CVarArgP", "viewThree"]
 - !private ["s7CVarArgP", "viewTwo"]
+- !private ["Sl", "append"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "ViewAction"]
 - !private ["s28CustomDebugStringConvertibleP", "ViewController"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -222,6 +227,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "actionSix"]
 - !private ["s28CustomDebugStringConvertibleP", "actionThree"]
 - !private ["s28CustomDebugStringConvertibleP", "actionTwo"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "createViewAction"]
 - !private ["s28CustomDebugStringConvertibleP", "delegateTabBar"]
 - !private ["s28CustomDebugStringConvertibleP", "feedbackLabel"]
@@ -240,6 +246,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "viewSix"]
 - !private ["s28CustomDebugStringConvertibleP", "viewThree"]
 - !private ["s28CustomDebugStringConvertibleP", "viewTwo"]
+- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "set"]
 - !private ["s17CustomReflectableP", "text"]
 - !private ["s23CustomStringConvertibleP", "ViewAction"]
@@ -254,6 +261,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "actionSix"]
 - !private ["s23CustomStringConvertibleP", "actionThree"]
 - !private ["s23CustomStringConvertibleP", "actionTwo"]
+- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "createViewAction"]
 - !private ["s23CustomStringConvertibleP", "delegateTabBar"]
 - !private ["s23CustomStringConvertibleP", "feedbackLabel"]
@@ -271,8 +279,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "viewSix"]
 - !private ["s23CustomStringConvertibleP", "viewThree"]
 - !private ["s23CustomStringConvertibleP", "viewTwo"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["Se", "append"]
 - !private ["Se", "set"]
 - !private ["Se", "text"]
+- !private ["SE", "append"]
 - !private ["SE", "set"]
 - !private ["SE", "text"]
 - !private ["SQ", "ViewAction"]
@@ -287,6 +298,7 @@ depends-member:
 - !private ["SQ", "actionSix"]
 - !private ["SQ", "actionThree"]
 - !private ["SQ", "actionTwo"]
+- !private ["SQ", "append"]
 - !private ["SQ", "createViewAction"]
 - !private ["SQ", "delegateTabBar"]
 - !private ["SQ", "feedbackLabel"]
@@ -305,6 +317,7 @@ depends-member:
 - !private ["SQ", "viewSix"]
 - !private ["SQ", "viewThree"]
 - !private ["SQ", "viewTwo"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s23ExpressibleByNilLiteralP", "set"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
 - !private ["SH", "ViewAction"]
@@ -319,6 +332,7 @@ depends-member:
 - !private ["SH", "actionSix"]
 - !private ["SH", "actionThree"]
 - !private ["SH", "actionTwo"]
+- !private ["SH", "append"]
 - !private ["SH", "createViewAction"]
 - !private ["SH", "delegateTabBar"]
 - !private ["SH", "feedbackLabel"]
@@ -337,6 +351,8 @@ depends-member:
 - !private ["SH", "viewSix"]
 - !private ["SH", "viewThree"]
 - !private ["SH", "viewTwo"]
+- !private ["SM", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["So8NSCodingP", "ViewAction"]
 - !private ["So8NSCodingP", "ViewController"]
 - ["So8NSCodingP", ""]
@@ -457,6 +473,8 @@ depends-member:
 - !private ["So8NSObjectP", "viewTwo"]
 - !private ["Sq", "set"]
 - !private ["Sq", "text"]
+- !private ["Sk", "append"]
+- !private ["Sm", "append"]
 - !private ["So24SCNSceneRendererDelegateP", "ViewAction"]
 - !private ["So24SCNSceneRendererDelegateP", "ViewController"]
 - ["So24SCNSceneRendererDelegateP", ""]
@@ -484,6 +502,7 @@ depends-member:
 - !private ["So24SCNSceneRendererDelegateP", "viewSix"]
 - !private ["So24SCNSceneRendererDelegateP", "viewThree"]
 - !private ["So24SCNSceneRendererDelegateP", "viewTwo"]
+- !private ["ST", "append"]
 - !private ["26AcessibilityFaceMovimentBR22TabBarSelectedProtocolP", "ViewAction"]
 - !private ["26AcessibilityFaceMovimentBR22TabBarSelectedProtocolP", "ViewController"]
 - ["26AcessibilityFaceMovimentBR22TabBarSelectedProtocolP", ""]
@@ -847,6 +866,10 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR14ViewControllerC", "viewSix"]
 - ["26AcessibilityFaceMovimentBR14ViewControllerC", "viewThree"]
 - ["26AcessibilityFaceMovimentBR14ViewControllerC", "viewTwo"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ViewAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -905,6 +928,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewSix"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewThree"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewTwo"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "set"]
 - !private ["s21_ObjectiveCBridgeableP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
@@ -912,25 +936,36 @@ depends-nominal:
 - "So17ARSCNViewDelegateP"
 - "So17ARSessionDelegateP"
 - "So17ARSessionObserverP"
-- "26AcessibilityFaceMovimentBR013AccessibilityB6AnchorC"
+- "26AcessibilityFaceMovimentBR013AccessibilityB20AnchorViewControllerC"
 - "26AcessibilityFaceMovimentBR0A14ViewControllerC"
 - !private "26AcessibilityFaceMovimentBR14ActionProtocolP"
+- !private "Sa"
+- !private "SK"
 - !private "So15CALayerDelegateP"
 - "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
 - !private "Se"
 - !private "SE"
 - "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - "SH"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
 - "So26NSExtensionRequestHandlingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "Sq"
+- !private "Sk"
+- !private "Sm"
 - "So24SCNSceneRendererDelegateP"
+- !private "ST"
 - "26AcessibilityFaceMovimentBR22TabBarSelectedProtocolP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -956,6 +991,10 @@ depends-nominal:
 - "So16UIViewControllerC"
 - !private "26AcessibilityFaceMovimentBR10ViewActionV"
 - "26AcessibilityFaceMovimentBR14ViewControllerC"
+- !private "s14_ArrayProtocolP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
@@ -1008,4 +1047,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6c3487ca78787a90c614807693f4ee4e"
+interface-hash: "242dfb7679d894cdcd869ef633837da8"

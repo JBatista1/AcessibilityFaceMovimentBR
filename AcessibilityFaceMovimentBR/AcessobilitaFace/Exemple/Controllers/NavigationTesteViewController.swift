@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NavigationTesteViewController: AccessibilityFaceAnchor {
+class NavigationTesteViewController: AccessibilityFaceAnchorViewController {
 
   @IBOutlet weak var nextButton: UIButton!
   @IBOutlet weak var bookImageView: UIImageView!
@@ -26,9 +26,10 @@ class NavigationTesteViewController: AccessibilityFaceAnchor {
   }
 
   func createViewAction() -> [ViewAction] {
-    let viewsAction: [ViewAction] = [ViewAction(view: nextButton, selector: #selector(tappedNextScreen(_:))),
+    var viewsAction: [ViewAction] = [ViewAction(view: nextButton, selector: #selector(tappedNextScreen(_:))),
                                      ViewAction(view: bookImageView, selector: #selector(handleTap(_:)))]
-    return getViewsActionWithTabBar(viewsAction: viewsAction)
+    viewsAction.append(contentsOf: getViewsActionWithTabBar())
+    return viewsAction
   }
 
   @IBAction func tappedNextScreen(_ sender: Any) {
