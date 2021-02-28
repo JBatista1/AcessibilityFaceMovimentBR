@@ -51,7 +51,7 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
 
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
     DispatchQueue.main.async {
-      UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 3, initialSpringVelocity: 0.3, options: .curveLinear, animations: {
+      UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 0.2, options: .curveLinear, animations: {
         self.cursor.center = nextPoint
       }, completion: nil)
     }

@@ -59,13 +59,13 @@ class ManagesSpecialCases {
       case is UICollectionView:
         viewAction.view.accessibilityIdentifier = AccessibilityUIType.uiCollectionView.identifier
       default:
-        viewAction.view.accessibilityIdentifier = AccessibilityUIType.unknown.identifier
+        break
       }
     }
     return viewsAction
   }
 
-  private func getTabBarViews(inTabBar tabBar: UITabBar, andSelector selector: Selector ) -> [ViewAction] {
+  private func getTabBarViews(inTabBar tabBar: UITabBar, andSelector selector: Selector) -> [ViewAction] {
     var viewsTabbar = [ViewAction]()
     var index = 0
     for view in tabBar.subviews {
@@ -77,5 +77,4 @@ class ManagesSpecialCases {
     }
     return viewsTabbar
   }
-
 }

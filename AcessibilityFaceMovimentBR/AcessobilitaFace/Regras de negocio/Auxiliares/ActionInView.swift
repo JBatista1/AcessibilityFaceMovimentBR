@@ -16,10 +16,14 @@ class ActionInView: NSObject {
   private var position: Position?
   private var pointView: CGPoint = .zero
   private var manageCase = ManagesSpecialCases()
+  private var timer = TimerControl()
+  private var isCooldown = false
 
   required init(typeStartAction: TypeStartAction = .tongue, target: UIViewController) {
     self.typeStartAction = typeStartAction
     self.target = target
+    super.init()
+    timer.delegate = self
   }
 
   // MARK: - Private Method
@@ -33,7 +37,6 @@ class ActionInView: NSObject {
   }
 
   private func calledSpecialTarge(withIndentifier identifier: String, inViewAction viewAction: ViewAction) {
-
     switch identifier {
     case AccessibilityUIType.uiButton.identifier,
          AccessibilityUIType.uiImageView.identifier,
@@ -49,14 +52,13 @@ class ActionInView: NSObject {
       self.target.perform(viewAction.selector, with: indexPath)
 
     default:
-      self.target.perform(viewAction.selector)
+      self.target.perform(viewAction.selector, with: identifier)
     }
   }
 
   private func verify(theEyeClose eyeClose: CGFloat, andEyeOpen eyeOpen: CGFloat) -> Bool {
     return eyeClose >= ValuesConstants.closeEye && eyeOpen <= ValuesConstants.openEye
   }
-  
 }
 
 // MARK: - Extension
@@ -79,7 +81,11 @@ extension ActionInView: ActionProtocol {
     if let index = position?.getViewSelectedBased(thePoint: point) {
       let viewAction = viewsAction[index]
       DispatchQueue.main.async {
-        self.calledSelector(inViewAction: viewAction)
+        if self.isCooldown == false {
+          self.timer.startTimer(withTimerSeconds: ValuesConstants.cooldown)
+          self.isCooldown = true
+          self.calledSelector(inViewAction: viewAction)
+        }
       }
     }
   }
@@ -101,4 +107,13 @@ extension ActionInView: ActionProtocol {
     position = Position(views: views)
     self.viewsAction = newViewsAction
   }
+}
+
+extension ActionInView: TimerActionResponseProtocol {
+
+  func finishTimer() {
+    isCooldown = false
+  }
+
+  func canceledTimer() {}
 }

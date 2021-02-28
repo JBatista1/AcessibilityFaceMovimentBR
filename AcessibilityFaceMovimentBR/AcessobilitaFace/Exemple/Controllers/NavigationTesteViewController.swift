@@ -15,9 +15,9 @@ class NavigationTesteViewController: AccessibilityFaceAnchorViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    action.setTypeStartAction(withType: .eyeRight)
     action.set(viewsAction: createViewAction())
     addActionUIImageView()
+    delegateTabBar = self
   }
 
   private func addActionUIImageView() {
@@ -42,5 +42,10 @@ class NavigationTesteViewController: AccessibilityFaceAnchorViewController {
 
   @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
     bookImageView.image = UIImage.init(systemName: "book")
+  }
+}
+extension NavigationTesteViewController: TabBarSelectedProtocol {
+  func tabBar(isSelectedIndex index: Int) {
+    tabBarController?.selectedIndex = index
   }
 }

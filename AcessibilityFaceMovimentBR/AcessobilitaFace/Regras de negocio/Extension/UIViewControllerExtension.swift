@@ -23,4 +23,17 @@ extension UIViewController {
     }
     return navBar
   }
+
+  func getNavigationBackButton() -> UIView? {
+    guard let navBar = navigationController?.navigationBar else {
+      return nil
+    }
+    if navBar.subviews.count >= 2 {
+      let views = navBar.subviews[1]
+      if views.subviews.count >= 1 && views.subviews.count >= 2 {
+        return views.subviews[1]
+      }
+    }
+    return nil
+  }
 }

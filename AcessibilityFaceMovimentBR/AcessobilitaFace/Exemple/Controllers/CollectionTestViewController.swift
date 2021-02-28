@@ -16,10 +16,10 @@ class CollectionTestViewController: AccessibilityFaceAnchorViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    action.setTypeStartAction(withType: .tongue)
     action.set(viewsAction: createViewAction())
     collectionViewConfiguration()
     delegateCellView = self
+    delegateTabBar = self
   }
 
   func collectionViewConfiguration() {
@@ -56,5 +56,12 @@ extension CollectionTestViewController: UICollectionViewDelegate, UICollectionVi
 extension CollectionTestViewController: CellViewSelectedProtocol {
   func cellSelected(withIndex index: IndexPath) {
     print(index)
+  }
+}
+
+extension CollectionTestViewController: TabBarSelectedProtocol {
+
+  func tabBar(isSelectedIndex index: Int) {
+    tabBarController?.selectedIndex = index
   }
 }

@@ -189,6 +189,7 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "IndexPath"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "Int"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "closeEye"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "cooldown"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "indexPathError"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "openEye"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tabBarIndexError"]
@@ -301,4 +302,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5cda4e95976ac9b7603d1ddeaf51d262"
+interface-hash: "cc1f31e6d3ba31f48ed7a4e1f45d855a"

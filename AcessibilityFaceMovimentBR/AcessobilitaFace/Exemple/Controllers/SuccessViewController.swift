@@ -13,19 +13,20 @@ class SuccessViewController: AccessibilityFaceAnchorViewController {
   @IBOutlet weak var tableView: UITableView!
   override func viewDidLoad() {
     super.viewDidLoad()
-    action.setTypeStartAction(withType: .tongue)
     action.set(viewsAction: createViewAction())
+    delegateNavigationBar = self
+    delegateTabBar = self
+    delegateCellView = self
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
   }
 
   func createViewAction() -> [ViewAction] {
-    var viewsAction: [ViewAction] = [ViewAction(view: tableView, selector: #selector(handleTap(_:)))]
-    viewsAction.append(contentsOf: getViewsActionWithTabBar())
+    var viewsAction: [ViewAction] = [ViewAction(view: tableView, selector: #selector(selectedCell(_:)))]
+    viewsAction.append(contentsOf: getViewsActionBackNavigationBar())
     return viewsAction
-  }
-
-  @objc func handleTap(_ sender: Any? = nil) {
-    guard let index = sender as? IndexPath else { return }
-    print(index)
   }
 }
 
@@ -45,5 +46,21 @@ extension SuccessViewController: UITableViewDataSource, UITableViewDelegate {
   }
   func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
     return "Tatu bola piranha"
+  }
+}
+
+extension SuccessViewController: CellViewSelectedProtocol {
+  func cellSelected(withIndex index: IndexPath) {
+    print(index)
+  }
+}
+
+extension SuccessViewController: TabBarSelectedProtocol, NavigationBackButtonProtocol {
+  func tabBar(isSelectedIndex index: Int) {
+    tabBarController?.selectedIndex = index
+  }
+
+  func actionNavigationBack() {
+    self.dismiss(animated: true, completion: nil)
   }
 }

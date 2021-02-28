@@ -238,11 +238,11 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR37AccessibilityFaceAnchorViewContro
 
 
 
+
+
 @interface AcessibilityViewController (SWIFT_EXTENSION(AcessibilityFaceMovimentBR))
 - (void)selectedCell:(id _Nullable)sender;
 @end
-
-
 
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR12ActionInView")
@@ -250,6 +250,8 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR12ActionInView")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
@@ -289,6 +291,8 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR28CollectionTestViewController")
 
 
 
+
+
 @interface CollectionTestViewController (SWIFT_EXTENSION(AcessibilityFaceMovimentBR)) <UICollectionViewDataSource, UICollectionViewDelegate>
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
@@ -308,6 +312,8 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR29NavigationTesteViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
 
 @class UIWindow;
 @class UIScene;
@@ -330,10 +336,14 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR21SuccessViewController")
 @interface SuccessViewController : AccessibilityFaceAnchorViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
-- (void)handleTap:(id _Nullable)sender;
+- (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 @class UITableViewCell;
 

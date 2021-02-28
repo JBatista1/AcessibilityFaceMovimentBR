@@ -87,8 +87,8 @@ extension AcessibilityViewController {
   }
 
   func getViewsActionBackNavigationBar() -> [ViewAction] {
-    if let tabBar = self.getNavigationBar() {
-      return[ViewAction(view: tabBar, selector: #selector(selectedBackNavigationBar))]
+    if let navBar = self.getNavigationBackButton() {
+       return [ViewAction(view: navBar, selector: #selector(selectedBackNavigationBar))]
     }
     return []
   }

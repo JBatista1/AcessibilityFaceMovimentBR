@@ -36,7 +36,7 @@ class TimerControl: TimerActionProtocol {
   }
 
   private func verifyTimerIsFinish(withRunTimer runTimer: Int) {
-    if runTimer == secondTimer {
+    if runTimer >= secondTimer {
       delegate?.finishTimer()
       timer?.invalidate()
     }

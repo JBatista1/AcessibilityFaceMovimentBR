@@ -8,13 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "calledSelector"
 - "calledSpecialTarge"
+- "canceledTimer"
+- "finishTimer"
 - "getViewForAction"
+- "isCooldown"
 - "manageCase"
 - "pointView"
 - "position"
 - "set"
 - "setTypeStartAction"
 - "target"
+- "timer"
 - "typeStartAction"
 - "verify"
 - "verifyAction"
@@ -22,12 +26,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "&&"
 - !private "<="
+- !private "=="
 - !private ">="
 - !private "AccessibilityUIType"
 - "ActionInView"
 - "ActionProtocol"
 - "AssignmentPrecedence"
 - "Bool"
+- "BooleanLiteralType"
 - "CGFloat"
 - "CGPoint"
 - !private "DispatchQueue"
@@ -35,6 +41,8 @@ depends-top-level:
 - "NSObject"
 - "Position"
 - "String"
+- "TimerActionResponseProtocol"
+- "TimerControl"
 - "TypeStartAction"
 - !private "UIView"
 - "UIViewController"
@@ -56,6 +64,7 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "ManagesSpecialCases"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "Position"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "String"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "TimerControl"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "TypeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIView"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIViewController"]
@@ -63,15 +72,19 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "ViewAction"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "calledSelector"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "calledSpecialTarge"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "canceledTimer"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "deinit"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "finishTimer"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "getViewForAction"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "init"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "isCooldown"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "manageCase"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "pointView"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "position"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "set"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "setTypeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "target"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "timer"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "typeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "verify"]
 - ["26AcessibilityFaceMovimentBR12ActionInViewC", "verifyAction"]
@@ -80,18 +93,23 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "DispatchQueue"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ManagesSpecialCases"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "Position"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "TimerControl"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "UIView"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ValuesConstants"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", ""]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "calledSelector"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "calledSpecialTarge"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "canceledTimer"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "finishTimer"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getViewForAction"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "isCooldown"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "manageCase"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "pointView"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "position"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "set"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "setTypeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "target"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "timer"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "typeStartAction"]
 - !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verify"]
 - ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verifyAction"]
@@ -108,6 +126,7 @@ depends-member:
 - !private ["s7CVarArgP", "DispatchQueue"]
 - ["s7CVarArgP", "ManagesSpecialCases"]
 - !private ["s7CVarArgP", "Position"]
+- ["s7CVarArgP", "TimerControl"]
 - !private ["s7CVarArgP", "UIView"]
 - !private ["s7CVarArgP", "ValuesConstants"]
 - ["s7CVarArgP", ""]
@@ -116,8 +135,11 @@ depends-member:
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "calledSelector"]
 - !private ["s7CVarArgP", "calledSpecialTarge"]
+- ["s7CVarArgP", "canceledTimer"]
+- ["s7CVarArgP", "finishTimer"]
 - ["s7CVarArgP", "getViewForAction"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isCooldown"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "manageCase"]
 - !private ["s7CVarArgP", "perform"]
@@ -127,6 +149,7 @@ depends-member:
 - ["s7CVarArgP", "setTypeStartAction"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "target"]
+- !private ["s7CVarArgP", "timer"]
 - !private ["s7CVarArgP", "typeStartAction"]
 - !private ["s7CVarArgP", "verify"]
 - ["s7CVarArgP", "verifyAction"]
@@ -141,6 +164,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
 - ["s28CustomDebugStringConvertibleP", "ManagesSpecialCases"]
 - !private ["s28CustomDebugStringConvertibleP", "Position"]
+- ["s28CustomDebugStringConvertibleP", "TimerControl"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - !private ["s28CustomDebugStringConvertibleP", "ValuesConstants"]
 - ["s28CustomDebugStringConvertibleP", ""]
@@ -149,8 +173,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "calledSelector"]
 - !private ["s28CustomDebugStringConvertibleP", "calledSpecialTarge"]
+- ["s28CustomDebugStringConvertibleP", "canceledTimer"]
+- ["s28CustomDebugStringConvertibleP", "finishTimer"]
 - ["s28CustomDebugStringConvertibleP", "getViewForAction"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isCooldown"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "manageCase"]
 - !private ["s28CustomDebugStringConvertibleP", "perform"]
@@ -160,6 +187,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "setTypeStartAction"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "target"]
+- !private ["s28CustomDebugStringConvertibleP", "timer"]
 - !private ["s28CustomDebugStringConvertibleP", "typeStartAction"]
 - !private ["s28CustomDebugStringConvertibleP", "verify"]
 - ["s28CustomDebugStringConvertibleP", "verifyAction"]
@@ -173,6 +201,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "DispatchQueue"]
 - ["s23CustomStringConvertibleP", "ManagesSpecialCases"]
 - !private ["s23CustomStringConvertibleP", "Position"]
+- ["s23CustomStringConvertibleP", "TimerControl"]
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - !private ["s23CustomStringConvertibleP", "ValuesConstants"]
 - ["s23CustomStringConvertibleP", ""]
@@ -181,8 +210,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "async"]
 - !private ["s23CustomStringConvertibleP", "calledSelector"]
 - !private ["s23CustomStringConvertibleP", "calledSpecialTarge"]
+- ["s23CustomStringConvertibleP", "canceledTimer"]
+- ["s23CustomStringConvertibleP", "finishTimer"]
 - ["s23CustomStringConvertibleP", "getViewForAction"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isCooldown"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "manageCase"]
 - !private ["s23CustomStringConvertibleP", "perform"]
@@ -192,6 +224,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "setTypeStartAction"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "target"]
+- !private ["s23CustomStringConvertibleP", "timer"]
 - !private ["s23CustomStringConvertibleP", "typeStartAction"]
 - !private ["s23CustomStringConvertibleP", "verify"]
 - ["s23CustomStringConvertibleP", "verifyAction"]
@@ -215,6 +248,7 @@ depends-member:
 - !private ["SQ", "DispatchQueue"]
 - ["SQ", "ManagesSpecialCases"]
 - !private ["SQ", "Position"]
+- ["SQ", "TimerControl"]
 - !private ["SQ", "UIView"]
 - !private ["SQ", "ValuesConstants"]
 - ["SQ", ""]
@@ -223,11 +257,14 @@ depends-member:
 - !private ["SQ", "async"]
 - !private ["SQ", "calledSelector"]
 - !private ["SQ", "calledSpecialTarge"]
+- ["SQ", "canceledTimer"]
 - ["SQ", "eyeLeft"]
 - ["SQ", "eyeRight"]
+- ["SQ", "finishTimer"]
 - ["SQ", "getViewForAction"]
 - !private ["SQ", "identifier"]
 - !private ["SQ", "init"]
+- !private ["SQ", "isCooldown"]
 - !private ["SQ", "main"]
 - !private ["SQ", "manageCase"]
 - !private ["SQ", "perform"]
@@ -237,6 +274,7 @@ depends-member:
 - ["SQ", "setTypeStartAction"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "target"]
+- !private ["SQ", "timer"]
 - ["SQ", "tongue"]
 - !private ["SQ", "typeStartAction"]
 - ["SQ", "uiButton"]
@@ -255,6 +293,7 @@ depends-member:
 - !private ["SH", "DispatchQueue"]
 - ["SH", "ManagesSpecialCases"]
 - !private ["SH", "Position"]
+- ["SH", "TimerControl"]
 - !private ["SH", "UIView"]
 - !private ["SH", "ValuesConstants"]
 - ["SH", ""]
@@ -263,11 +302,14 @@ depends-member:
 - !private ["SH", "async"]
 - !private ["SH", "calledSelector"]
 - !private ["SH", "calledSpecialTarge"]
+- ["SH", "canceledTimer"]
 - ["SH", "eyeLeft"]
 - ["SH", "eyeRight"]
+- ["SH", "finishTimer"]
 - ["SH", "getViewForAction"]
 - !private ["SH", "identifier"]
 - !private ["SH", "init"]
+- !private ["SH", "isCooldown"]
 - !private ["SH", "main"]
 - !private ["SH", "manageCase"]
 - !private ["SH", "perform"]
@@ -277,6 +319,7 @@ depends-member:
 - ["SH", "setTypeStartAction"]
 - !private ["SH", "subscript"]
 - !private ["SH", "target"]
+- !private ["SH", "timer"]
 - ["SH", "tongue"]
 - !private ["SH", "typeStartAction"]
 - ["SH", "uiButton"]
@@ -309,6 +352,7 @@ depends-member:
 - ["So8NSObjectC", "ManagesSpecialCases"]
 - ["So8NSObjectC", "Position"]
 - ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "TimerControl"]
 - ["So8NSObjectC", "TypeStartAction"]
 - !private ["So8NSObjectC", "UIView"]
 - ["So8NSObjectC", "UIViewController"]
@@ -319,8 +363,11 @@ depends-member:
 - !private ["So8NSObjectC", "async"]
 - ["So8NSObjectC", "calledSelector"]
 - ["So8NSObjectC", "calledSpecialTarge"]
+- ["So8NSObjectC", "canceledTimer"]
+- ["So8NSObjectC", "finishTimer"]
 - ["So8NSObjectC", "getViewForAction"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isCooldown"]
 - !private ["So8NSObjectC", "main"]
 - ["So8NSObjectC", "manageCase"]
 - !private ["So8NSObjectC", "perform"]
@@ -329,6 +376,7 @@ depends-member:
 - ["So8NSObjectC", "set"]
 - ["So8NSObjectC", "setTypeStartAction"]
 - ["So8NSObjectC", "target"]
+- ["So8NSObjectC", "timer"]
 - ["So8NSObjectC", "typeStartAction"]
 - ["So8NSObjectC", "verify"]
 - ["So8NSObjectC", "verifyAction"]
@@ -337,6 +385,7 @@ depends-member:
 - !private ["So8NSObjectP", "DispatchQueue"]
 - ["So8NSObjectP", "ManagesSpecialCases"]
 - !private ["So8NSObjectP", "Position"]
+- ["So8NSObjectP", "TimerControl"]
 - !private ["So8NSObjectP", "UIView"]
 - !private ["So8NSObjectP", "ValuesConstants"]
 - ["So8NSObjectP", ""]
@@ -344,8 +393,11 @@ depends-member:
 - !private ["So8NSObjectP", "async"]
 - !private ["So8NSObjectP", "calledSelector"]
 - !private ["So8NSObjectP", "calledSpecialTarge"]
+- ["So8NSObjectP", "canceledTimer"]
+- ["So8NSObjectP", "finishTimer"]
 - ["So8NSObjectP", "getViewForAction"]
 - !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isCooldown"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "manageCase"]
 - !private ["So8NSObjectP", "perform"]
@@ -354,6 +406,7 @@ depends-member:
 - ["So8NSObjectP", "set"]
 - ["So8NSObjectP", "setTypeStartAction"]
 - !private ["So8NSObjectP", "target"]
+- !private ["So8NSObjectP", "timer"]
 - !private ["So8NSObjectP", "typeStartAction"]
 - !private ["So8NSObjectP", "verify"]
 - ["So8NSObjectP", "verifyAction"]
@@ -379,6 +432,38 @@ depends-member:
 - !private ["ST", "append"]
 - !private ["ST", "init"]
 - !private ["ST", "subscript"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "delegate"]
+- ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "init"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "startTimer"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "AccessibilityUIType"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "DispatchQueue"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "ManagesSpecialCases"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "Position"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "TimerControl"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "UIView"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "ValuesConstants"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", ""]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "calledSelector"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "calledSpecialTarge"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "canceledTimer"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "finishTimer"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "getViewForAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "isCooldown"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "manageCase"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "pointView"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "position"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "set"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "setTypeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "target"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "timer"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "typeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "verify"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "verifyAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "viewsAction"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "deinit"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "delegate"]
+- ["26AcessibilityFaceMovimentBR12TimerControlC", "init"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "startTimer"]
 - ["26AcessibilityFaceMovimentBR15TypeStartActionO", "eyeLeft"]
 - ["26AcessibilityFaceMovimentBR15TypeStartActionO", "eyeRight"]
 - ["26AcessibilityFaceMovimentBR15TypeStartActionO", "tongue"]
@@ -408,6 +493,7 @@ depends-member:
 - !private ["So6UIViewC", "accessibilityIdentifier"]
 - !private ["So16UIViewControllerC", "perform"]
 - !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "closeEye"]
+- !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "cooldown"]
 - !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "openEye"]
 - !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tongue"]
 - !private ["26AcessibilityFaceMovimentBR10ViewActionV", "selector"]
@@ -429,6 +515,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ManagesSpecialCases"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Position"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "TimerControl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ValuesConstants"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -436,8 +523,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "calledSelector"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "calledSpecialTarge"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "canceledTimer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "finishTimer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "getViewForAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isCooldown"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "manageCase"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
@@ -446,6 +536,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "setTypeStartAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "target"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "typeStartAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "verify"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "verifyAction"]
@@ -454,6 +545,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ManagesSpecialCases"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Position"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TimerControl"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ValuesConstants"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
@@ -461,8 +553,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calledSelector"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calledSpecialTarge"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "canceledTimer"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "finishTimer"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getViewForAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isCooldown"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "manageCase"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "perform"]
@@ -471,6 +566,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setTypeStartAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "target"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "typeStartAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "verify"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "verifyAction"]
@@ -516,6 +612,9 @@ depends-nominal:
 - "SY"
 - !private "7Combine9SchedulerP"
 - !private "ST"
+- "26AcessibilityFaceMovimentBR19TimerActionProtocolP"
+- "26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP"
+- "26AcessibilityFaceMovimentBR12TimerControlC"
 - "26AcessibilityFaceMovimentBR15TypeStartActionO"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -594,4 +693,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "98e6ba51d0260dc833b4c4dc075dab83"
+interface-hash: "0c08d80dc24283a6a4b4357f15069aa6"

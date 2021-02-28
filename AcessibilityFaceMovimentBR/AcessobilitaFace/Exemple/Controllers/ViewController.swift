@@ -40,7 +40,6 @@ class ViewController: AccessibilityFaceAnchorViewController {
                                      ViewAction(view: viewSeven, selector: #selector(actionSeven)),
                                      ViewAction(view: viewEight, selector: #selector(actionEight))]
     viewsAction.append(contentsOf: getViewsActionWithTabBar())
-
     return viewsAction
   }
 

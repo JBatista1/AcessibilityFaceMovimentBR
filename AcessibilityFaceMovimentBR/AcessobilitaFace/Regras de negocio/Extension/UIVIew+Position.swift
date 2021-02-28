@@ -17,8 +17,18 @@ extension UIView {
   }
 
   func absoluteValueToFrame() -> CGRect {
-    let rootView = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
-    guard let absoluteframe = self.superview?.convert(self.frame, to: rootView) else { return CGRect(x: 0, y: 0, width: 0, height: 0)}
+    if let baseWindow = UIApplication.shared.windows.filter({ $0.isKeyWindow }).first {
+      return returnAbsoluteValue(basedInWindows: baseWindow)
+    }
+
+    if let alternativeWindow = UIApplication.shared.windows.first {
+       return returnAbsoluteValue(basedInWindows: alternativeWindow)
+    }
+
+    return CGRect(x: 0, y: 0, width: 0, height: 0)
+  }
+  private func returnAbsoluteValue(basedInWindows windows: UIWindow) -> CGRect {
+    guard let absoluteframe = self.superview?.convert(self.frame, to: windows) else { return CGRect(x: 0, y: 0, width: 0, height: 0)}
     return absoluteframe
   }
 

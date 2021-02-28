@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>7A5DE85A-A183-420F-8C1E-7242EDD68B07</key>
+		<key>7269E5A0-D2C4-4924-BE99-95A9928D5ABA</key>
 		<dict>
 			<key>className</key>
 			<string>IDEActivityLogMajorGroupSection</string>
@@ -15,24 +15,24 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
 			<key>fileName</key>
-			<string>7A5DE85A-A183-420F-8C1E-7242EDD68B07.xcactivitylog</string>
+			<string>7269E5A0-D2C4-4924-BE99-95A9928D5ABA.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 			</dict>
 			<key>signature</key>
 			<string>AcessibilityFaceMovimentBR-ebwxowkedffdbuezlgvpexwsouxp</string>
 			<key>timeStartedRecording</key>
-			<real>636162322.57652795</real>
+			<real>636171729.74058402</real>
 			<key>timeStoppedRecording</key>
-			<real>636162328.22729194</real>
+			<real>636171734.16320598</real>
 			<key>title</key>
 			<string>Build target AcessibilityFaceMovimentBR</string>
 			<key>uniqueIdentifier</key>
-			<string>7A5DE85A-A183-420F-8C1E-7242EDD68B07</string>
+			<string>7269E5A0-D2C4-4924-BE99-95A9928D5ABA</string>
 		</dict>
 		<key>E6159C15-2D83-4237-B3ED-CB5C7A80F2D8</key>
 		<dict>
