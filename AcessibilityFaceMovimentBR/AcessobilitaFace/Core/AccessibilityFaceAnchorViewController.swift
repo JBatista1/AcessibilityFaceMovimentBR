@@ -15,7 +15,7 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
   
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
-
+  private var isShow = true
   // MARK: - Life cicle
 
   open override func viewDidLoad() {
@@ -28,6 +28,10 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
     super.viewDidAppear(animated)
     UIApplication.shared.isIdleTimerDisabled = true
     resetTracking()
+  }
+
+  open override func viewDidDisappear(_ animated: Bool) {
+    sceneView.session.pause()
   }
 
   // MARK: - Private Class Methods
@@ -51,7 +55,7 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
 
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
     DispatchQueue.main.async {
-      UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 2, initialSpringVelocity: 0.2, options: .curveLinear, animations: {
+      UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 6, initialSpringVelocity: 0.2, options: [.curveLinear, .preferredFramesPerSecond60], animations: {
         self.cursor.center = nextPoint
       }, completion: nil)
     }

@@ -13,19 +13,20 @@ class SuccessViewController: AccessibilityFaceAnchorViewController {
   @IBOutlet weak var tableView: UITableView!
   override func viewDidLoad() {
     super.viewDidLoad()
-    action.set(viewsAction: createViewAction())
+
     delegateNavigationBar = self
     delegateTabBar = self
     delegateCellView = self
   }
 
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+     action.set(viewsAction: createViewAction())
   }
 
   func createViewAction() -> [ViewAction] {
     var viewsAction: [ViewAction] = [ViewAction(view: tableView, selector: #selector(selectedCell(_:)))]
-    viewsAction.append(contentsOf: getViewsActionBackNavigationBar())
+    viewsAction.append(contentsOf: getViewActionNavigationAndTabBar())
     return viewsAction
   }
 }
@@ -38,7 +39,7 @@ extension SuccessViewController: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = UITableViewCell()
     cell.textLabel?.text = "AQUI MANO DO Cell\(indexPath.row)"
-    cell.accessibilityIdentifier = "row:\(indexPath.row) section: \(indexPath.section)"
+
     return cell
   }
   func numberOfSections(in tableView: UITableView) -> Int {
@@ -51,7 +52,7 @@ extension SuccessViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension SuccessViewController: CellViewSelectedProtocol {
   func cellSelected(withIndex index: IndexPath) {
-    print(index)
+    title = "Row \(index.row)"
   }
 }
 
@@ -61,6 +62,6 @@ extension SuccessViewController: TabBarSelectedProtocol, NavigationBackButtonPro
   }
 
   func actionNavigationBack() {
-    self.dismiss(animated: true, completion: nil)
+    navigationController?.popViewController(animated: true)
   }
 }

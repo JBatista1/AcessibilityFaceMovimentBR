@@ -16,10 +16,14 @@ class CollectionTestViewController: AccessibilityFaceAnchorViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    action.set(viewsAction: createViewAction())
     collectionViewConfiguration()
     delegateCellView = self
     delegateTabBar = self
+  }
+
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    action.set(viewsAction: createViewAction())
   }
 
   func collectionViewConfiguration() {

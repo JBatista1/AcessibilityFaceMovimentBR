@@ -7,16 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2AB7D357-7B3C-4E54-B060-D1AC721B3583"
-            shouldBeEnabled = "Yes"
+            uuid = "85E46B80-D090-411C-BB97-64A847CA47C8"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/CollectionTestViewController.swift"
+            filePath = "AcessibilityFaceMovimentBR/AcessobilitaFace/Core/AccessibilityFaceAnchorViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "tabBar(isSelectedIndex:)"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "viewDidDisappear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DC73363-C2C0-465E-A264-7AE7F00C4DC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AcessibilityFaceMovimentBR/AcessobilitaFace/Regras de negocio/Extension/UIVIew+Position.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "returnAbsoluteValue(basedInWindows:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

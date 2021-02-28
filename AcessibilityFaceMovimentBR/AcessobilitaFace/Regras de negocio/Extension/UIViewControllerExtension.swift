@@ -28,10 +28,13 @@ extension UIViewController {
     guard let navBar = navigationController?.navigationBar else {
       return nil
     }
+
     if navBar.subviews.count >= 2 {
-      let views = navBar.subviews[1]
-      if views.subviews.count >= 1 && views.subviews.count >= 2 {
-        return views.subviews[1]
+      let views = navBar.subviews
+      for view in views {
+        if view.isKind(of: NSClassFromString("_UINavigationBarContentView")!) && view.subviews.count >= 1 {
+          return view.subviews.first
+        }
       }
     }
     return nil

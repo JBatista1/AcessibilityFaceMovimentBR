@@ -3,9 +3,9 @@
 <plist version="1.0">
 <array>
 	<string>Foundation</string>
+	<string>AppKit</string>
 	<string>XCTest</string>
 	<string>AcessibilityFaceMovimentBR</string>
-	<string>AppKit</string>
 	<string>UIKit</string>
 	<string>ARKit</string>
 </array>

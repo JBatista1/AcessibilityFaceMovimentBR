@@ -24,7 +24,6 @@ class Position {
       if verify(withPoint: point, insideInFrame: absolutePosition[index]) {
         return index
       }
-      print(absolutePosition[index])
     }
     return nil
   }

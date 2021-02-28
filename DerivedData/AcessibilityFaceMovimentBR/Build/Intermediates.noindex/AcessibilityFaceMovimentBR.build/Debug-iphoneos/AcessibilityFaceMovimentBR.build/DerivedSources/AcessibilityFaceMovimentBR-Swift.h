@@ -215,6 +215,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR26AcessibilityViewController")
 @interface AcessibilityViewController : UIViewController
 - (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -224,6 +225,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR37AccessibilityFaceAnchorViewContro
 @interface AccessibilityFaceAnchorViewController : AcessibilityViewController
 - (void)viewDidLoad;
 - (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -283,6 +285,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR28CollectionTestViewController")
 @interface CollectionTestViewController : AccessibilityFaceAnchorViewController
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified collectionView;
 - (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
 - (void)handleTap:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
@@ -307,6 +310,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR29NavigationTesteViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified nextButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bookImageView;
 - (void)viewDidLoad;
+- (void)viewDidLayoutSubviews;
 - (IBAction)tappedNextScreen:(id _Nonnull)sender;
 - (void)handleTap:(UITapGestureRecognizer * _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
@@ -336,7 +340,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR21SuccessViewController")
 @interface SuccessViewController : AccessibilityFaceAnchorViewController
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
-- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end

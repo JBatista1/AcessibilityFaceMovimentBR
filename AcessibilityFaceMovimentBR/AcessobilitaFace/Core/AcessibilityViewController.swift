@@ -35,6 +35,11 @@ open class AcessibilityViewController: UIViewController {
     cursor.accessibilityIdentifier = AccessibilityUIType.uiCursor.identifier
   }
 
+  open override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    tabBarController?.tabBar.invalidateIntrinsicContentSize()
+  }
+
   private func insertCursor() {
     if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first, (getCursor(inWindows: window) == nil) {
       window.addSubview(cursor)
@@ -42,6 +47,7 @@ open class AcessibilityViewController: UIViewController {
     }
 
     if let window = UIApplication.shared.windows.first, (getCursor(inWindows: window) == nil) {
+      window.makeKey()
       window.addSubview(cursor)
       return
     }
@@ -93,7 +99,7 @@ extension AcessibilityViewController {
     return []
   }
 
-  func getViewActionNavigationAndTabBar(viewsAction: [ViewAction]) -> [ViewAction] {
+  func getViewActionNavigationAndTabBar() -> [ViewAction] {
     var newViewActions = [ViewAction]()
     newViewActions.append(contentsOf: getViewsActionWithTabBar())
     newViewActions.append(contentsOf: getViewsActionBackNavigationBar())
