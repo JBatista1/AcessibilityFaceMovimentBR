@@ -11,33 +11,35 @@ import UIKit
 final class MoveCursorFaceAnchor {
 
   // MARK: - Private Property
+  
   private typealias Limited = (axisX: CGFloat, axisY: CGFloat)
   private typealias PercentagemAxis = (percentagemX: Int, percentagemY: Int)
-
-  private var isInitial = false
-  private var limitAxis = Limited(0.4, 0.3)
   private var lastPercentagem = PercentagemAxis(0, 0)
   private var lastPosition = CGPoint.zero
-  private var tolerance = 2
   private var totalPercentage: CGFloat = 100
+  private var faceSensitivity: FaceSensitivity = FaceSensitivity.getDefault()
 
   // MARK: - Life Cicle
 
-  init() {}
+  init(faceSensitivity: FaceSensitivity? = nil) {
+    if let sensitivity =  faceSensitivity {
+      self.faceSensitivity = sensitivity
+    }
+  }
 
   // MARK: - Private Method
 
   private func verifyDirectionMove(withCoordinate coordinate: CGFloat) -> MovimentDirection {
     if coordinate > 0 {
-        return .positive
+      return .positive
     } else {
-        return .negative
+      return .negative
     }
   }
 
   private func getPercentage(withFacePosition position: CGFloat, andLimitedAxis limited: CGFloat) -> Int {
     if position < limited {
-       return Int(((position * totalPercentage))/limited)
+      return Int(((position * totalPercentage))/limited)
     } else {
       return Int(((limited * totalPercentage))/limited)
     }
@@ -69,17 +71,17 @@ extension MoveCursorFaceAnchor: MoveCursorProtocol {
 
     switch directionX {
     case .positive:
-      percentagemX = getPercentage(withFacePosition: point.x, andLimitedAxis: limitAxis.axisX)
+      percentagemX = getPercentage(withFacePosition: point.x, andLimitedAxis: faceSensitivity.getLimitedX())
     case .negative:
-      percentagemX = getPercentage(withFacePosition: -point.x, andLimitedAxis: limitAxis.axisX)
+      percentagemX = getPercentage(withFacePosition: -point.x, andLimitedAxis: faceSensitivity.getLimitedX())
     }
 
     let directionY = verifyDirectionMove(withCoordinate: point.y)
     switch directionY {
     case .positive:
-      percentagemY = getPercentage(withFacePosition: point.y, andLimitedAxis: limitAxis.axisY)
+      percentagemY = getPercentage(withFacePosition: point.y, andLimitedAxis: faceSensitivity.getLimitedY())
     case .negative:
-      percentagemY = getPercentage(withFacePosition: -point.y, andLimitedAxis: limitAxis.axisY)
+      percentagemY = getPercentage(withFacePosition: -point.y, andLimitedAxis: faceSensitivity.getLimitedY())
     }
 
     newPositionCursor.x =  getNewPosition(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Screen.center.x)

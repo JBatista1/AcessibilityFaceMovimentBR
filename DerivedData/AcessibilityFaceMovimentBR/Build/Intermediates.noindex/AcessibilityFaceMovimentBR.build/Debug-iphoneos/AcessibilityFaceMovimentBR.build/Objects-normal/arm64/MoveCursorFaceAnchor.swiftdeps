@@ -6,14 +6,12 @@ provides-nominal:
 provides-member:
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", ""]
 provides-dynamic-lookup:
+- "faceSensitivity"
 - "getNewPosition"
 - "getNextPosition"
 - "getPercentage"
-- "isInitial"
 - "lastPercentagem"
 - "lastPosition"
-- "limitAxis"
-- "tolerance"
 - "totalPercentage"
 - "verifyDirectionMove"
 depends-top-level:
@@ -24,9 +22,9 @@ depends-top-level:
 - !private "<"
 - !private ">"
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
 - "CGFloat"
 - "CGPoint"
+- "FaceSensitivity"
 - "FloatLiteralType"
 - "Int"
 - "IntegerLiteralType"
@@ -68,6 +66,9 @@ depends-member:
 - ["SQ", "zero"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- ["26AcessibilityFaceMovimentBR0B11SensitivityV", "getDefault"]
+- !private ["26AcessibilityFaceMovimentBR0B11SensitivityV", "getLimitedX"]
+- !private ["26AcessibilityFaceMovimentBR0B11SensitivityV", "getLimitedY"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["SF", "init"]
 - !private ["SH", "init"]
@@ -78,36 +79,35 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "CGPoint"]
+- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "FaceSensitivity"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Int"]
-- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Limited"]
+- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Limited"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "MovimentDirection"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "PercentagemAxis"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Screen"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "deinit"]
+- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "faceSensitivity"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "getNewPosition"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "getNextPosition"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "getPercentage"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "init"]
-- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "isInitial"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPosition"]
-- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "limitAxis"]
-- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "tolerance"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyDirectionMove"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGFloat"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGPoint"]
+- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "FaceSensitivity"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "Int"]
-- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "Limited"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "PercentagemAxis"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "Screen"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", ""]
+- !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "faceSensitivity"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNewPosition"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNextPosition"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getPercentage"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPosition"]
-- !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "limitAxis"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "verifyDirectionMove"]
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "negative"]
@@ -146,6 +146,7 @@ depends-nominal:
 - "SQ"
 - !private "s25ExpressibleByFloatLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
+- "26AcessibilityFaceMovimentBR0B11SensitivityV"
 - !private "s17FixedWidthIntegerP"
 - !private "SF"
 - "SH"
@@ -215,4 +216,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e23b11b8912bdfa00d7db5f2a79d9854"
+interface-hash: "e2cd9d09042d60ae5ffd576971e83b97"

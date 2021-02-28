@@ -25,9 +25,14 @@ enum ValuesConstants {
   static let closeEye: CGFloat = 0.6
   static let openEye: CGFloat = 0.3
   static let tongue: CGFloat = 0.6
-  static let indexPathError = IndexPath(row: -1, section: -1)
+  static let indexPathError: IndexPath = IndexPath(row: -1, section: -1)
   static let tabBarIndexError: Int = -1
   static let cooldown: Int = 3
+  static let limitedX: CGFloat = 0.15
+  static let limitedY: CGFloat = 0.1
+  static let tolerance: CGFloat = 0.005
+  static let numberAcceptedValues: Int = 50
+  static let valueForStart: Int = 10
 }
 
 internal enum AccessibilityUIType: String {

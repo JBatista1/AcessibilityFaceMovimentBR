@@ -28,6 +28,8 @@
 		9A5E811E25D02EFC00B58861 /* ActionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E811D25D02EFC00B58861 /* ActionProtocol.swift */; };
 		9A5E812025D02FD500B58861 /* ViewAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E811F25D02FD500B58861 /* ViewAction.swift */; };
 		9A5E812225D031CC00B58861 /* UIVIew+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E812125D031CC00B58861 /* UIVIew+Position.swift */; };
+		9AAB125E25EC4849004ED34C /* AcessibilityGetSensitivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB125D25EC4849004ED34C /* AcessibilityGetSensitivityViewController.swift */; };
+		9AAB126025EC4873004ED34C /* FaceSensitivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AAB125F25EC4873004ED34C /* FaceSensitivity.swift */; };
 		9AB086A025D4A81E00DF37C7 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB0869F25D4A81E00DF37C7 /* Position.swift */; };
 		9AB6644025D8993A002EEA51 /* NavigationBackButtonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6643F25D8993A002EEA51 /* NavigationBackButtonProtocol.swift */; };
 		9AB6644225D899CD002EEA51 /* AcessibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6644125D899CD002EEA51 /* AcessibilityViewController.swift */; };
@@ -43,6 +45,10 @@
 		9AF2C87525D8942700FB7259 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87425D8942700FB7259 /* UIViewControllerExtension.swift */; };
 		9AF2C87725D895AB00FB7259 /* NavigationTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */; };
 		9AF2C87B25D8978800FB7259 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87A25D8978800FB7259 /* SuccessViewController.swift */; };
+		9AFCD72B25EC532B00A4B88B /* GetSensitivityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCD72A25EC532B00A4B88B /* GetSensitivityProtocol.swift */; };
+		9AFCD72D25EC545300A4B88B /* ManagePointSensibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCD72C25EC545300A4B88B /* ManagePointSensibility.swift */; };
+		9AFCD72F25EC551F00A4B88B /* DirectiorFaceMoviment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCD72E25EC551F00A4B88B /* DirectiorFaceMoviment.swift */; };
+		9AFCD73125EC567400A4B88B /* ManagerPointSesibilittyProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFCD73025EC567400A4B88B /* ManagerPointSesibilittyProtocol.swift */; };
 		A0770479EFD2B2BF5D4A61C0 /* Pods_AcessibilityFaceMovimentBRTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6524D84D03E0513A22BF13 /* Pods_AcessibilityFaceMovimentBRTests.framework */; };
 		C8335635C543761D60B5302B /* Pods_AcessibilityFaceMovimentBR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F628952DC4CA9110355D4E49 /* Pods_AcessibilityFaceMovimentBR.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +91,8 @@
 		9A5E811D25D02EFC00B58861 /* ActionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionProtocol.swift; sourceTree = "<group>"; };
 		9A5E811F25D02FD500B58861 /* ViewAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewAction.swift; sourceTree = "<group>"; };
 		9A5E812125D031CC00B58861 /* UIVIew+Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew+Position.swift"; sourceTree = "<group>"; };
+		9AAB125D25EC4849004ED34C /* AcessibilityGetSensitivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityGetSensitivityViewController.swift; sourceTree = "<group>"; };
+		9AAB125F25EC4873004ED34C /* FaceSensitivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceSensitivity.swift; sourceTree = "<group>"; };
 		9AB0869F25D4A81E00DF37C7 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		9AB6643F25D8993A002EEA51 /* NavigationBackButtonProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBackButtonProtocol.swift; sourceTree = "<group>"; };
 		9AB6644125D899CD002EEA51 /* AcessibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +108,10 @@
 		9AF2C87425D8942700FB7259 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTesteViewController.swift; sourceTree = "<group>"; };
 		9AF2C87A25D8978800FB7259 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		9AFCD72A25EC532B00A4B88B /* GetSensitivityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSensitivityProtocol.swift; sourceTree = "<group>"; };
+		9AFCD72C25EC545300A4B88B /* ManagePointSensibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagePointSensibility.swift; sourceTree = "<group>"; };
+		9AFCD72E25EC551F00A4B88B /* DirectiorFaceMoviment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectiorFaceMoviment.swift; sourceTree = "<group>"; };
+		9AFCD73025EC567400A4B88B /* ManagerPointSesibilittyProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerPointSesibilittyProtocol.swift; sourceTree = "<group>"; };
 		9CA8C3FDF5F9C4E736F9F0A1 /* Pods-AcessibilityFaceMovimentBR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBR.debug.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBR/Pods-AcessibilityFaceMovimentBR.debug.xcconfig"; sourceTree = "<group>"; };
 		A23B29D2B6A7E8BF9CAEFE40 /* Pods-AcessibilityFaceMovimentBRTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBRTests.release.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBRTests/Pods-AcessibilityFaceMovimentBRTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAA48ED0EA9DADD247F51A8C /* Pods-AcessibilityFaceMovimentBR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AcessibilityFaceMovimentBR.release.xcconfig"; path = "Target Support Files/Pods-AcessibilityFaceMovimentBR/Pods-AcessibilityFaceMovimentBR.release.xcconfig"; sourceTree = "<group>"; };
@@ -252,6 +264,7 @@
 			children = (
 				9A49E76E25A7C52800F39BB9 /* AccessibilityFaceAnchorViewController.swift */,
 				9AB6644125D899CD002EEA51 /* AcessibilityViewController.swift */,
+				9AAB125D25EC4849004ED34C /* AcessibilityGetSensitivityViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -272,6 +285,8 @@
 				9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */,
 				9AB6643F25D8993A002EEA51 /* NavigationBackButtonProtocol.swift */,
 				9AE8480B25E8703B00666008 /* CellViewSelectedProtocol.swift */,
+				9AFCD72A25EC532B00A4B88B /* GetSensitivityProtocol.swift */,
+				9AFCD73025EC567400A4B88B /* ManagerPointSesibilittyProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -284,6 +299,7 @@
 				9A5E811B25D02EE800B58861 /* ActionInView.swift */,
 				9AB0869F25D4A81E00DF37C7 /* Position.swift */,
 				9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */,
+				9AFCD72C25EC545300A4B88B /* ManagePointSensibility.swift */,
 			);
 			path = Auxiliares;
 			sourceTree = "<group>";
@@ -294,6 +310,7 @@
 				9A4EDFA025AD2BE300DC97DA /* MovimentDirection.swift */,
 				9A4EDFA425AD303000DC97DA /* LimitedScreen.swift */,
 				9A5E811925D02E7A00B58861 /* TypeStartAction.swift */,
+				9AFCD72E25EC551F00A4B88B /* DirectiorFaceMoviment.swift */,
 			);
 			path = Enuns;
 			sourceTree = "<group>";
@@ -311,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				9A5E811F25D02FD500B58861 /* ViewAction.swift */,
+				9AAB125F25EC4873004ED34C /* FaceSensitivity.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -552,6 +570,8 @@
 				9AB77FF225E9B54F00BCC152 /* ManagesSpecialCases.swift in Sources */,
 				9AF2C87525D8942700FB7259 /* UIViewControllerExtension.swift in Sources */,
 				9A4EDFA525AD303000DC97DA /* LimitedScreen.swift in Sources */,
+				9AFCD73125EC567400A4B88B /* ManagerPointSesibilittyProtocol.swift in Sources */,
+				9AFCD72F25EC551F00A4B88B /* DirectiorFaceMoviment.swift in Sources */,
 				9A5E812025D02FD500B58861 /* ViewAction.swift in Sources */,
 				9A5E811A25D02E7A00B58861 /* TypeStartAction.swift in Sources */,
 				9A4EDFA125AD2BE300DC97DA /* MovimentDirection.swift in Sources */,
@@ -563,12 +583,16 @@
 				9A49E76F25A7C52800F39BB9 /* AccessibilityFaceAnchorViewController.swift in Sources */,
 				9A4EDF9E25AD275300DC97DA /* MoveCursorFaceAnchor.swift in Sources */,
 				9A5E812225D031CC00B58861 /* UIVIew+Position.swift in Sources */,
+				9AAB125E25EC4849004ED34C /* AcessibilityGetSensitivityViewController.swift in Sources */,
 				9AE8480C25E8703B00666008 /* CellViewSelectedProtocol.swift in Sources */,
 				9AB6644625D8A25E002EEA51 /* TimerActionProtocol.swift in Sources */,
+				9AAB126025EC4873004ED34C /* FaceSensitivity.swift in Sources */,
 				9A58CE5325AA6FD400948A06 /* Constants.swift in Sources */,
 				9A5E811C25D02EE800B58861 /* ActionInView.swift in Sources */,
 				9AB77FF625E9BE0600BCC152 /* UICollectionViewExtension.swift in Sources */,
 				9AB6644025D8993A002EEA51 /* NavigationBackButtonProtocol.swift in Sources */,
+				9AFCD72D25EC545300A4B88B /* ManagePointSensibility.swift in Sources */,
+				9AFCD72B25EC532B00A4B88B /* GetSensitivityProtocol.swift in Sources */,
 				9A2F485725A3EA880043A2A6 /* AppDelegate.swift in Sources */,
 				9AF2C87B25D8978800FB7259 /* SuccessViewController.swift in Sources */,
 				9A2F485925A3EA880043A2A6 /* SceneDelegate.swift in Sources */,

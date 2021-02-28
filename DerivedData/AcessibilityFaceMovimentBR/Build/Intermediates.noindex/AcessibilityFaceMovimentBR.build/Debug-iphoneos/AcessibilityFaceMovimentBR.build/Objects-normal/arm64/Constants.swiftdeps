@@ -191,9 +191,14 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "closeEye"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "cooldown"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "indexPathError"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "limitedX"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "limitedY"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "numberAcceptedValues"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "openEye"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tabBarIndexError"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tolerance"]
 - ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tongue"]
+- ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "valueForStart"]
 - ["s15_CVarArgAlignedP", "init"]
 - ["s22_CVarArgPassedAsDoubleP", "init"]
 - ["s30_CustomPlaygroundQuickLookableP", "height"]
@@ -302,4 +307,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cc1f31e6d3ba31f48ed7a4e1f45d855a"
+interface-hash: "b92f536a2d88b22a32dcb76173b743a3"

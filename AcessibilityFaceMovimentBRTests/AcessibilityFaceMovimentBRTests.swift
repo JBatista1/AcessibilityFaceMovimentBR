@@ -20,8 +20,10 @@ class AcessibilityFaceMovimentBRTests: XCTestCase {
     }
 
     func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+      let teste = FaceSensitivity(limitedTopX: 0.4, limitedBottonX: -0.6, limitedTopY: -0.8, limitedBottonY: 0.8)
+
+      XCTAssertEqual(teste.getLimitedX(), 1.0)
+      XCTAssertEqual(teste.getLimitedY(), 1.6)
     }
 
     func testPerformanceExample() throws {

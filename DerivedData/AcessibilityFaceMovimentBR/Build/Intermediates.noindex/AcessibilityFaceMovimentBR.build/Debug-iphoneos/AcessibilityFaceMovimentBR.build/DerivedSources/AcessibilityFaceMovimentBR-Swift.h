@@ -239,6 +239,23 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR37AccessibilityFaceAnchorViewContro
 @end
 
 
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR40AcessibilityGetSensitivityViewController")
+@interface AcessibilityGetSensitivityViewController : UIViewController
+- (void)viewDidLoad;
+- (void)viewDidAppear:(BOOL)animated;
+- (void)viewDidDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface AcessibilityGetSensitivityViewController (SWIFT_EXTENSION(AcessibilityFaceMovimentBR)) <ARSCNViewDelegate, ARSessionDelegate>
+- (void)renderer:(id <SCNSceneRenderer> _Nonnull)renderer didUpdateNode:(SCNNode * _Nonnull)node forAnchor:(ARAnchor * _Nonnull)anchor;
+@end
+
+
+
+
 
 
 
