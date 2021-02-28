@@ -1,0 +1,696 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "ActionInView"
+provides-nominal:
+- "26AcessibilityFaceMovimentBR12ActionInViewC"
+provides-member:
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", ""]
+provides-dynamic-lookup:
+- "calledSelector"
+- "calledSpecialTarge"
+- "canceledTimer"
+- "finishTimer"
+- "getViewForAction"
+- "isCooldown"
+- "manageCase"
+- "pointView"
+- "position"
+- "set"
+- "setTypeStartAction"
+- "target"
+- "timer"
+- "typeStartAction"
+- "verify"
+- "verifyAction"
+- "viewsAction"
+depends-top-level:
+- !private "&&"
+- !private "<="
+- !private "=="
+- !private ">="
+- !private "AccessibilityUIType"
+- "ActionInView"
+- "ActionProtocol"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CGFloat"
+- "CGPoint"
+- !private "DispatchQueue"
+- "ManagesSpecialCases"
+- "NSObject"
+- "Position"
+- "String"
+- "TimerActionResponseProtocol"
+- "TimerControl"
+- "TypeStartAction"
+- !private "UIView"
+- "UIViewController"
+- !private "ValuesConstants"
+- "ViewAction"
+- !private "~="
+depends-member:
+- !private ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "identifier"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiButton"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiCollectionView"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiImageView"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiTabBar"]
+- ["26AcessibilityFaceMovimentBR19AccessibilityUITypeO", "uiTableView"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "AccessibilityUIType"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "Bool"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "CGFloat"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "CGPoint"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "DispatchQueue"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "ManagesSpecialCases"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "Position"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "String"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "TimerControl"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "TypeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIView"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "UIViewController"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "ValuesConstants"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "ViewAction"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "calledSelector"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "calledSpecialTarge"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "canceledTimer"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "deinit"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "finishTimer"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "getViewForAction"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "init"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "isCooldown"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "manageCase"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "pointView"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "position"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "set"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "setTypeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "target"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "timer"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "typeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "verify"]
+- ["26AcessibilityFaceMovimentBR12ActionInViewC", "verifyAction"]
+- !private ["26AcessibilityFaceMovimentBR12ActionInViewC", "viewsAction"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "AccessibilityUIType"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "DispatchQueue"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ManagesSpecialCases"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "Position"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "TimerControl"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "UIView"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "ValuesConstants"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", ""]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "calledSelector"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "calledSpecialTarge"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "canceledTimer"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "finishTimer"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "getViewForAction"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "isCooldown"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "manageCase"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "pointView"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "position"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "set"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "setTypeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "target"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "timer"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "typeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verify"]
+- ["26AcessibilityFaceMovimentBR14ActionProtocolP", "verifyAction"]
+- !private ["26AcessibilityFaceMovimentBR14ActionProtocolP", "viewsAction"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- !private ["SK", "append"]
+- !private ["SK", "init"]
+- !private ["SK", "subscript"]
+- !private ["So15CALayerDelegateP", "accessibilityIdentifier"]
+- ["So7CGPointV", "zero"]
+- !private ["s7CVarArgP", "AccessibilityUIType"]
+- !private ["s7CVarArgP", "DispatchQueue"]
+- ["s7CVarArgP", "ManagesSpecialCases"]
+- !private ["s7CVarArgP", "Position"]
+- ["s7CVarArgP", "TimerControl"]
+- !private ["s7CVarArgP", "UIView"]
+- !private ["s7CVarArgP", "ValuesConstants"]
+- ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "accessibilityIdentifier"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "async"]
+- !private ["s7CVarArgP", "calledSelector"]
+- !private ["s7CVarArgP", "calledSpecialTarge"]
+- ["s7CVarArgP", "canceledTimer"]
+- ["s7CVarArgP", "finishTimer"]
+- ["s7CVarArgP", "getViewForAction"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isCooldown"]
+- !private ["s7CVarArgP", "main"]
+- !private ["s7CVarArgP", "manageCase"]
+- !private ["s7CVarArgP", "perform"]
+- !private ["s7CVarArgP", "pointView"]
+- !private ["s7CVarArgP", "position"]
+- ["s7CVarArgP", "set"]
+- ["s7CVarArgP", "setTypeStartAction"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "target"]
+- !private ["s7CVarArgP", "timer"]
+- !private ["s7CVarArgP", "typeStartAction"]
+- !private ["s7CVarArgP", "verify"]
+- ["s7CVarArgP", "verifyAction"]
+- !private ["s7CVarArgP", "viewsAction"]
+- !private ["Sl", "append"]
+- !private ["Sl", "init"]
+- !private ["Sl", "subscript"]
+- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["10Foundation15ContiguousBytesP", "init"]
+- !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "AccessibilityUIType"]
+- !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
+- ["s28CustomDebugStringConvertibleP", "ManagesSpecialCases"]
+- !private ["s28CustomDebugStringConvertibleP", "Position"]
+- ["s28CustomDebugStringConvertibleP", "TimerControl"]
+- !private ["s28CustomDebugStringConvertibleP", "UIView"]
+- !private ["s28CustomDebugStringConvertibleP", "ValuesConstants"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "accessibilityIdentifier"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "async"]
+- !private ["s28CustomDebugStringConvertibleP", "calledSelector"]
+- !private ["s28CustomDebugStringConvertibleP", "calledSpecialTarge"]
+- ["s28CustomDebugStringConvertibleP", "canceledTimer"]
+- ["s28CustomDebugStringConvertibleP", "finishTimer"]
+- ["s28CustomDebugStringConvertibleP", "getViewForAction"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isCooldown"]
+- !private ["s28CustomDebugStringConvertibleP", "main"]
+- !private ["s28CustomDebugStringConvertibleP", "manageCase"]
+- !private ["s28CustomDebugStringConvertibleP", "perform"]
+- !private ["s28CustomDebugStringConvertibleP", "pointView"]
+- !private ["s28CustomDebugStringConvertibleP", "position"]
+- ["s28CustomDebugStringConvertibleP", "set"]
+- ["s28CustomDebugStringConvertibleP", "setTypeStartAction"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "target"]
+- !private ["s28CustomDebugStringConvertibleP", "timer"]
+- !private ["s28CustomDebugStringConvertibleP", "typeStartAction"]
+- !private ["s28CustomDebugStringConvertibleP", "verify"]
+- ["s28CustomDebugStringConvertibleP", "verifyAction"]
+- !private ["s28CustomDebugStringConvertibleP", "viewsAction"]
+- ["s28CustomDebugStringConvertibleP", "zero"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "AccessibilityUIType"]
+- !private ["s23CustomStringConvertibleP", "DispatchQueue"]
+- ["s23CustomStringConvertibleP", "ManagesSpecialCases"]
+- !private ["s23CustomStringConvertibleP", "Position"]
+- ["s23CustomStringConvertibleP", "TimerControl"]
+- !private ["s23CustomStringConvertibleP", "UIView"]
+- !private ["s23CustomStringConvertibleP", "ValuesConstants"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "accessibilityIdentifier"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "async"]
+- !private ["s23CustomStringConvertibleP", "calledSelector"]
+- !private ["s23CustomStringConvertibleP", "calledSpecialTarge"]
+- ["s23CustomStringConvertibleP", "canceledTimer"]
+- ["s23CustomStringConvertibleP", "finishTimer"]
+- ["s23CustomStringConvertibleP", "getViewForAction"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isCooldown"]
+- !private ["s23CustomStringConvertibleP", "main"]
+- !private ["s23CustomStringConvertibleP", "manageCase"]
+- !private ["s23CustomStringConvertibleP", "perform"]
+- !private ["s23CustomStringConvertibleP", "pointView"]
+- !private ["s23CustomStringConvertibleP", "position"]
+- ["s23CustomStringConvertibleP", "set"]
+- ["s23CustomStringConvertibleP", "setTypeStartAction"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "target"]
+- !private ["s23CustomStringConvertibleP", "timer"]
+- !private ["s23CustomStringConvertibleP", "typeStartAction"]
+- !private ["s23CustomStringConvertibleP", "verify"]
+- ["s23CustomStringConvertibleP", "verifyAction"]
+- !private ["s23CustomStringConvertibleP", "viewsAction"]
+- !private ["10Foundation12DataProtocolP", "append"]
+- !private ["10Foundation12DataProtocolP", "init"]
+- !private ["10Foundation12DataProtocolP", "subscript"]
+- !private ["Se", "append"]
+- !private ["Se", "init"]
+- !private ["Se", "subscript"]
+- ["Se", "zero"]
+- !private ["So18OS_dispatch_objectC", "async"]
+- !private ["So18OS_dispatch_objectC", "main"]
+- !private ["So17OS_dispatch_queueC", "async"]
+- !private ["So17OS_dispatch_queueC", "main"]
+- !private ["SE", "append"]
+- !private ["SE", "init"]
+- !private ["SE", "subscript"]
+- ["SE", "zero"]
+- !private ["SQ", "AccessibilityUIType"]
+- !private ["SQ", "DispatchQueue"]
+- ["SQ", "ManagesSpecialCases"]
+- !private ["SQ", "Position"]
+- ["SQ", "TimerControl"]
+- !private ["SQ", "UIView"]
+- !private ["SQ", "ValuesConstants"]
+- ["SQ", ""]
+- !private ["SQ", "accessibilityIdentifier"]
+- !private ["SQ", "append"]
+- !private ["SQ", "async"]
+- !private ["SQ", "calledSelector"]
+- !private ["SQ", "calledSpecialTarge"]
+- ["SQ", "canceledTimer"]
+- ["SQ", "eyeLeft"]
+- ["SQ", "eyeRight"]
+- ["SQ", "finishTimer"]
+- ["SQ", "getViewForAction"]
+- !private ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "isCooldown"]
+- !private ["SQ", "main"]
+- !private ["SQ", "manageCase"]
+- !private ["SQ", "perform"]
+- !private ["SQ", "pointView"]
+- !private ["SQ", "position"]
+- ["SQ", "set"]
+- ["SQ", "setTypeStartAction"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "target"]
+- !private ["SQ", "timer"]
+- ["SQ", "tongue"]
+- !private ["SQ", "typeStartAction"]
+- ["SQ", "uiButton"]
+- ["SQ", "uiCollectionView"]
+- ["SQ", "uiImageView"]
+- ["SQ", "uiTabBar"]
+- ["SQ", "uiTableView"]
+- !private ["SQ", "verify"]
+- ["SQ", "verifyAction"]
+- !private ["SQ", "viewsAction"]
+- ["SQ", "zero"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["SH", "AccessibilityUIType"]
+- !private ["SH", "DispatchQueue"]
+- ["SH", "ManagesSpecialCases"]
+- !private ["SH", "Position"]
+- ["SH", "TimerControl"]
+- !private ["SH", "UIView"]
+- !private ["SH", "ValuesConstants"]
+- ["SH", ""]
+- !private ["SH", "accessibilityIdentifier"]
+- !private ["SH", "append"]
+- !private ["SH", "async"]
+- !private ["SH", "calledSelector"]
+- !private ["SH", "calledSpecialTarge"]
+- ["SH", "canceledTimer"]
+- ["SH", "eyeLeft"]
+- ["SH", "eyeRight"]
+- ["SH", "finishTimer"]
+- ["SH", "getViewForAction"]
+- !private ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "isCooldown"]
+- !private ["SH", "main"]
+- !private ["SH", "manageCase"]
+- !private ["SH", "perform"]
+- !private ["SH", "pointView"]
+- !private ["SH", "position"]
+- ["SH", "set"]
+- ["SH", "setTypeStartAction"]
+- !private ["SH", "subscript"]
+- !private ["SH", "target"]
+- !private ["SH", "timer"]
+- ["SH", "tongue"]
+- !private ["SH", "typeStartAction"]
+- ["SH", "uiButton"]
+- ["SH", "uiCollectionView"]
+- ["SH", "uiImageView"]
+- ["SH", "uiTabBar"]
+- ["SH", "uiTableView"]
+- !private ["SH", "verify"]
+- ["SH", "verifyAction"]
+- !private ["SH", "viewsAction"]
+- !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "getIndexPathTheTable"]
+- !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "getIndexPathTheUICollectionView"]
+- ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "init"]
+- !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "inserTabBarViews"]
+- !private ["26AcessibilityFaceMovimentBR19ManagesSpecialCasesC", "insertAccessibilityIdentifier"]
+- !private ["SM", "append"]
+- !private ["SM", "init"]
+- !private ["SM", "subscript"]
+- !private ["10Foundation19MutableDataProtocolP", "append"]
+- !private ["10Foundation19MutableDataProtocolP", "init"]
+- !private ["10Foundation19MutableDataProtocolP", "subscript"]
+- !private ["So8NSCodingP", "accessibilityIdentifier"]
+- !private ["So8NSCodingP", "perform"]
+- !private ["So26NSExtensionRequestHandlingP", "perform"]
+- !private ["So8NSObjectC", "AccessibilityUIType"]
+- ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "CGFloat"]
+- ["So8NSObjectC", "CGPoint"]
+- !private ["So8NSObjectC", "DispatchQueue"]
+- ["So8NSObjectC", "ManagesSpecialCases"]
+- ["So8NSObjectC", "Position"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "TimerControl"]
+- ["So8NSObjectC", "TypeStartAction"]
+- !private ["So8NSObjectC", "UIView"]
+- ["So8NSObjectC", "UIViewController"]
+- !private ["So8NSObjectC", "ValuesConstants"]
+- ["So8NSObjectC", "ViewAction"]
+- ["So8NSObjectC", ""]
+- !private ["So8NSObjectC", "accessibilityIdentifier"]
+- !private ["So8NSObjectC", "async"]
+- ["So8NSObjectC", "calledSelector"]
+- ["So8NSObjectC", "calledSpecialTarge"]
+- ["So8NSObjectC", "canceledTimer"]
+- ["So8NSObjectC", "finishTimer"]
+- ["So8NSObjectC", "getViewForAction"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "isCooldown"]
+- !private ["So8NSObjectC", "main"]
+- ["So8NSObjectC", "manageCase"]
+- !private ["So8NSObjectC", "perform"]
+- ["So8NSObjectC", "pointView"]
+- ["So8NSObjectC", "position"]
+- ["So8NSObjectC", "set"]
+- ["So8NSObjectC", "setTypeStartAction"]
+- ["So8NSObjectC", "target"]
+- ["So8NSObjectC", "timer"]
+- ["So8NSObjectC", "typeStartAction"]
+- ["So8NSObjectC", "verify"]
+- ["So8NSObjectC", "verifyAction"]
+- ["So8NSObjectC", "viewsAction"]
+- !private ["So8NSObjectP", "AccessibilityUIType"]
+- !private ["So8NSObjectP", "DispatchQueue"]
+- ["So8NSObjectP", "ManagesSpecialCases"]
+- !private ["So8NSObjectP", "Position"]
+- ["So8NSObjectP", "TimerControl"]
+- !private ["So8NSObjectP", "UIView"]
+- !private ["So8NSObjectP", "ValuesConstants"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "accessibilityIdentifier"]
+- !private ["So8NSObjectP", "async"]
+- !private ["So8NSObjectP", "calledSelector"]
+- !private ["So8NSObjectP", "calledSpecialTarge"]
+- ["So8NSObjectP", "canceledTimer"]
+- ["So8NSObjectP", "finishTimer"]
+- ["So8NSObjectP", "getViewForAction"]
+- !private ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isCooldown"]
+- !private ["So8NSObjectP", "main"]
+- !private ["So8NSObjectP", "manageCase"]
+- !private ["So8NSObjectP", "perform"]
+- !private ["So8NSObjectP", "pointView"]
+- !private ["So8NSObjectP", "position"]
+- ["So8NSObjectP", "set"]
+- ["So8NSObjectP", "setTypeStartAction"]
+- !private ["So8NSObjectP", "target"]
+- !private ["So8NSObjectP", "timer"]
+- !private ["So8NSObjectP", "typeStartAction"]
+- !private ["So8NSObjectP", "verify"]
+- ["So8NSObjectP", "verifyAction"]
+- !private ["So8NSObjectP", "viewsAction"]
+- !private ["So9OS_objectC", "async"]
+- !private ["So9OS_objectC", "main"]
+- !private ["26AcessibilityFaceMovimentBR8PositionC", "getViewSelectedBased"]
+- !private ["26AcessibilityFaceMovimentBR8PositionC", "init"]
+- !private ["Sk", "append"]
+- !private ["Sk", "init"]
+- !private ["Sk", "subscript"]
+- !private ["Sm", "append"]
+- !private ["Sm", "init"]
+- !private ["Sm", "subscript"]
+- !private ["SY", "identifier"]
+- ["SY", "uiButton"]
+- ["SY", "uiCollectionView"]
+- ["SY", "uiImageView"]
+- ["SY", "uiTabBar"]
+- ["SY", "uiTableView"]
+- !private ["7Combine9SchedulerP", "async"]
+- !private ["7Combine9SchedulerP", "main"]
+- !private ["ST", "append"]
+- !private ["ST", "init"]
+- !private ["ST", "subscript"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "delegate"]
+- ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "init"]
+- !private ["26AcessibilityFaceMovimentBR19TimerActionProtocolP", "startTimer"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "AccessibilityUIType"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "DispatchQueue"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "ManagesSpecialCases"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "Position"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "TimerControl"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "UIView"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "ValuesConstants"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", ""]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "calledSelector"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "calledSpecialTarge"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "canceledTimer"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "finishTimer"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "getViewForAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "isCooldown"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "manageCase"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "pointView"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "position"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "set"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "setTypeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "target"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "timer"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "typeStartAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "verify"]
+- ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "verifyAction"]
+- !private ["26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP", "viewsAction"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "deinit"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "delegate"]
+- ["26AcessibilityFaceMovimentBR12TimerControlC", "init"]
+- !private ["26AcessibilityFaceMovimentBR12TimerControlC", "startTimer"]
+- ["26AcessibilityFaceMovimentBR15TypeStartActionO", "eyeLeft"]
+- ["26AcessibilityFaceMovimentBR15TypeStartActionO", "eyeRight"]
+- ["26AcessibilityFaceMovimentBR15TypeStartActionO", "tongue"]
+- !private ["So29UIAccessibilityIdentificationP", "accessibilityIdentifier"]
+- !private ["So12UIAppearanceP", "accessibilityIdentifier"]
+- !private ["So21UIAppearanceContainerP", "accessibilityIdentifier"]
+- !private ["So21UIAppearanceContainerP", "perform"]
+- !private ["So18UIContentContainerP", "perform"]
+- !private ["So17UICoordinateSpaceP", "accessibilityIdentifier"]
+- !private ["So13UIDynamicItemP", "accessibilityIdentifier"]
+- !private ["So18UIFocusEnvironmentP", "accessibilityIdentifier"]
+- !private ["So18UIFocusEnvironmentP", "perform"]
+- !private ["So11UIFocusItemP", "accessibilityIdentifier"]
+- !private ["So20UIFocusItemContainerP", "accessibilityIdentifier"]
+- !private ["So24UILargeContentViewerItemP", "accessibilityIdentifier"]
+- !private ["So30UIPasteConfigurationSupportingP", "accessibilityIdentifier"]
+- !private ["So30UIPasteConfigurationSupportingP", "perform"]
+- !private ["So11UIResponderC", "accessibilityIdentifier"]
+- !private ["So11UIResponderC", "perform"]
+- !private ["So30UIResponderStandardEditActionsP", "accessibilityIdentifier"]
+- !private ["So30UIResponderStandardEditActionsP", "perform"]
+- !private ["So16UIStateRestoringP", "perform"]
+- !private ["So18UITraitEnvironmentP", "accessibilityIdentifier"]
+- !private ["So18UITraitEnvironmentP", "perform"]
+- !private ["So23UIUserActivityRestoringP", "accessibilityIdentifier"]
+- !private ["So23UIUserActivityRestoringP", "perform"]
+- !private ["So6UIViewC", "accessibilityIdentifier"]
+- !private ["So16UIViewControllerC", "perform"]
+- !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "closeEye"]
+- !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "cooldown"]
+- !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "openEye"]
+- !private ["26AcessibilityFaceMovimentBR15ValuesConstantsO", "tongue"]
+- !private ["26AcessibilityFaceMovimentBR10ViewActionV", "selector"]
+- !private ["26AcessibilityFaceMovimentBR10ViewActionV", "view"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "init"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- ["s30_CustomPlaygroundQuickLookableP", "zero"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "init"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s19_HasContiguousBytesP", "append"]
+- !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AccessibilityUIType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "DispatchQueue"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ManagesSpecialCases"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "Position"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "TimerControl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ValuesConstants"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "accessibilityIdentifier"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "calledSelector"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "calledSpecialTarge"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "canceledTimer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "finishTimer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "getViewForAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isCooldown"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "manageCase"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "perform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "pointView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "position"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "setTypeStartAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "target"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "timer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "typeStartAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "verify"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "verifyAction"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewsAction"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AccessibilityUIType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "DispatchQueue"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ManagesSpecialCases"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Position"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TimerControl"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ValuesConstants"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "accessibilityIdentifier"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calledSelector"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "calledSpecialTarge"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "canceledTimer"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "finishTimer"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getViewForAction"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "isCooldown"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "manageCase"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "perform"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pointView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "position"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setTypeStartAction"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "target"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "timer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "typeStartAction"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "verify"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "verifyAction"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewsAction"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "accessibilityIdentifier"]
+depends-nominal:
+- "26AcessibilityFaceMovimentBR19AccessibilityUITypeO"
+- "26AcessibilityFaceMovimentBR12ActionInViewC"
+- "26AcessibilityFaceMovimentBR14ActionProtocolP"
+- !private "Sa"
+- !private "SK"
+- !private "So15CALayerDelegateP"
+- "So7CGPointV"
+- "s7CVarArgP"
+- !private "Sl"
+- !private "10Foundation15ContiguousBytesP"
+- "s28CustomDebugStringConvertibleP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- "Se"
+- !private "So18OS_dispatch_objectC"
+- !private "So17OS_dispatch_queueC"
+- "SE"
+- "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
+- "SH"
+- "26AcessibilityFaceMovimentBR19ManagesSpecialCasesC"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
+- !private "So8NSCodingP"
+- !private "So26NSExtensionRequestHandlingP"
+- "So8NSObjectC"
+- "So8NSObjectP"
+- !private "So9OS_objectC"
+- !private "26AcessibilityFaceMovimentBR8PositionC"
+- !private "Sk"
+- !private "Sm"
+- "SY"
+- !private "7Combine9SchedulerP"
+- !private "ST"
+- "26AcessibilityFaceMovimentBR19TimerActionProtocolP"
+- "26AcessibilityFaceMovimentBR27TimerActionResponseProtocolP"
+- "26AcessibilityFaceMovimentBR12TimerControlC"
+- "26AcessibilityFaceMovimentBR15TypeStartActionO"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So18UIContentContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So20UIFocusItemContainerP"
+- !private "So24UILargeContentViewerItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So16UIStateRestoringP"
+- !private "So18UITraitEnvironmentP"
+- !private "So23UIUserActivityRestoringP"
+- !private "So6UIViewC"
+- !private "So16UIViewControllerC"
+- !private "26AcessibilityFaceMovimentBR15ValuesConstantsO"
+- !private "26AcessibilityFaceMovimentBR10ViewActionV"
+- !private "s14_ArrayProtocolP"
+- "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- "10Foundation37_KeyValueCodingAndObservingPublishingP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s38__DefaultCustomPlaygroundQuickLookableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMIDI.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ModelIO.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreMedia.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/simd.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/AVFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreAudio.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/GLKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ARKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SceneKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SpriteKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/ModelIO.framework/Headers/ModelIO.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreMedia.framework/Headers/CoreMedia.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/apinotes/Dispatch.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreAudioTypes.framework/Headers/CoreAudioTypes.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/SceneKit.framework/Headers/SceneKit.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
+- "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "0c08d80dc24283a6a4b4357f15069aa6"
