@@ -30,9 +30,9 @@ enum ValuesConstants {
   static let cooldown: Int = 3
   static let limitedX: CGFloat = 0.15
   static let limitedY: CGFloat = 0.1
-  static let tolerance: CGFloat = 0.005
-  static let numberAcceptedValues: Int = 50
-  static let valueForStart: Int = 10
+  static let tolerance: CGFloat = 0.01
+  static let numberAcceptedValues: Int = 150
+  static let valueForStart: Int = 50
 }
 
 internal enum AccessibilityUIType: String {

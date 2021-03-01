@@ -16,6 +16,7 @@
 		9A2F486325A3EA8F0043A2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A2F486125A3EA8F0043A2A6 /* LaunchScreen.storyboard */; };
 		9A2F486E25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F486D25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift */; };
 		9A2F487E25A3F1A80043A2A6 /* UIImage+ImagesResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2F487D25A3F1A80043A2A6 /* UIImage+ImagesResources.swift */; };
+		9A4306C125ED893C00E8D2F9 /* CaptureFaceSensibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4306C025ED893C00E8D2F9 /* CaptureFaceSensibilityViewController.swift */; };
 		9A49E76F25A7C52800F39BB9 /* AccessibilityFaceAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E76E25A7C52800F39BB9 /* AccessibilityFaceAnchorViewController.swift */; };
 		9A49E77525A7CAD300F39BB9 /* MoveCursorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A49E77425A7CAD300F39BB9 /* MoveCursorProtocol.swift */; };
 		9A4EDF9E25AD275300DC97DA /* MoveCursorFaceAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4EDF9D25AD275300DC97DA /* MoveCursorFaceAnchor.swift */; };
@@ -41,6 +42,7 @@
 		9AB77FF925E9C07F00BCC152 /* CellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB77FF825E9C07F00BCC152 /* CellCollectionViewCell.swift */; };
 		9AE8480C25E8703B00666008 /* CellViewSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480B25E8703B00666008 /* CellViewSelectedProtocol.swift */; };
 		9AE8480E25E8768100666008 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480D25E8768100666008 /* UITableViewExtension.swift */; };
+		9AEE6E6525ED90E60041A1B1 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE6E6425ED90E60041A1B1 /* Direction.swift */; };
 		9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */; };
 		9AF2C87525D8942700FB7259 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87425D8942700FB7259 /* UIViewControllerExtension.swift */; };
 		9AF2C87725D895AB00FB7259 /* NavigationTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */; };
@@ -79,6 +81,7 @@
 		9A2F486D25A3EA8F0043A2A6 /* AcessibilityFaceMovimentBRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcessibilityFaceMovimentBRTests.swift; sourceTree = "<group>"; };
 		9A2F486F25A3EA8F0043A2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A2F487D25A3F1A80043A2A6 /* UIImage+ImagesResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+ImagesResources.swift"; sourceTree = "<group>"; };
+		9A4306C025ED893C00E8D2F9 /* CaptureFaceSensibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFaceSensibilityViewController.swift; sourceTree = "<group>"; };
 		9A49E76E25A7C52800F39BB9 /* AccessibilityFaceAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityFaceAnchorViewController.swift; sourceTree = "<group>"; };
 		9A49E77425A7CAD300F39BB9 /* MoveCursorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCursorProtocol.swift; sourceTree = "<group>"; };
 		9A4EDF9D25AD275300DC97DA /* MoveCursorFaceAnchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveCursorFaceAnchor.swift; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 		9AB77FF825E9C07F00BCC152 /* CellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AE8480B25E8703B00666008 /* CellViewSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewSelectedProtocol.swift; sourceTree = "<group>"; };
 		9AE8480D25E8768100666008 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		9AEE6E6425ED90E60041A1B1 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSelectedProtocol.swift; sourceTree = "<group>"; };
 		9AF2C87425D8942700FB7259 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTesteViewController.swift; sourceTree = "<group>"; };
@@ -311,6 +315,7 @@
 				9A4EDFA425AD303000DC97DA /* LimitedScreen.swift */,
 				9A5E811925D02E7A00B58861 /* TypeStartAction.swift */,
 				9AFCD72E25EC551F00A4B88B /* DirectiorFaceMoviment.swift */,
+				9AEE6E6425ED90E60041A1B1 /* Direction.swift */,
 			);
 			path = Enuns;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 				9A2F485A25A3EA880043A2A6 /* ViewController.swift */,
 				9AF2C87A25D8978800FB7259 /* SuccessViewController.swift */,
 				9AB77FED25E9B36500BCC152 /* CollectionTestViewController.swift */,
+				9A4306C025ED893C00E8D2F9 /* CaptureFaceSensibilityViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -563,6 +569,7 @@
 				9A1BA60925B10084007F9AF4 /* CGFloatExtension.swift in Sources */,
 				9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */,
 				9AB77FEE25E9B36500BCC152 /* CollectionTestViewController.swift in Sources */,
+				9AEE6E6525ED90E60041A1B1 /* Direction.swift in Sources */,
 				9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */,
 				9AB6644425D8A252002EEA51 /* TimerControl.swift in Sources */,
 				9AF2C87725D895AB00FB7259 /* NavigationTesteViewController.swift in Sources */,
@@ -570,6 +577,7 @@
 				9AB77FF225E9B54F00BCC152 /* ManagesSpecialCases.swift in Sources */,
 				9AF2C87525D8942700FB7259 /* UIViewControllerExtension.swift in Sources */,
 				9A4EDFA525AD303000DC97DA /* LimitedScreen.swift in Sources */,
+				9A4306C125ED893C00E8D2F9 /* CaptureFaceSensibilityViewController.swift in Sources */,
 				9AFCD73125EC567400A4B88B /* ManagerPointSesibilittyProtocol.swift in Sources */,
 				9AFCD72F25EC551F00A4B88B /* DirectiorFaceMoviment.swift in Sources */,
 				9A5E812025D02FD500B58861 /* ViewAction.swift in Sources */,

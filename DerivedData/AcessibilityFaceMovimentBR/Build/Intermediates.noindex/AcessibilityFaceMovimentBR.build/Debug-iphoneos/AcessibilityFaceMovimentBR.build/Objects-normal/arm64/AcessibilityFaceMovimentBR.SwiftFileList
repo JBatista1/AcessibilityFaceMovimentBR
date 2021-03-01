@@ -1,6 +1,7 @@
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Extension/CGFloatExtension.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/ViewController.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/CollectionTestViewController.swift
+/Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Enuns/Direction.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Protocols/TabBarSelectedProtocol.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Auxiliares/TimerControl.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/NavigationTesteViewController.swift
@@ -8,6 +9,7 @@
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Auxiliares/ManagesSpecialCases.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Extension/UIViewControllerExtension.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Enuns/LimitedScreen.swift
+/Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Exemple/Controllers/CaptureFaceSensibilityViewController.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Protocols/ManagerPointSesibilittyProtocol.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Enuns/DirectiorFaceMoviment.swift
 /Users/ItSelf/Documents/TCC/TCC\ Zero\ a\ 100/AcessibilityFaceMovimentBR/AcessibilityFaceMovimentBR/AcessobilitaFace/Regras\ de\ negocio/Models/ViewAction.swift

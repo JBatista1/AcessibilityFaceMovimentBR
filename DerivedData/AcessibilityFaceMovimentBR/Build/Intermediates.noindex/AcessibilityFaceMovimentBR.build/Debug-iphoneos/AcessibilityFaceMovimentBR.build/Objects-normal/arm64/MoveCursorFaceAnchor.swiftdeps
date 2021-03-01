@@ -12,6 +12,7 @@ provides-dynamic-lookup:
 - "getPercentage"
 - "lastPercentagem"
 - "lastPosition"
+- "setSensibilityValue"
 - "totalPercentage"
 - "verifyDirectionMove"
 depends-top-level:
@@ -81,7 +82,6 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "CGPoint"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "FaceSensitivity"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Int"]
-- !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Limited"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "MovimentDirection"]
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "PercentagemAxis"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "Screen"]
@@ -93,6 +93,7 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "init"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPosition"]
+- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "setSensibilityValue"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyDirectionMove"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGFloat"]
@@ -216,4 +217,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e2cd9d09042d60ae5ffd576971e83b97"
+interface-hash: "045e0270afe53ed59dc2d21d75f20b7d"

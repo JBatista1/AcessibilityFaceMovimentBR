@@ -16,6 +16,7 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
   private var isShow = true
+  
   // MARK: - Life cicle
 
   open override func viewDidLoad() {

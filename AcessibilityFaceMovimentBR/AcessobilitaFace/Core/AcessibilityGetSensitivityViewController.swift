@@ -15,13 +15,15 @@ public class AcessibilityGetSensitivityViewController: UIViewController {
 
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private var isInCapture: Bool = false
-  private var startCapture: Bool = false
   private var direction: DirectiorFaceMoviment = .axisX
   private var manager = ManagePointSensibility()
+  var valueX: CGFloat = 0
+  var valueY: CGFloat = 0
+  var count = 0
 
   // MARK: - Public Property
   
-  public weak var delegate: GetSensitivityProtocol?
+  public weak var sensibilityDelegate: GetSensitivityProtocol?
 
   // MARK: - Life cicle
 
@@ -41,12 +43,15 @@ public class AcessibilityGetSensitivityViewController: UIViewController {
   open override func viewDidDisappear(_ animated: Bool) {
     sceneView.session.pause()
   }
+  
+  // MARK: - Public Class Methods
 
   func initialCapture(withDirection direction: DirectiorFaceMoviment) {
     self.direction = direction
-    startCapture = true
+    isInCapture = true
   }
-  // MARK: - Public Class Methods
+
+  // MARK: - Private Class Methods
 
   private func resetTracking() {
     guard ARFaceTrackingConfiguration.isSupported else {return}
@@ -72,16 +77,19 @@ extension AcessibilityGetSensitivityViewController: ARSCNViewDelegate, ARSession
 
   public func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
     let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
-    manager.insertValueToCompare(thePoint: point, andDirection: direction)
+    if isInCapture {
+       manager.insertValueToCompare(thePoint: point, andDirection: direction)
+    }
   }
 }
 
 extension AcessibilityGetSensitivityViewController: ManagerPointSesibilittyProtocol {
-  func startCaptura() {
-    delegate?.startCaptura()
+  func capturaStartGetValue() {
+    sensibilityDelegate?.startCaptura()
   }
 
-  func returnCapture(theValue value: CGFloat) {
-    delegate?.returnCapture(theValue: value)
+  func captureFinishWith(theValue value: CGFloat) {
+    sensibilityDelegate?.returnCapture(theValue: value)
+    isInCapture = false
   }
 }

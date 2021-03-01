@@ -28,6 +28,10 @@ depends-top-level:
 - !private "fatalError"
 depends-member:
 - ["26AcessibilityFaceMovimentBR5AssetO", "ImageAsset"]
+- ["26AcessibilityFaceMovimentBR5AssetO", "arrowBotton"]
+- ["26AcessibilityFaceMovimentBR5AssetO", "arrowLeft"]
+- ["26AcessibilityFaceMovimentBR5AssetO", "arrowRight"]
+- ["26AcessibilityFaceMovimentBR5AssetO", "arrowTop"]
 - ["26AcessibilityFaceMovimentBR5AssetO", "cursorDefault"]
 - ["So8NSBundleC", "init"]
 - !private ["s7CVarArgP", "BundleToken"]
@@ -154,4 +158,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "045f5ab93bf5919d14acb04568637285"
+interface-hash: "39d4cfd2557459d239fe8afdf1878b41"

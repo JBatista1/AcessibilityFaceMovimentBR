@@ -27,6 +27,10 @@ public typealias AssetImageTypeAlias = ImageAsset.Image
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 public enum Asset {
   public static let cursorDefault = ImageAsset(name: "cursorDefault")
+  public static let arrowTop = ImageAsset(name: "arrowTop")
+  public static let arrowBotton = ImageAsset(name: "arrowBotton")
+  public static let arrowLeft = ImageAsset(name: "arrowLeft")
+  public static let arrowRight = ImageAsset(name: "arrowRight")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 

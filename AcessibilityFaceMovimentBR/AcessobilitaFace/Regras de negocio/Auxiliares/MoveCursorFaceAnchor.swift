@@ -11,8 +11,7 @@ import UIKit
 final class MoveCursorFaceAnchor {
 
   // MARK: - Private Property
-  
-  private typealias Limited = (axisX: CGFloat, axisY: CGFloat)
+
   private typealias PercentagemAxis = (percentagemX: Int, percentagemY: Int)
   private var lastPercentagem = PercentagemAxis(0, 0)
   private var lastPosition = CGPoint.zero
@@ -25,6 +24,10 @@ final class MoveCursorFaceAnchor {
     if let sensitivity =  faceSensitivity {
       self.faceSensitivity = sensitivity
     }
+  }
+
+  public func set(faceSensitivity: FaceSensitivity) {
+    self.faceSensitivity = faceSensitivity
   }
 
   // MARK: - Private Method

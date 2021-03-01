@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adV-sB-ziR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eDr-Ds-34D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Teste-->
+        <!--Teste de movimentação-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AcessibilityFaceMovimentBR" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="usabilidad" id="BYZ-38-t0r" customClass="ViewController" customModule="AcessibilityFaceMovimentBR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Teste" id="IEb-tO-si9"/>
+                    <navigationItem key="navigationItem" title="Teste de movimentação" id="IEb-tO-si9"/>
                     <connections>
                         <outlet property="feedbackLabel" destination="otn-47-obO" id="2Eb-Mm-ZN6"/>
                         <outlet property="viewEight" destination="FzV-yi-ObS" id="JmL-nB-FKB"/>
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xgT-KE-uVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1147.8260869565217" y="693.75"/>
+            <point key="canvasLocation" x="1287" y="508"/>
         </scene>
         <!--Success View Controller-->
         <scene sceneID="dm7-Rz-ceT">
@@ -244,9 +244,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yw-qp-ytu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1977" y="695"/>
+            <point key="canvasLocation" x="2197" y="508"/>
         </scene>
-        <!--Item 1-->
+        <!--Teste Collection-->
         <scene sceneID="22m-f2-SHQ">
             <objects>
                 <viewController id="ezK-Jt-wyl" customClass="CollectionTestViewController" customModule="AcessibilityFaceMovimentBR" customModuleProvider="target" sceneMemberID="viewController">
@@ -255,7 +255,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="mdj-wx-To7">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="15" id="DB9-kE-GQt">
                                     <size key="itemSize" width="170" height="200"/>
@@ -299,7 +299,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nBi-uH-8Qp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="5Q5-jT-gP9"/>
+                    <tabBarItem key="tabBarItem" title="Teste Collection" selectedImage="rectangle.split.3x3" catalog="system" id="5Q5-jT-gP9"/>
                     <connections>
                         <outlet property="collectionView" destination="mdj-wx-To7" id="SY9-gf-OA5"/>
                     </connections>
@@ -311,7 +311,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="R7Y-Pq-J8X">
             <objects>
-                <tabBarController id="adV-sB-ziR" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTab" id="adV-sB-ziR" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="oR4-9L-iQt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="AsN-TQ-Yaz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -319,20 +319,20 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ezK-Jt-wyl" kind="relationship" relationship="viewControllers" id="IYQ-T7-8vq"/>
-                        <segue destination="93f-IZ-fh0" kind="relationship" relationship="viewControllers" id="A3b-aD-Bax"/>
-                        <segue destination="KJT-pf-Cmv" kind="relationship" relationship="viewControllers" id="iPz-36-Tyz"/>
+                        <segue destination="KJT-pf-Cmv" kind="relationship" relationship="viewControllers" id="lCB-EZ-LtK"/>
+                        <segue destination="93f-IZ-fh0" kind="relationship" relationship="viewControllers" id="gXU-qY-2Ss"/>
+                        <segue destination="ezK-Jt-wyl" kind="relationship" relationship="viewControllers" id="lfs-KH-suj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nMM-Bp-TL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="266" y="-239"/>
         </scene>
-        <!--Item 2-->
+        <!--Table naviagtion-->
         <scene sceneID="WEL-sV-Yod">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="93f-IZ-fh0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xjc-17-M51"/>
+                    <tabBarItem key="tabBarItem" title="Table naviagtion" selectedImage="table.fill" catalog="system" id="xjc-17-M51"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D02-sE-0aI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -345,13 +345,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYU-BU-XiG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="263.768115942029" y="693.75"/>
+            <point key="canvasLocation" x="264" y="508"/>
         </scene>
-        <!--Item-->
+        <!--Teste usabilidade-->
         <scene sceneID="tXD-ZE-bVo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KJT-pf-Cmv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="j6S-oW-D7P"/>
+                    <tabBarItem key="tabBarItem" title="Teste usabilidade" selectedImage="wrench" catalog="system" id="j6S-oW-D7P"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KZ2-UR-tL0">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -366,8 +366,107 @@
             </objects>
             <point key="canvasLocation" x="1286.9565217391305" y="-239.0625"/>
         </scene>
+        <!--Capturar face-->
+        <scene sceneID="Msg-Xb-7rO">
+            <objects>
+                <navigationController id="eDr-Ds-34D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Capturar face" selectedImage="person.crop.circle.fill" catalog="system" id="xvC-dh-m7e"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rTx-vj-xDj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1ZU-0K-vmh" kind="relationship" relationship="rootViewController" id="O8T-xX-nz9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOm-Ro-TvF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1736" y="-239"/>
+        </scene>
+        <!--Captura de movimento-->
+        <scene sceneID="HSN-R9-aLR">
+            <objects>
+                <viewController id="1ZU-0K-vmh" customClass="CaptureFaceSensibilityViewController" customModule="AcessibilityFaceMovimentBR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aB5-ge-ixW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P7p-1X-gVW">
+                                <rect key="frame" x="82" y="350" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="EPY-fQ-txH"/>
+                                    <constraint firstAttribute="height" constant="250" id="nGc-zc-9sS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mova a cabeça para a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-91-Bkj">
+                                <rect key="frame" x="24" y="112" width="366" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ht5-i5-oU7">
+                                <rect key="frame" x="24" y="798" width="366" height="40"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1lL-Ba-2dh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <state key="normal" title="Iniciar Teste">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="adV-sB-ziR" kind="show" id="M4s-hQ-HmR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIP-sG-aiD">
+                                <rect key="frame" x="24" y="746" width="366" height="40"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RX1-gC-pL3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Iniciar Captura">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAction:" destination="1ZU-0K-vmh" eventType="touchUpInside" id="qX6-Gl-p5z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ujw-91-Bkj" firstAttribute="top" secondItem="I1z-at-iI4" secondAttribute="top" constant="24" id="Gkh-VT-Qgk"/>
+                            <constraint firstItem="P7p-1X-gVW" firstAttribute="centerX" secondItem="I1z-at-iI4" secondAttribute="centerX" id="X0R-nt-wek"/>
+                            <constraint firstItem="LIP-sG-aiD" firstAttribute="leading" secondItem="I1z-at-iI4" secondAttribute="leading" constant="24" id="aBB-Lx-OZs"/>
+                            <constraint firstItem="I1z-at-iI4" firstAttribute="bottom" secondItem="ht5-i5-oU7" secondAttribute="bottom" constant="24" id="bfL-0b-hT0"/>
+                            <constraint firstItem="ht5-i5-oU7" firstAttribute="top" secondItem="LIP-sG-aiD" secondAttribute="bottom" constant="12" id="dlv-Jr-3lO"/>
+                            <constraint firstItem="ht5-i5-oU7" firstAttribute="leading" secondItem="I1z-at-iI4" secondAttribute="leading" constant="24" id="gQW-pf-0rd"/>
+                            <constraint firstItem="P7p-1X-gVW" firstAttribute="centerY" secondItem="I1z-at-iI4" secondAttribute="centerY" id="kGI-IH-C82"/>
+                            <constraint firstItem="I1z-at-iI4" firstAttribute="trailing" secondItem="ht5-i5-oU7" secondAttribute="trailing" constant="24" id="lAm-NP-bHT"/>
+                            <constraint firstItem="Ujw-91-Bkj" firstAttribute="leading" secondItem="I1z-at-iI4" secondAttribute="leading" constant="24" id="pKa-wv-9q6"/>
+                            <constraint firstItem="I1z-at-iI4" firstAttribute="trailing" secondItem="LIP-sG-aiD" secondAttribute="trailing" constant="24" id="vTF-J8-ZYg"/>
+                            <constraint firstItem="I1z-at-iI4" firstAttribute="trailing" secondItem="Ujw-91-Bkj" secondAttribute="trailing" constant="24" id="xx5-uV-4PJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I1z-at-iI4"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Captura de movimento" id="V8V-F5-1uH"/>
+                    <connections>
+                        <outlet property="arrowImage" destination="P7p-1X-gVW" id="Fcs-yu-vAo"/>
+                        <outlet property="captureButton" destination="LIP-sG-aiD" id="4hQ-C6-Nrs"/>
+                        <outlet property="nextflowButton" destination="ht5-i5-oU7" id="sBO-Aq-8cd"/>
+                        <outlet property="titleLabel" destination="Ujw-91-Bkj" id="6hx-5d-UGv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XQU-oR-Eb2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-886" y="-239"/>
+        </scene>
     </scenes>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="rectangle.split.3x3" catalog="system" width="128" height="93"/>
+        <image name="table.fill" catalog="system" width="128" height="93"/>
+        <image name="wrench" catalog="system" width="128" height="120"/>
     </resources>
 </document>

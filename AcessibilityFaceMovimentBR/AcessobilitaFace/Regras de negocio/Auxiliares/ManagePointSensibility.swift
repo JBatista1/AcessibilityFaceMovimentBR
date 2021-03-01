@@ -17,7 +17,7 @@ class ManagePointSensibility {
 
   private var lastValue: CGFloat = 0.0
   private var isInitial: Bool = true
-
+  private var isStart: Bool = false
   weak var delegate: ManagerPointSesibilittyProtocol?
 
   internal init(tolerance: CGFloat = ValuesConstants.tolerance,
@@ -31,6 +31,7 @@ class ManagePointSensibility {
   func insertValueToCompare(thePoint point: CGPoint, andDirection direction: DirectiorFaceMoviment) {
     let valueAxis = getValue(withThePoint: point, andDirection: direction)
     if verifyIsStartCapture(withValueLimited: startValue) {
+      calledStartCapture()
       captureStart(withValue: valueAxis)
     } else {
       captureNotStart(withValue: valueAxis)
@@ -44,13 +45,24 @@ class ManagePointSensibility {
   }
 
   private func captureStart(withValue value: CGFloat) {
-    delegate?.startCaptura()
     updateArray(withValue: value)
     if verifyIsStartCapture(withValueLimited: numberAcceptedValues) {
-      delegate?.returnCapture(theValue: getAverage())
+      delegate?.captureFinishWith(theValue: getAverage())
+      resetProprety()
     }
   }
-
+  private func resetProprety() {
+    valuesAceepted = []
+    isStart = false
+    isInitial = true
+  }
+  
+  private func calledStartCapture() {
+    if !isStart {
+      delegate?.capturaStartGetValue()
+      isStart = true
+    }
+  }
   private func getInitialPosition(withValue value: CGFloat) {
     if isInitial {
       lastValue = value
@@ -81,7 +93,7 @@ class ManagePointSensibility {
   }
 
   private func verifyIsStartCapture(withValueLimited value: Int) -> Bool {
-    return  valuesAceepted.count == value
+    return  valuesAceepted.count >= value
   }
 
   private func getAverage() -> CGFloat {

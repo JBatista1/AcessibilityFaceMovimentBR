@@ -257,11 +257,11 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR40AcessibilityGetSensitivityViewCon
 
 
 
-
-
 @interface AcessibilityViewController (SWIFT_EXTENSION(AcessibilityFaceMovimentBR))
 - (void)selectedCell:(id _Nullable)sender;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR12ActionInView")
@@ -288,6 +288,23 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR11AppDelegate")
 @end
 
 @class UILabel;
+@class UIImageView;
+@class UIButton;
+
+SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR36CaptureFaceSensibilityViewController")
+@interface CaptureFaceSensibilityViewController : AcessibilityGetSensitivityViewController
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified arrowImage;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified nextflowButton;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified captureButton;
+- (void)viewDidLoad;
+- (IBAction)tapAction:(id _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR22CellCollectionViewCell")
 @interface CellCollectionViewCell : UICollectionViewCell
@@ -318,8 +335,6 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR28CollectionTestViewController")
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class UIButton;
-@class UIImageView;
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR29NavigationTesteViewController")

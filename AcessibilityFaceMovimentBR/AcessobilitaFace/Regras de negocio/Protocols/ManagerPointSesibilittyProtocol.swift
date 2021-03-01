@@ -9,6 +9,6 @@
 import UIKit
 
 protocol ManagerPointSesibilittyProtocol: AnyObject {
-  func startCaptura()
-  func returnCapture(theValue value: CGFloat)
+  func capturaStartGetValue()
+  func captureFinishWith(theValue value: CGFloat)
 }
