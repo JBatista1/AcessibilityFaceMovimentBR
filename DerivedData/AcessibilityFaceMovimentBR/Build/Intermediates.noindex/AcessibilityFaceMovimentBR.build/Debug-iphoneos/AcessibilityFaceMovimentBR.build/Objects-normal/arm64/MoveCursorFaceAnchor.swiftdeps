@@ -12,7 +12,7 @@ provides-dynamic-lookup:
 - "getPercentage"
 - "lastPercentagem"
 - "lastPosition"
-- "setSensibilityValue"
+- "set"
 - "totalPercentage"
 - "verifyDirectionMove"
 depends-top-level:
@@ -93,7 +93,7 @@ depends-member:
 - ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "init"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "lastPosition"]
-- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "setSensibilityValue"]
+- ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "set"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR010MoveCursorB6AnchorC", "verifyDirectionMove"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGFloat"]
@@ -109,6 +109,7 @@ depends-member:
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getPercentage"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPercentagem"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "lastPosition"]
+- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "set"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "totalPercentage"]
 - !private ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "verifyDirectionMove"]
 - ["26AcessibilityFaceMovimentBR0C9DirectionO", "negative"]
@@ -217,4 +218,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "045e0270afe53ed59dc2d21d75f20b7d"
+interface-hash: "6004eb414f9d3d4915b30437f8b195c7"

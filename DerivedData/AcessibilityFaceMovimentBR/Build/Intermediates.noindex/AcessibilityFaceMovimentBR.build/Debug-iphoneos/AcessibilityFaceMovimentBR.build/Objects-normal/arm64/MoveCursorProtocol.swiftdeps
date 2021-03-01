@@ -9,10 +9,13 @@ provides-dynamic-lookup:
 depends-top-level:
 - "AnyObject"
 - "CGPoint"
+- "FaceSensitivity"
 - "MoveCursorProtocol"
 depends-member:
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "CGPoint"]
+- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "FaceSensitivity"]
 - ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "getNextPosition"]
+- ["26AcessibilityFaceMovimentBR18MoveCursorProtocolP", "set"]
 depends-nominal:
 - "26AcessibilityFaceMovimentBR18MoveCursorProtocolP"
 depends-dynamic-lookup:
@@ -63,4 +66,4 @@ depends-external:
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/MediaToolbox.framework/Headers/MediaToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 - "/Applications/Xcode 11.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b70587076fdbb601d8273b6b9e7bde9d"
+interface-hash: "8964b803cfae9df80b8e9ce3d976f116"

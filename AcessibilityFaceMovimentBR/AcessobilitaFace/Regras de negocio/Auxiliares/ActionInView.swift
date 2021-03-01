@@ -114,6 +114,5 @@ extension ActionInView: TimerActionResponseProtocol {
   func finishTimer() {
     isCooldown = false
   }
-
   func canceledTimer() {}
 }

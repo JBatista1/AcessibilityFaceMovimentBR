@@ -290,6 +290,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR11AppDelegate")
 @class UILabel;
 @class UIImageView;
 @class UIButton;
+@class UIStoryboardSegue;
 
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR36CaptureFaceSensibilityViewController")
 @interface CaptureFaceSensibilityViewController : AcessibilityGetSensitivityViewController
@@ -299,6 +300,7 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR36CaptureFaceSensibilityViewControl
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified captureButton;
 - (void)viewDidLoad;
 - (IBAction)tapAction:(id _Nonnull)sender;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -415,6 +417,8 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR14ViewController")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewSeven;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified viewEight;
 - (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
 - (void)actionOne;
 - (void)actionTwo;
 - (void)actionThree;

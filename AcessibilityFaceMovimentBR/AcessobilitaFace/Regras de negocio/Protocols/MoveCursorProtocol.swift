@@ -8,6 +8,7 @@
 
 import UIKit
 
-protocol MoveCursorProtocol: AnyObject {
+public protocol MoveCursorProtocol: AnyObject {
   func getNextPosition(withPoint point: CGPoint) -> CGPoint
+  func set(faceSensitivity: FaceSensitivity)
 }

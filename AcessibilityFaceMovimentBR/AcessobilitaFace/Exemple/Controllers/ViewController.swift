@@ -29,6 +29,15 @@ class ViewController: AccessibilityFaceAnchorViewController {
     action.set(viewsAction: createViewAction())
     delegateTabBar = self
   }
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    navigationController?.setNavigationBarHidden(true, animated: animated)
+  }
+
+  override func viewWillDisappear(_ animated: Bool) {
+    super.viewWillDisappear(animated)
+    navigationController?.setNavigationBarHidden(false, animated: animated)
+  }
 
   func createViewAction() -> [ViewAction] {
     var viewsAction: [ViewAction] = [ViewAction(view: viewOne, selector: #selector(ViewController.actionOne)),

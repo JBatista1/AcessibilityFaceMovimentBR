@@ -35,6 +35,9 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
     sceneView.session.pause()
   }
 
+  public func set(faceSensitivity: FaceSensitivity) {
+    moveCursor.set(faceSensitivity: faceSensitivity)
+  }
   // MARK: - Private Class Methods
 
   private func resetTracking() {

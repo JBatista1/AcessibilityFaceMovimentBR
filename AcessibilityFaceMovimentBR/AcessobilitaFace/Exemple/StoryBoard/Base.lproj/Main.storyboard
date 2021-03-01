@@ -391,15 +391,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P7p-1X-gVW">
-                                <rect key="frame" x="82" y="350" width="250" height="250"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrowTop" translatesAutoresizingMaskIntoConstraints="NO" id="P7p-1X-gVW">
+                                <rect key="frame" x="82" y="250" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="EPY-fQ-txH"/>
                                     <constraint firstAttribute="height" constant="250" id="nGc-zc-9sS"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mova a cabeça para a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-91-Bkj">
-                                <rect key="frame" x="24" y="112" width="366" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mova a cabeça para a Cima e clique em iniciar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ujw-91-Bkj">
+                                <rect key="frame" x="24" y="112" width="366" height="53"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -433,7 +433,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ujw-91-Bkj" firstAttribute="top" secondItem="I1z-at-iI4" secondAttribute="top" constant="24" id="Gkh-VT-Qgk"/>
                             <constraint firstItem="P7p-1X-gVW" firstAttribute="centerX" secondItem="I1z-at-iI4" secondAttribute="centerX" id="X0R-nt-wek"/>
@@ -441,7 +441,7 @@
                             <constraint firstItem="I1z-at-iI4" firstAttribute="bottom" secondItem="ht5-i5-oU7" secondAttribute="bottom" constant="24" id="bfL-0b-hT0"/>
                             <constraint firstItem="ht5-i5-oU7" firstAttribute="top" secondItem="LIP-sG-aiD" secondAttribute="bottom" constant="12" id="dlv-Jr-3lO"/>
                             <constraint firstItem="ht5-i5-oU7" firstAttribute="leading" secondItem="I1z-at-iI4" secondAttribute="leading" constant="24" id="gQW-pf-0rd"/>
-                            <constraint firstItem="P7p-1X-gVW" firstAttribute="centerY" secondItem="I1z-at-iI4" secondAttribute="centerY" id="kGI-IH-C82"/>
+                            <constraint firstItem="P7p-1X-gVW" firstAttribute="centerY" secondItem="I1z-at-iI4" secondAttribute="centerY" constant="-100" id="kGI-IH-C82"/>
                             <constraint firstItem="I1z-at-iI4" firstAttribute="trailing" secondItem="ht5-i5-oU7" secondAttribute="trailing" constant="24" id="lAm-NP-bHT"/>
                             <constraint firstItem="Ujw-91-Bkj" firstAttribute="leading" secondItem="I1z-at-iI4" secondAttribute="leading" constant="24" id="pKa-wv-9q6"/>
                             <constraint firstItem="I1z-at-iI4" firstAttribute="trailing" secondItem="LIP-sG-aiD" secondAttribute="trailing" constant="24" id="vTF-J8-ZYg"/>
@@ -463,6 +463,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowTop" width="217" height="344"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="121"/>
         <image name="rectangle.split.3x3" catalog="system" width="128" height="93"/>

@@ -12,20 +12,21 @@ public struct FaceSensitivity {
 
   var limitedTopX: CGFloat
   var limitedBottonX: CGFloat
-  var limitedTopY: CGFloat
-  var limitedBottonY: CGFloat
+  var limitedLeftY: CGFloat
+  var limitedRightY: CGFloat
 
-  public init(limitedTopX: CGFloat, limitedBottonX: CGFloat, limitedTopY: CGFloat, limitedBottonY: CGFloat) {
+  public init(limitedTopX: CGFloat, limitedBottonX: CGFloat, limitedLeftY: CGFloat, limitedRightY: CGFloat) {
     self.limitedTopX = limitedTopX
     self.limitedBottonX = limitedBottonX
-    self.limitedTopY = limitedTopY
-    self.limitedBottonY = limitedBottonY
+    self.limitedLeftY = limitedLeftY
+    self.limitedRightY = limitedRightY
   }
+
   static func getDefault() -> FaceSensitivity {
     return FaceSensitivity(limitedTopX: ValuesConstants.limitedX,
                            limitedBottonX: -ValuesConstants.limitedX,
-                           limitedTopY: ValuesConstants.limitedY,
-                           limitedBottonY: -ValuesConstants.limitedY)
+                           limitedLeftY: ValuesConstants.limitedY,
+                           limitedRightY: -ValuesConstants.limitedY)
   }
 
   func getLimitedX() -> CGFloat {
@@ -33,7 +34,7 @@ public struct FaceSensitivity {
   }
   
   func getLimitedY() -> CGFloat {
-    return abs(limitedTopY) + abs(limitedBottonY)
+    return abs(limitedLeftY) + abs(limitedRightY)
   }
   
 }

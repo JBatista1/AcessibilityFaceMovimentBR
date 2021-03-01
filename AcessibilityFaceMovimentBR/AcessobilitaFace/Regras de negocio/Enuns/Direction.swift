@@ -26,4 +26,12 @@ enum Direction: String {
       return Asset.arrowRight.image
     }
   }
+  var direction: DirectiorFaceMoviment {
+    switch self {
+    case .top, .botton:
+      return .axisY
+    case .left, .right:
+      return .axisY
+    }
+  }
 }
