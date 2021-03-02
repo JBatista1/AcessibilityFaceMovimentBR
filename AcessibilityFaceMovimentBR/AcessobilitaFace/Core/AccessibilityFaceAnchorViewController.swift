@@ -29,7 +29,6 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
     super.viewDidLoad()
     setupSceneView()
     setupViews()
-
   }
 
   open override func viewDidAppear(_ animated: Bool) {
@@ -53,12 +52,14 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
     let configuration = ARFaceTrackingConfiguration()
     configuration.maximumNumberOfTrackedFaces = 1
     sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+    sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
   }
 
   private func setupSceneView() {
     sceneView.delegate = self
     sceneView.session.delegate = self
     sceneView.isHidden = true
+    sceneView.preferredFramesPerSecond = 45
   }
 
   private func setupViews() {
@@ -85,16 +86,21 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
 extension AccessibilityFaceAnchorViewController: ARSCNViewDelegate, ARSessionDelegate {
 
   public func renderer(_ renderer: SCNSceneRenderer, didUpdate node: SCNNode, for anchor: ARAnchor) {
-
     guard let faceAnchor = anchor as? ARFaceAnchor,
       let eyeRight = faceAnchor.blendShapes[.eyeBlinkLeft] as? CGFloat,
       let eyeLeft = faceAnchor.blendShapes[.eyeBlinkRight] as? CGFloat,
       let tongue = faceAnchor.blendShapes[.tongueOut] as? CGFloat else { return }
 
-        let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
-        let newPosition = self.moveCursor.getNextPosition(withPoint: point)
-        self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
-        self.animateCursor(toNextPoint: newPosition)
+    let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
+
+    let newPosition = self.moveCursor.getNextPosition(withPoint: point)
+    self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
+    self.animateCursor(toNextPoint: newPosition)
+    print(point)
+    print("####")
+    print("####")
+    print("####")
+
   }
 }
 

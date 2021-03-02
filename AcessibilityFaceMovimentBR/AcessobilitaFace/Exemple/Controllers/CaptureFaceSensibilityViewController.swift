@@ -61,10 +61,10 @@ extension CaptureFaceSensibilityViewController: GetSensitivityProtocol {
         self.titleLabel.text = "Mova a cabeça para a Baixo e clique em iniciar"
       case .botton:
         self.faceSensitivity.limitedBottonX = value
-        self.titleLabel.text = "Mova a cabeça para a Direita e clique em iniciar"
+        self.titleLabel.text = "Mova a cabeça para a Esquerda e clique em iniciar"
       case .left:
         self.faceSensitivity.limitedLeftY = value
-        self.titleLabel.text = "Mova a cabeça para a Esquerda e clique em iniciar"
+        self.titleLabel.text = "Mova a cabeça para a Direita e clique em iniciar"
       case .right:
         self.faceSensitivity.limitedRightY = value
         self.captureButton.isHidden = true
