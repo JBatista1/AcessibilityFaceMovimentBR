@@ -59,7 +59,7 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
     sceneView.delegate = self
     sceneView.session.delegate = self
     sceneView.isHidden = true
-    sceneView.preferredFramesPerSecond = 45
+    sceneView.preferredFramesPerSecond = 60
   }
 
   private func setupViews() {
