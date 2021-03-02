@@ -30,7 +30,7 @@ enum ValuesConstants {
   static let cooldown: Int = 3
   static let limitedX: CGFloat = 0.15
   static let limitedY: CGFloat = 0.1
-  static let tolerance: CGFloat = 0.01
+  static let tolerance: CGFloat = 0.02
   static let numberAcceptedValues: Int = 150
   static let valueForStart: Int = 50
 }
@@ -43,6 +43,7 @@ internal enum AccessibilityUIType: String {
   case uiCollectionView
   case uiCursor
   case uiTabBar
+  case scene
   case unknown
 
   var identifier: String {
@@ -58,6 +59,8 @@ internal enum AccessibilityUIType: String {
     case .uiCursor:
       return "UICursor"
     case .uiTabBar:
+      return "UITabBar"
+    case .scene:
       return "UITabBar"
     case .unknown:
       return "UIUNKNOWN"

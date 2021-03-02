@@ -67,7 +67,7 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
   }
 
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
-    let actionMove = SKAction.move(to: nextPoint, duration: 0.15)
+    let actionMove = SKAction.move(to: nextPoint, duration: 0.17)
     cursor.run(actionMove)
   }
 
@@ -92,8 +92,8 @@ extension AccessibilityFaceAnchorViewController: ARSCNViewDelegate, ARSessionDel
 
     let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
     let newPosition = self.moveCursor.getNextPosition(withPoint: point)
-    self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
-    self.animateCursor(toNextPoint: newPosition)
+    self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition.screen)
+    self.animateCursor(toNextPoint: newPosition.cursor)
   }
 }
 

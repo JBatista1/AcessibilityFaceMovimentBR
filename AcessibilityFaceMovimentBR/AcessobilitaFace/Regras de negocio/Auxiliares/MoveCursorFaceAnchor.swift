@@ -72,9 +72,10 @@ final class MoveCursorFaceAnchor {
 
 extension MoveCursorFaceAnchor: MoveCursorProtocol {
 
-  func getNextPosition(withPoint point: CGPoint) -> CGPoint {
+  func getNextPosition(withPoint point: CGPoint) -> (cursor : CGPoint, screen: CGPoint) {
 
     var newPositionCursor = CGPoint.zero
+    var positionInScreen = CGPoint.zero
 
     var percentagemX = 0
     var percentagemY = 0
@@ -96,13 +97,17 @@ extension MoveCursorFaceAnchor: MoveCursorProtocol {
       percentagemY = getPercentage(withFacePosition: -point.y, andLimitedAxis: faceSensitivity.getLimitedY())
     }
 
-    newPositionCursor.x =  getNewPositionX(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Screen.center.x)
+    newPositionCursor.x = getNewPositionX(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Screen.center.x)
 
-    newPositionCursor.y =  getNewPositionY(withPercentage: percentagemY, MovimentDirection: directionY, andMaxValue: Screen.center.y) 
+    newPositionCursor.y = getNewPositionY(withPercentage: percentagemY, MovimentDirection: directionY, andMaxValue: Screen.center.y)
+
+    positionInScreen.x = getNewPositionX(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Screen.center.x)
+
+    positionInScreen.y = getNewPositionX(withPercentage: percentagemY, MovimentDirection: directionY, andMaxValue: Screen.center.y)
 
     lastPercentagem = (percentagemX, percentagemY)
     lastPosition = newPositionCursor
 
-    return newPositionCursor
+    return (newPositionCursor, positionInScreen)
   }
 }

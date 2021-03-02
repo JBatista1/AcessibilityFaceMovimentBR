@@ -29,19 +29,13 @@ open class AcessibilityViewController: UIViewController {
     action = ActionInView(target: self)
     setupCursor()
     insertCursor()
-    skView.showsFPS = true
-    skView.showsNodeCount = true
-    skView.ignoresSiblingOrder = true
-    skView.presentScene(scene)
-    skView.frame.size = scene.size
-    skView.backgroundColor = .clear
-    scene.backgroundColor = .clear
-    cursor.size = CGSize(width: Cursor.width, height: Cursor.heigh)
+
   }
 
   open override func didMove(toParent parent: UIViewController?) {
     let point = CGPoint(x: Cursor.x, y: Cursor.y)
-    let actionMove = SKAction.move(to: point, duration: 0.15)
+    let actionMove = SKAction.move(to: point, duration: 0.2)
+
     cursor.run(actionMove)
     scene.addChild(cursor)
   }
@@ -49,7 +43,13 @@ open class AcessibilityViewController: UIViewController {
   // MARK: - Private Class Methods
 
   private func setupCursor() {
-    skView.accessibilityIdentifier = AccessibilityUIType.uiCursor.identifier
+    skView.ignoresSiblingOrder = false
+    skView.presentScene(scene)
+    skView.frame.size = scene.size
+    skView.backgroundColor = .clear
+    scene.backgroundColor = .clear
+    cursor.size = CGSize(width: Cursor.width, height: Cursor.heigh)
+    skView.accessibilityIdentifier = AccessibilityUIType.scene.identifier
   }
 
   open override func viewDidLayoutSubviews() {
@@ -71,7 +71,7 @@ open class AcessibilityViewController: UIViewController {
   }
 
   private func getCursor(inWindows windows: UIWindow) -> SKView? {
-    if let cursor = windows.getViewAcessibility(WithType: .uiCursor) as? SKView {
+    if let cursor = windows.getViewAcessibility(WithType: .scene) as? SKView {
       self.skView = cursor
       return self.skView
     }
