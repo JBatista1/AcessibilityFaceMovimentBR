@@ -67,10 +67,27 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
   }
 
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
+
     DispatchQueue.main.async {
-      UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 6, initialSpringVelocity: 0.2, options: [.curveLinear, .preferredFramesPerSecond60], animations: {
-        self.cursor.center = nextPoint
-      }, completion: nil)
+      let spring = CASpringAnimation(keyPath: "origin.x")
+      spring.damping = 1
+      spring.fromValue = self.cursor.center
+      spring.toValue = nextPoint
+      spring.duration = 0.7
+      spring.initialVelocity = 0.2
+      //      let animation  = CABasicAnimation()
+//      animation.keyPath = "origin"
+//      animation.fromValue = self.cursor.center
+//      animation.toValue = nextPoint
+//      animation.duration = 3
+
+//      animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+      self.cursor.layer.add(spring, forKey: "basic")
+      self.cursor.layer.position = nextPoint
+
+//      UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 6, initialSpringVelocity: 0.2, options: [.curveLinear, .preferredFramesPerSecond60], animations: {
+//        self.cursor.center = nextPoint
+//      }, completion: nil)
     }
   }
 
@@ -96,11 +113,6 @@ extension AccessibilityFaceAnchorViewController: ARSCNViewDelegate, ARSessionDel
     let newPosition = self.moveCursor.getNextPosition(withPoint: point)
     self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
     self.animateCursor(toNextPoint: newPosition)
-    print(point)
-    print("####")
-    print("####")
-    print("####")
-
   }
 }
 
