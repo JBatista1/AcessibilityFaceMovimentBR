@@ -48,13 +48,22 @@ final class MoveCursorFaceAnchor {
     }
   }
 
-  private func getNewPosition(withPercentage percentage: Int, MovimentDirection direction: MovimentDirection, andMaxValue maxValue: CGFloat) -> CGFloat {
+  private func getNewPositionX(withPercentage percentage: Int, MovimentDirection direction: MovimentDirection, andMaxValue maxValue: CGFloat) -> CGFloat {
     let valueMoviment = (CGFloat(percentage)*maxValue)/100
     switch direction {
     case .positive:
       return maxValue + valueMoviment
     case .negative:
       return maxValue - valueMoviment
+    }
+  }
+  private func getNewPositionY(withPercentage percentage: Int, MovimentDirection direction: MovimentDirection, andMaxValue maxValue: CGFloat) -> CGFloat {
+    let valueMoviment = (CGFloat(percentage)*maxValue)/100
+    switch direction {
+    case .positive:
+      return maxValue - valueMoviment
+    case .negative:
+      return maxValue + valueMoviment
     }
   }
 }
@@ -87,9 +96,9 @@ extension MoveCursorFaceAnchor: MoveCursorProtocol {
       percentagemY = getPercentage(withFacePosition: -point.y, andLimitedAxis: faceSensitivity.getLimitedY())
     }
 
-    newPositionCursor.x =  getNewPosition(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Screen.center.x)
+    newPositionCursor.x =  getNewPositionX(withPercentage: percentagemX, MovimentDirection: directionX, andMaxValue: Screen.center.x)
 
-    newPositionCursor.y =  getNewPosition(withPercentage: percentagemY, MovimentDirection: directionY, andMaxValue: Screen.center.y) 
+    newPositionCursor.y =  getNewPositionY(withPercentage: percentagemY, MovimentDirection: directionY, andMaxValue: Screen.center.y) 
 
     lastPercentagem = (percentagemX, percentagemY)
     lastPosition = newPositionCursor

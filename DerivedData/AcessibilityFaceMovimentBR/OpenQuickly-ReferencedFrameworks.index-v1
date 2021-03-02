@@ -3,11 +3,12 @@
 <plist version="1.0">
 <array>
 	<string>AppKit</string>
+	<string>XCTest</string>
+	<string>Speech</string>
+	<string>SpriteKit</string>
+	<string>ARKit</string>
+	<string>UIKit</string>
 	<string>AcessibilityFaceMovimentBR</string>
 	<string>Foundation</string>
-	<string>ARKit</string>
-	<string>Speech</string>
-	<string>UIKit</string>
-	<string>XCTest</string>
 </array>
 </plist>

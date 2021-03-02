@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpriteKit
 
 open class AcessibilityViewController: UIViewController {
 
@@ -18,21 +19,37 @@ open class AcessibilityViewController: UIViewController {
 
   // MARK: - Public Property
 
-  var cursor = UIImageView(frame: CGRect(x: Cursor.x, y: Cursor.y, width: Cursor.width, height: Cursor.heigh))
+  var cursor = SKSpriteNode(imageNamed: "cursorDefault")
   var action: ActionProtocol!
+  var skView = SKView()
+  let scene = SKScene(size: CGSize(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
 
   public override func viewDidLoad() {
     super.viewDidLoad()
     action = ActionInView(target: self)
     setupCursor()
     insertCursor()
+    skView.showsFPS = true
+    skView.showsNodeCount = true
+    skView.ignoresSiblingOrder = true
+    skView.presentScene(scene)
+    skView.frame.size = scene.size
+    skView.backgroundColor = .clear
+    scene.backgroundColor = .clear
+    cursor.size = CGSize(width: Cursor.width, height: Cursor.heigh)
+  }
+
+  open override func didMove(toParent parent: UIViewController?) {
+    let point = CGPoint(x: Cursor.x, y: Cursor.y)
+    let actionMove = SKAction.move(to: point, duration: 0.15)
+    cursor.run(actionMove)
+    scene.addChild(cursor)
   }
 
   // MARK: - Private Class Methods
 
   private func setupCursor() {
-    cursor.image = Asset.cursorDefault.image
-    cursor.accessibilityIdentifier = AccessibilityUIType.uiCursor.identifier
+    skView.accessibilityIdentifier = AccessibilityUIType.uiCursor.identifier
   }
 
   open override func viewDidLayoutSubviews() {
@@ -42,21 +59,21 @@ open class AcessibilityViewController: UIViewController {
 
   private func insertCursor() {
     if let window = UIApplication.shared.windows.filter({$0.isKeyWindow}).first, (getCursor(inWindows: window) == nil) {
-      window.addSubview(cursor)
+      window.addSubview(skView)
       return
     }
 
     if let window = UIApplication.shared.windows.first, (getCursor(inWindows: window) == nil) {
       window.makeKey()
-      window.addSubview(cursor)
+      window.addSubview(skView)
       return
     }
   }
 
-  private func getCursor(inWindows windows: UIWindow) -> UIImageView? {
-    if let cursor = windows.getViewAcessibility(WithType: .uiCursor) as? UIImageView {
-      self.cursor = cursor
-      return self.cursor
+  private func getCursor(inWindows windows: UIWindow) -> SKView? {
+    if let cursor = windows.getViewAcessibility(WithType: .uiCursor) as? SKView {
+      self.skView = cursor
+      return self.skView
     }
     return nil
   }

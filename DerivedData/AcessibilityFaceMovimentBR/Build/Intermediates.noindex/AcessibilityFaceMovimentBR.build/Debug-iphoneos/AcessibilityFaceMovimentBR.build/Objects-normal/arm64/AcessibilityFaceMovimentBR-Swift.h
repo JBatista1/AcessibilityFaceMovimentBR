@@ -215,6 +215,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR26AcessibilityViewController")
 @interface AcessibilityViewController : UIViewController
 - (void)viewDidLoad;
+- (void)didMoveToParentViewController:(UIViewController * _Nullable)parent;
 - (void)viewDidLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;

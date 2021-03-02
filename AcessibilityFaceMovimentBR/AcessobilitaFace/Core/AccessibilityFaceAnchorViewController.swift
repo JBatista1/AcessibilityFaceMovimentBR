@@ -52,7 +52,7 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
     let configuration = ARFaceTrackingConfiguration()
     configuration.maximumNumberOfTrackedFaces = 1
     sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
-    sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints, ARSCNDebugOptions.showWorldOrigin]
+    sceneView.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
   }
 
   private func setupSceneView() {
@@ -67,11 +67,8 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
   }
 
   private func animateCursor(toNextPoint nextPoint: CGPoint) {
-    DispatchQueue.main.async {
-      UIView.animate(withDuration: 0.7, delay: 0, usingSpringWithDamping: 6, initialSpringVelocity: 0.2, options: [.curveLinear, .preferredFramesPerSecond60], animations: {
-        self.cursor.center = nextPoint
-      }, completion: nil)
-    }
+    let actionMove = SKAction.move(to: nextPoint, duration: 0.15)
+    cursor.run(actionMove)
   }
 
   private func verifyAction(withValueEyeRight eyeRight: CGFloat, theEyeLeft eyeLeft: CGFloat, tongueValue tongue: CGFloat, andPoint pointMouse: CGPoint) {
@@ -89,18 +86,14 @@ extension AccessibilityFaceAnchorViewController: ARSCNViewDelegate, ARSessionDel
     guard let faceAnchor = anchor as? ARFaceAnchor,
       let eyeRight = faceAnchor.blendShapes[.eyeBlinkLeft] as? CGFloat,
       let eyeLeft = faceAnchor.blendShapes[.eyeBlinkRight] as? CGFloat,
-      let tongue = faceAnchor.blendShapes[.tongueOut] as? CGFloat else { return }
+      let tongue = faceAnchor.blendShapes[.tongueOut] as? CGFloat else {
+        return
+    }
 
     let point = CGPoint(x: CGFloat(node.eulerAngles.y).truncate(), y: CGFloat(node.eulerAngles.x).truncate())
-
     let newPosition = self.moveCursor.getNextPosition(withPoint: point)
     self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
     self.animateCursor(toNextPoint: newPosition)
-    print(point)
-    print("####")
-    print("####")
-    print("####")
-
   }
 }
 
