@@ -101,6 +101,7 @@ extension AccessibilityFaceAnchorViewController: ARSCNViewDelegate, ARSessionDel
 // Recongnizer
 
 extension AccessibilityFaceAnchorViewController {
+  //MOVER Para arquivo separado
   private func checkPermissions() {
     SFSpeechRecognizer.requestAuthorization { authStatus in
       DispatchQueue.main.async {
@@ -152,7 +153,16 @@ extension AccessibilityFaceAnchorViewController {
         let indexTo = message.index(message.startIndex, offsetBy: segment.substringRange.location)
         lastString = String(message[indexTo...])
       }
-      print(lastString)
+      switch lastString {
+      case "ação":
+        print("Ação")
+      case "subi":
+        print("Subi")
+      case "descer":
+        print("Descer")
+      default:
+        print(lastString)
+      }
     })
   }
 
