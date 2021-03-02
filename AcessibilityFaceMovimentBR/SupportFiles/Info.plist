@@ -22,6 +22,10 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>"Usar a camera para pegar posicionamento do rosto"</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>"Posso usar o reconhecimento de fala para capturar suas ações?"</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>"Posso usar o reconhecimento de fala para capturar suas ações?"</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

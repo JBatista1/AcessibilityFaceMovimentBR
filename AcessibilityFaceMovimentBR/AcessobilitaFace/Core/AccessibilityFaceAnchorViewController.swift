@@ -8,6 +8,7 @@
 
 import UIKit
 import ARKit
+import Speech
 
 open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
 
@@ -16,19 +17,26 @@ open class AccessibilityFaceAnchorViewController: AcessibilityViewController {
   private let sceneView = ARSCNView(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
   private let moveCursor: MoveCursorProtocol = MoveCursorFaceAnchor()
   private var isShow = true
-  
+
+  let audioEngine = AVAudioEngine()
+  let speechReconizer : SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale(identifier: "pt-BR"))
+  let request = SFSpeechAudioBufferRecognitionRequest()
+  var task : SFSpeechRecognitionTask!
+
   // MARK: - Life cicle
 
   open override func viewDidLoad() {
     super.viewDidLoad()
     setupSceneView()
     setupViews()
+
   }
 
   open override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     UIApplication.shared.isIdleTimerDisabled = true
     resetTracking()
+    checkPermissions()
   }
 
   open override func viewDidDisappear(_ animated: Bool) {
@@ -88,4 +96,64 @@ extension AccessibilityFaceAnchorViewController: ARSCNViewDelegate, ARSessionDel
         self.verifyAction(withValueEyeRight: eyeRight, theEyeLeft: eyeLeft, tongueValue: tongue, andPoint: newPosition)
         self.animateCursor(toNextPoint: newPosition)
   }
+}
+
+// Recongnizer
+
+extension AccessibilityFaceAnchorViewController {
+  private func checkPermissions() {
+    SFSpeechRecognizer.requestAuthorization { authStatus in
+      DispatchQueue.main.async {
+        switch authStatus {
+        case .authorized:
+          print("AQUI")
+          break
+        case .denied:
+          // TODO: Implement.
+          break
+        case .restricted:
+          // TODO: Implement.
+          break
+        case .notDetermined:
+          // TODO: Implement.
+          break
+        @unknown default:
+          fatalError()
+        }
+      }
+    }
+  }
+
+  //------------------------------------------------------------------------------
+
+  func startRecording() {
+    let node = audioEngine.inputNode
+    let recordingFormat = node.outputFormat(forBus: 0)
+
+    node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, _) in
+      self.request.append(buffer)
+    }
+
+    audioEngine.prepare()
+    do {
+      try audioEngine.start()
+    } catch let error {
+      print("Error")
+    }
+
+    guard let myRecognization = SFSpeechRecognizer() else {
+      return
+    }
+    task = speechReconizer?.recognitionTask(with: request, resultHandler: { (response, error) in
+      guard let response = response else { return }
+      let message = response.bestTranscription.formattedString
+      var lastString: String = ""
+      for segment in response.bestTranscription.segments {
+        let indexTo = message.index(message.startIndex, offsetBy: segment.substringRange.location)
+        lastString = String(message[indexTo...])
+      }
+      print(lastString)
+    })
+  }
+
 }

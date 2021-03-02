@@ -43,6 +43,7 @@
 		9AE8480C25E8703B00666008 /* CellViewSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480B25E8703B00666008 /* CellViewSelectedProtocol.swift */; };
 		9AE8480E25E8768100666008 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE8480D25E8768100666008 /* UITableViewExtension.swift */; };
 		9AEE6E6525ED90E60041A1B1 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE6E6425ED90E60041A1B1 /* Direction.swift */; };
+		9AEE6E6725EDABA80041A1B1 /* Recognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEE6E6625EDABA80041A1B1 /* Recognizer.swift */; };
 		9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */; };
 		9AF2C87525D8942700FB7259 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87425D8942700FB7259 /* UIViewControllerExtension.swift */; };
 		9AF2C87725D895AB00FB7259 /* NavigationTesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */; };
@@ -108,6 +109,7 @@
 		9AE8480B25E8703B00666008 /* CellViewSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewSelectedProtocol.swift; sourceTree = "<group>"; };
 		9AE8480D25E8768100666008 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		9AEE6E6425ED90E60041A1B1 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		9AEE6E6625EDABA80041A1B1 /* Recognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recognizer.swift; sourceTree = "<group>"; };
 		9AF2C87225D892D100FB7259 /* TabBarSelectedProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarSelectedProtocol.swift; sourceTree = "<group>"; };
 		9AF2C87425D8942700FB7259 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		9AF2C87625D895AB00FB7259 /* NavigationTesteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTesteViewController.swift; sourceTree = "<group>"; };
@@ -304,6 +306,7 @@
 				9AB0869F25D4A81E00DF37C7 /* Position.swift */,
 				9AB77FF125E9B54F00BCC152 /* ManagesSpecialCases.swift */,
 				9AFCD72C25EC545300A4B88B /* ManagePointSensibility.swift */,
+				9AEE6E6625EDABA80041A1B1 /* Recognizer.swift */,
 			);
 			path = Auxiliares;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				9A2F485B25A3EA880043A2A6 /* ViewController.swift in Sources */,
 				9AB77FEE25E9B36500BCC152 /* CollectionTestViewController.swift in Sources */,
 				9AEE6E6525ED90E60041A1B1 /* Direction.swift in Sources */,
+				9AEE6E6725EDABA80041A1B1 /* Recognizer.swift in Sources */,
 				9AF2C87325D892D100FB7259 /* TabBarSelectedProtocol.swift in Sources */,
 				9AB6644425D8A252002EEA51 /* TimerControl.swift in Sources */,
 				9AF2C87725D895AB00FB7259 /* NavigationTesteViewController.swift in Sources */,
@@ -774,7 +778,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFaceBR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -794,7 +798,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joaoBatista.AcessibilityFaceBR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

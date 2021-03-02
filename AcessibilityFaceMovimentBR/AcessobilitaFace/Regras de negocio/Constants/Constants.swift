@@ -22,9 +22,9 @@ enum Cursor {
 }
 
 enum ValuesConstants {
-  static let closeEye: CGFloat = 0.6
-  static let openEye: CGFloat = 0.3
-  static let tongue: CGFloat = 0.6
+  static let closeEye: CGFloat = 0.3
+  static let openEye: CGFloat = 0.6
+  static let tongue: CGFloat = 0.2
   static let indexPathError: IndexPath = IndexPath(row: -1, section: -1)
   static let tabBarIndexError: Int = -1
   static let cooldown: Int = 3
@@ -61,7 +61,6 @@ internal enum AccessibilityUIType: String {
       return "UITabBar"
     case .unknown:
       return "UIUNKNOWN"
-
     }
   }
 }

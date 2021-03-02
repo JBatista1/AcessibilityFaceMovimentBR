@@ -26,7 +26,7 @@ class CaptureFaceSensibilityViewController: AcessibilityGetSensitivityViewContro
   override func viewDidLoad() {
     super.viewDidLoad()
     sensibilityDelegate = self
-    nextflowButton.isHidden = true
+//    nextflowButton.isHidden = true
   }
 
   @IBAction func tapAction(_ sender: Any) {

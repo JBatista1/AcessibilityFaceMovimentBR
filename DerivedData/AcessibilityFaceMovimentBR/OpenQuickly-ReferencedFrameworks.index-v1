@@ -6,6 +6,7 @@
 	<string>ARKit</string>
 	<string>XCTest</string>
 	<string>AcessibilityFaceMovimentBR</string>
+	<string>Speech</string>
 	<string>UIKit</string>
 	<string>AppKit</string>
 </array>

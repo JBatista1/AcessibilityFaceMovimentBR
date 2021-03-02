@@ -239,6 +239,8 @@ SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR37AccessibilityFaceAnchorViewContro
 @end
 
 
+
+
 SWIFT_CLASS("_TtC26AcessibilityFaceMovimentBR40AcessibilityGetSensitivityViewController")
 @interface AcessibilityGetSensitivityViewController : UIViewController
 - (void)viewDidLoad;
